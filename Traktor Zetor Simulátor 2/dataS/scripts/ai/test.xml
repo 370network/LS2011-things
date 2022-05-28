@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!--AIDefinition>
+    <Preconditions additionalSourceFile="" additionalXMLFile="" >
+        <Precondition type="BasicPrecondition" name="" checkPerceptionSourceCode="" arity="" />
+        <Precondition type="NegatePrecondition" name="" preconditionToNegateName="" arity="" />
+        <Precondition type="InjectionPrecondition" name="" preconditionToInjectName="" arity="" />
+        <Precondition type="PreconditionCollection" name="" arity="" >
+            <SubPrecondition name="" />
+            <SubPrecondition name="" />
+        </Precondition>
+        <Precondition type="EntityPreconditionCollection" name="" entityType="" arity="" >
+            <SubPrecondition name="" />
+            <SubPrecondition name="" />
+        </Precondition>
+    </Preconditions>
+    <Effects additionalSourceFile="" additionalXMLFile="" >
+        <Effect type="BasicEffect" name="" applySourceCode="" />
+        <Effect type="AttributeEffect" name="" attributeName="" changeValue="" />
+        <Effect type="EffectCollection" name="" >
+            <SubEffect name="" />
+            <SubEffect name="" />
+        </Effect>
+    </Effects>
+    <Transitions additionalSourceFile="" additionalXMLFile="" >
+        <Transition targetStateName="" preconditionType="PREDEFINED" preconditionName="" effectType="PREDEFINED" effectName="" />
+        <Transition targetStateName="" preconditionType="CUSTOM" effectType="CUSTOM" >
+            <Precondition type="" name="" arity="" >
+            </Precondition>
+            <Effect>
+            </Effect>
+    </Transitions>
+    <SteeringBehaviors additionalSourceFile="" additionalXMLFile="" >
+    </SteeringBehaviors>
+    <States additionalSourceFile="" additionalXMLFile="">
+        <State name="">
+            <Transitions>
+                <Transition targetStateName="" preconditionType="PREDEFINED" preconditionName="" effectType="PREDEFINED" effectName="" />
+                <Transition targetStateName="" preconditionType="CUSTOM" effectType="CUSTOM" >
+                    <Precondition type="" name="" arity="" >
+                    </Precondition>
+                    <Effect>
+                    </Effect>
+                </Transition>
+            </Transitions>
+            <SteeringBehaviors>
+                <SteeringBehavior behaviorName="" weight="" />
+            </SteeringBehaviors>
+            <AttributeUpdates>
+                <AttributeUpdate attributeName="" changePerS="" />
+            </AttributeUpdates>
+        </State>
+    </States>
+</AIDefinition-->
+
+<AIDefinition>
+    <Preconditions additionalSourceFile="" additionalXMLFile="" >
+        <Precondition type="BasicPrecondition" name="" checkPerceptionSourceCode="" />
+        <Precondition type="NegatePrecondition" name="" preconditionToNegateName="" />
+        <Precondition type="InjectionPrecondition" name="" preconditionToInjectName="" />
+        <Precondition type="PreconditionCollection" name="" >
+            <SubPrecondition name="" />
+            <SubPrecondition name="" />
+        </Precondition>
+        <Precondition type="EntityPreconditionCollection" name="" entityType="" >
+            <SubPrecondition name="" />
+            <SubPrecondition name="" />
+        </Precondition>
+    </Preconditions>
+    <Effects additionalSourceFile="" additionalXMLFile="" >
+        <Effect type="BasicEffect" name="" applySourceCode="" />
+        <Effect type="AttributeEffect" name="" attributeName="" changeValue="" />
+        <Effect type="EffectCollection" name="" >
+            <SubEffect name="" />
+            <SubEffect name="" />
+        </Effect>
+    </Effects>
+    <SteeringBehaviors additionalSourceFile="" additionalXMLFile="" >
+    </SteeringBehaviors>
+    <States additionalSourceFile="" additionalXMLFile="">
+        <State name="Wander" superState="Stand" speedLimit="WANDER" accelerationLimit="WANDER">
+            <Transitions>
+                <Transition targetStateName="Startled" preconditionName="playerSlapped" />
+                <Transition targetStateName="Escape" >
+                    <Precondition type="EntityCollection" name="shouldEscapeFromPlayerWhileWandering" entityType="PLAYER" arity="2" validityTime="NONE" >
+                        <Precondition name="isFrightening" />
+                        <Precondition name="isNear" /></CustomPrecondition></Transition>
+                <Transition targetStateName="GoToFeedingPlace" >
+                    <Precondition type="Collection" name="shouldWalkToFeedingPlaceBecauseVeryHungry" arity="1" validityTime="LONG" >
+                        <Precondition name="isStateChangePracticable" />
+                        <Precondition name="fiveSecondsPassed" />
+                        <Precondition name="isVeryHungry" />
+                        <Precondition type="EntityCollection" name="isEatableAndAvailable" entityType="OBJECT" arity="2" validityTime="LONG" >
+                            <Precondition name="isEatable" />
+                            <Precondition name="isInteractionPlaceAvailable" /></CustomPrecondition></CustomPrecondition></Transition>
+                <Transition targetStateName="Stop" >
+                    <Precondition type="Collection" name="shouldStopToSleepBecauseVeryExhausted" arity="1" validityTime="LONG" >
+                        <Precondition name="isStateChangePracticable" />
+                        <Precondition name="fiveSecondsPassed" />
+                        <Precondition name="isVeryExhausted" /></CustomPrecondition></Transition>
+                <Transition targetStateName="GoToWateringPlace" >
+                    <Precondition type="Collection" name="shouldWalkToWateringPlaceBecauseVeryThirsty" arity="1" validityTime="LONG" >
+                        <Precondition name="isStateChangePracticable" />
+                        <Precondition name="fiveSecondsPassed" />
+                        <Precondition name="isVeryThirsty" />
+                        <Precondition type="EntityCollection" name="isDrinkableAndAvailable" entityType="OBJECT" arity="2" validityTime="LONG" >
+                            <Precondition name="isDrinkable" />
+                            <Precondition name="isInteractionPlaceAvailable" /></CustomPrecondition></CustomPrecondition></Transition>
+                <Transition targetStateName="GoToFeedingPlace" >
+                    <Precondition type="Collection" name="shouldWalkToFeedingPlaceBecauseHungryAndInRange" arity="1" validityTime="LONG" >
+                        <Precondition name="isStateChangePracticable" />
+                        <Precondition name="fiveSecondsPassed" />
+                        <Precondition name="isHungry" />
+                        <Precondition type="EntityCollection" name="isEatableAndAvailable" entityType="OBJECT" arity="2" validityTime="LONG" >
+                            <Precondition name="isEatable" />
+                            <Precondition name="isInRange" />
+                            <Precondition name="isInteractionPlaceAvailable" /></CustomPrecondition></CustomPrecondition></Transition>
+                <Transition targetStateName="GoToFeedingPlace" >
+                    <Precondition type="Collection" name="shouldWalkToFeedingPlaceBecauseItGotRefilled" arity="1" validityTime="LONG" >
+                        <Precondition name="isStateChangePracticable" />
+                        <Precondition name="fiveSecondsPassed" />
+                        <Precondition name="isHungry" />
+                        <Precondition type="EntityCollection" name="isEatableAndAvailable" entityType="OBJECT" arity="2" validityTime="LONG" >
+                            <Precondition name="isEatable" />
+                            <Precondition name="gotRefilled" />
+                            <Precondition name="isInteractionPlaceAvailable" /></CustomPrecondition></CustomPrecondition></Transition>
+                <Transition targetStateName="Pursuit" >
+                    <Precondition type="Collection" name="shouldPursuitPlayerBecauseHungryAndInRange" arity="1" validityTime="LONG" >
+                        <Precondition name="isStateChangePracticable" />
+                        <Precondition name="fiveSecondsPassed" />
+                        <Precondition name="isHungry" />
+                        <Precondition type="EntityCollection" name="isInRangeButNotNear" entityType="PLAYER" arity="2" validityTime="LONG" >
+                            <Precondition name="isInRange" />
+                            <Precondition name="isNotNear" /></CustomPrecondition></CustomPrecondition></Transition>
+                <Transition targetStateName="Stop" >
+                    <Precondition type="Collection" name="shouldStopToEatGrassBecauseHungry" arity="1" validityTime="LONG" >
+                        <Precondition name="isStateChangePracticable" />
+                        <Precondition name="fiveSecondsPassed" />
+                        <Precondition name="isHungry" />
+                        <Precondition name="isStandingOnGrass" /></CustomPrecondition></Transition>
+                <Transition targetStateName="Stop" >
+                    <Precondition type="Collection" name="shouldStopToTakeANapBecauseExhausted" arity="1" validityTime="LONG" >
+                        <Precondition name="isStateChangePracticable" />
+                        <Precondition name="fiveSecondsPassed" />
+                        <Precondition name="isExhausted" /></CustomPrecondition></Transition>
+                <Transition targetStateName="GoToWateringPlace" >
+                    <Precondition type="Collection" name="shouldWalkToWateringPlaceBecauseThirsty" arity="1" validityTime="LONG" >
+                        <Precondition name="isStateChangePracticable" />
+                        <Precondition name="fiveSecondsPassed" />
+                        <Precondition name="isThirsty" />
+                        <Precondition type="EntityCollection" name="isDrinkableAndAvailable" entityType="OBJECT" arity="2" validityTime="LONG" >
+                            <Precondition name="isDrinkable" />
+                            <Precondition name="isInteractionPlaceAvailable" /></CustomPrecondition></CustomPrecondition></Transition>
+                <Transition targetStateName="Stop" >
+                    <Precondition type="Collection" name="shouldStopToSleepBecauseNight" arity="1" validityTime="LONG" >
+                        <Precondition name="isStateChangePracticable" />
+                        <Precondition name="fiveSecondsPassed" />
+                        <Precondition name="isNight" /></CustomPrecondition></Transition>
+            </Transitions>
+            <SteeringBehaviors>
+                <SteeringBehavior behaviorName="Cohesion" />
+                <SteeringBehavior behaviorName="Separation" weight="3" />
+                <SteeringBehavior behaviorName="ObstacleAvoidance" weight="10" />
+                <SteeringBehavior behaviorName="Wander" />
+                <SteeringBehavior behaviorName="Alignment" />
+            </SteeringBehaviors>
+            <AttributeUpdates>
+                <AttributeUpdate attributeName="HUNGER" changePerS="0.001" />
+                <AttributeUpdate attributeName="THIRST" changePerS="0.001" />
+                <AttributeUpdate attributeName="ENERGY" changePerS="-0.001" />
+            </AttributeUpdates>
+        </State>
+    </States>
+</AIDefinition>
+

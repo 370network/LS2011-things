@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<messages>
+    
+    <message id="1">
+        <title>$l10n_messageTitle_tut_sowing_01</title>
+        <content>$l10n_messageContent_tut_sowing_01</content>
+        <duration>18000</duration>
+    </message>
+    
+    <message id="2">
+        <title>$l10n_messageTitle_tut_sowing_02</title>
+        <content>$l10n_messageContent_tut_sowing_02</content>
+        <duration>10000</duration>
+    </message>
+    
+</messages>

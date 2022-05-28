@@ -1,0 +1,22 @@
+DefaultEffects = {}
+DefaultValues = {
+  A_BIT = 0.05,
+  SLIGHTLY = 0.1,
+  MODERATE = 0.2,
+  MUCH = 0.3,
+  A_LOT = 0.5,
+  ALMOST_COMPLETELY = 0.75,
+  COMPLETELY = 1
+}
+DefaultAttributeEffectChangeValues = DefaultValues
+DefaultEffects.raiseEnergyALot = AttributeEffect:new(AnimalAttributeData.ENERGY, DefaultValues.A_LOT, "raiseEnergyALot")
+DefaultEffects.raiseEnergySlightly = AttributeEffect:new(AnimalAttributeData.ENERGY, DefaultValues.SLIGHTLY, "raiseEnergySlightly")
+DefaultEffects.lowerHungerABit = AttributeEffect:new(AnimalAttributeData.HUNGER, DefaultValues.A_BIT * -1, "lowerHungerABit")
+DefaultEffects.lowerHungerSlightly = AttributeEffect:new(AnimalAttributeData.HUNGER, DefaultValues.SLIGHTLY * -1, "lowerHungerSlightly")
+DefaultEffects.lowerHungerModerate = AttributeEffect:new(AnimalAttributeData.HUNGER, DefaultValues.MODERATE * -1, "lowerHungerSlightly")
+DefaultEffects.raiseThirstSlightly = AttributeEffect:new(AnimalAttributeData.THIRST, DefaultValues.SLIGHTLY, "raiseThirstSlightly")
+DefaultEffects.raiseThirstABit = AttributeEffect:new(AnimalAttributeData.THIRST, DefaultValues.A_BIT, "raiseThirstABit")
+DefaultEffects.lowerThirstSlightly = AttributeEffect:new(AnimalAttributeData.THIRST, DefaultValues.SLIGHTLY * -1, "lowerThirstSlightly")
+DefaultEffects.lowerThirstModerate = AttributeEffect:new(AnimalAttributeData.THIRST, DefaultValues.MODERATE * -1, "lowerThirstSlightly")
+DefaultEffects.lowerThirstABit = AttributeEffect:new(AnimalAttributeData.THIRST, DefaultValues.A_BIT * -1, "lowerThirstABit")
+DefaultEffects.lowerMilkCompletely = AttributeEffect:new(AnimalAttributeData.MILK, DefaultValues.COMPLETELY * -1, "lowerMilkCompletely")

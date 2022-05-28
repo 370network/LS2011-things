@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onCreate="onShopScreenCreated">
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/background01.png" imageColor="1 1 1 1" onOpen="onOpen" onClose="onClose">
+        <GuiElement type="bitmap" position="0 0.135" size="1 0.7" imageFilename="dataS2/menu/settings_background.png" imageColor="1 1 1 1"/>
+
+        <GuiElement type="button" profile="defaultButton" position="0.03 0.84" imageFilename="dataS2/menu/button_up_normal.png" imageFocusedFilename="dataS2/menu/button_up_focused.png" imagePressedFilename="dataS2/menu/button_up_pressed.png" onCreate="onUpButtonCreate" onClick="onUpClick" focusId="1" focusChangeBottom="list" focusChangeRight="2" />
+
+        <GuiElement type="button" profile="defaultExtraLargeButton" position="0.25 0.84" text="$l10n_Button_Select_All_Mods" onClick="onSelectAllModsClick" focusId="2" focusChangeBottom="list" focusChangeLeft="1" focusChangeRight="3" />
+        <GuiElement type="button" profile="defaultExtraLargeButton" position="0.62 0.84" text="$l10n_Button_Deselect_All_Mods" onClick="onDeselectAllModsClick" focusId="3" focusChangeBottom="list" focusChangeLeft="2" />
+
+        <!-- list with the selected available -->
+        <GuiElement type="list" position="0 0.822857" positionOrigin="topLeft" size="0.7 5*0.114285" visibleItems="4" numColumns="1" columnPositios="0" showSlider="false" listItemHeight="0.15665" listItemSpacing="0.017635" onCreate="onCreateList" onSelectionChanged="onListSelectionChanged" focusId="list" focusChangeTop="1" focusChangeBottom="4" >
+            <GuiElement type="listItem" position="0.01 0" size="0.7 0.08665" onCreate="onCreateListItem" >
+                <GuiElement type="bitmap" position="0 0" size="0.16*0.75 0.16" onCreate="onCreateIcon" imageColor="1 1 1 1"/>
+                <GuiElement type="text" profile="defaultText" position="0.137 0.12" textSize="0.032" text2Size="0.032" onCreate="onCreateTitleText" text="" textWrapWidth="0.8" size="0.61 0.2" alignment="left"/>
+                <GuiElement type="text" profile="defaultTextNoBold" position="0.138 0.1" textSize="0.022" onCreate="onCreateDescText" text="" textWrapWidth="0.8" size="0.61 0.2" alignment="left"/>
+                <!--GuiElement type="button" profile="defaultButton" position="0.6 0.02" text="$l10n_Button_Add" onCreate="onCreateAddButton" />
+                <GuiElement type="button" profile="defaultButton" position="0.7714 0.02" text="$l10n_Button_Remove" onCreate="onCreateRemoveButton"/-->
+
+
+                <GuiElement type="text" profile="defaultText" position="0.52 -0.007" textSize="0.022" text2Size="0.022" onCreate="onCreateVersionText" text="" textWrapWidth="0" size="0.61 0.2" alignment="left"/>
+                <GuiElement type="text" profile="defaultText" position="0.69 -0.007" textSize="0.022" text2Size="0.022" onCreate="onCreateAuthorText" text="" textWrapWidth="0" size="0.61 0.2" alignment="left"/>
+                <GuiElement type="text" profile="defaultText" position="0.137 -0.007" textSize="0.022" text2Size="0.022" onCreate="onCreateHashText" text="" textWrapWidth="0" size="0.61 0.2" alignment="left"/>
+
+                <GuiElement type="toggleButton" profile="defaultToggleButton" position="0.85 0.045" onCreate="onCreateToggleModSelected" >
+                    <GuiElement type="button" profile="defaultCheckedButton" position="0 0" />
+                    <GuiElement type="button" profile="defaultUncheckedButton" position="0 0" />
+                </GuiElement>
+
+            </GuiElement>
+        </GuiElement>
+
+        <GuiElement type="button" profile="defaultButton" position="0.03 0.07" imageFilename="dataS2/menu/button_down_normal.png" imageFocusedFilename="dataS2/menu/button_down_focused.png" imagePressedFilename="dataS2/menu/button_down_pressed.png" onCreate="onDownButtonCreate" onClick="onDownClick" focusId="4" focusChangeTop="list" focusChangeRight="5" />
+        <GuiElement type="button" profile="defaultButton" position="0.61 0.07" text="$l10n_Button_Cancel" onClick="onCancelClick" focusId="5" focusChangeTop="list" focusChangeLeft="4" focusChangeRight="6" />
+        <GuiElement type="button" profile="defaultButton" position="0.8 0.07" text="$l10n_Button_Save" onClick="onSaveClick" focusId="6" focusChangeTop="list" focusChangeLeft="5" focusInit="onOpen" />
+    </GuiElement>
+</GUI>

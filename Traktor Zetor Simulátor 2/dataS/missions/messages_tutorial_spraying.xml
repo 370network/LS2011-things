@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<messages>
+    
+    <message id="1">
+        <title>$l10n_messageTitle_tut_spraying_01</title>
+        <content>$l10n_messageContent_tut_spraying_01</content>
+        <duration>18000</duration>
+    </message>
+    
+</messages>

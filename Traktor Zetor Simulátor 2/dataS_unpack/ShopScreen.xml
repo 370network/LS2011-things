@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onCreate="onShopScreenCreated">
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/shop_background.png" imageColor="1 1 1 1" onOpen="onOpen" onClose="onClose">
+
+        <GuiElement type="button" profile="defaultButton" position="0.03 0.84" imageFilename="dataS2/menu/button_up_normal.png" imageFocusedFilename="dataS2/menu/button_up_focused.png" imagePressedFilename="dataS2/menu/button_up_pressed.png" onCreate="onUpButtonCreate" onClick="onUpClick" focusId="1" focusChangeLeft="3" focusChangeRight="2" focusChangeTop="5" focusChangeBottom="5" />
+        
+        <GuiElement type="button" profile="defaultButton" position="0.305 0.84" imageFilename="dataS2/menu/button_left_normal.png" imageFocusedFilename="dataS2/menu/button_left_focused.png" imagePressedFilename="dataS2/menu/button_left_pressed.png" onCreate="onLeftButtonCreate" onClick="onLeftClick" focusId="2" focusChangeLeft="1" focusChangeRight="3"/>
+        <GuiElement type="text" profile="defaultText" position="0 0.845" textSize="0.032" text2Size="0.032" onCreate="onCreateSectionText" text="Section" alignment="center"/>
+        <GuiElement type="button" profile="defaultButton" position="0.595 0.84" imageFilename="dataS2/menu/button_right_normal.png" imageFocusedFilename="dataS2/menu/button_right_focused.png" imagePressedFilename="dataS2/menu/button_right_pressed.png" onCreate="onRightButtonCreate" onClick="onRightClick" focusId="3" focusChangeLeft="2" focusChangeRight="1"/>
+
+        <GuiElement type="text" profile="defaultText" position="0.72 0.845" textSize="0.032" text2Size="0.032" onCreate="onCreateCapitalText" text="" alignment="left"/>
+
+        <!-- list with the selected available -->
+        <GuiElement type="list" position="0.0286 0.822857" positionOrigin="topLeft" size="0.95 4*0.18" visibleItems="4" numColumns="1" columnPositions="0" showSlider="false" listItemHeight="0.15665" listItemSpacing="0.017635" onCreate="onCreateList" onSelectionChanged="onListSelectionChanged" onScroll="onItemListScrolled">
+            <GuiElement type="listItem" position="0 0" size="0.4 0.08665" onCreate="onCreateListItem" >
+                <GuiElement type="bitmap" position="-0.0286 -0.005" size="1 0.17" imageFilename="dataS2/menu/shopSlot_normal.png" imageColor="1 1 1 1"/>
+                <GuiElement type="bitmap" position="0.01 0.01" size="0.14*0.75 0.14" onCreate="onCreateIcon" imageFilename="data/vehicles/store_empty.png" imageColor="1 1 1 1"/>
+                <GuiElement type="text" profile="defaultText" position="0.138 0.12" textSize="0.032" text2Size="0.032" onCreate="onCreateTitleText" text="" textWrapWidth="0.8" size="0.61 0.2" alignment="left"/>
+                <GuiElement type="text" profile="defaultTextNoBold" position="0.14 0.1" textSize="0.022" onCreate="onCreateDescText" text="" textWrapWidth="0.8" size="0.61 0.2" alignment="left"/>
+                <GuiElement type="text" profile="defaultTextNoBold" position="0.14 0.1-5*0.022" textSize="0.022" onCreate="onCreateSpecsText" text="" textWrapWidth="0.8" size="0.61 0.2" alignment="left"/>
+                <GuiElement type="button" profile="defaultButton" position="0.6 0.02" text="$l10n_Button_Buy" onCreate="onCreateBuyButton" />
+                <GuiElement type="button" profile="defaultButton" position="0.7714 0.02" text="$l10n_Button_Sell" onCreate="onCreateSellButton"/>
+                <GuiElement type="text" profile="defaultText" position="0.615 0.1-5*0.022" textSize="0.022" text2Size="0.022" onCreate="onCreateBuyPriceText" text="10000" textWrapWidth="0.8" alignment="left"/>
+                <GuiElement type="text" profile="defaultText" position="0.7864 0.1-5*0.022" textSize="0.022" text2Size="0.022" onCreate="onCreateSellPriceText" text="10000" textWrapWidth="0.8" alignment="left"/>
+
+            
+            </GuiElement>
+        </GuiElement>
+        
+        <GuiElement type="button" profile="defaultButton" position="0.03 0.07" imageFilename="dataS2/menu/button_down_normal.png" imageFocusedFilename="dataS2/menu/button_down_focused.png" imagePressedFilename="dataS2/menu/button_down_pressed.png" onClick="onDownClick" focusId="5" focusChangeTop="4" focusChangeBottom="1" focusChangeRight="6"/>
+        
+        <GuiElement type="button" profile="defaultButton" position="0.8 0.07" text="$l10n_Button_Back" onClick="onBackClick" focusId="6" focusChangeTop="4" focusChangeBottom="1" focusChangeLeft="5" focusChangeRight="5" focusInit="onOpen" />
+    
+        <GuiElement type="text" profile="defaultText" position="0 0.008" textSize="0.032" text2Size="0.032" onCreate="onCreateMessageText" text="This is a message line that can change depending on stuff and things." alignment="center"/>
+    </GuiElement>
+</GUI>

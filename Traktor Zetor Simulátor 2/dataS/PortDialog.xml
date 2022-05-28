@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI>
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/background01.png" imageColor="1 1 1 1" onOpen="onOpen" onClose="onClose"/>
+    <GuiElement type="bitmap" position="0.2 0.5" size="0.65 0.2666" imageFilename="dataS2/menu/dialog_width_bg.png" imageColor="1 1 1 1">
+        <GuiElement type="button" profile="defaultLargeButton" position="-0.025 0.02" text="$l10n_Button_Start_Anyway" onClick="onContinueClick" focusId="1" focusChangeRight="2" />
+		<GuiElement type="button" profile="defaultExtraLargeButton" position="0.28 0.02" text="$l10n_Button_Choose_Another_Port" onClick="onCancelClick" focusId="2" focusInit="onOpen" focusChangeLeft="1" />
+        <GuiElement type="text" profile="defaultText" onCreate="onCreateText" position="0 0.2" size="0.6 1" textSize="0.03" text2Size="0.03" text="" textWrapWidth="0.55" alignment="center" />
+    </GuiElement> 
+</GUI>
+

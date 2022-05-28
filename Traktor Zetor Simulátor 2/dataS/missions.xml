@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<missions>
+    <mission id="1">
+        <name>$l10n_missionName_race1</name>
+        <time>10</time>
+        <description>$l10n_missionDescription_race1</description>
+        <image active="dataS2/missions/mission_race1a.png"/>
+        <script filename="dataS/missions/mission_race1.lua" class="MissionRace1"/>
+        <lockable>false</lockable>
+        <briefing>dataS2/menu/briefingScreen/mission_race1_briefing</briefing>
+        <briefingText1>$l10n_missionBriefing_race1_1</briefingText1>
+        <briefingText2>$l10n_missionBriefing_race1_2</briefingText2>
+        <briefingText3>$l10n_missionBriefing_race1_3</briefingText3>
+        <bronze>300</bronze>
+        <silver>180</silver>
+        <gold>120</gold>
+        <mission_type>time</mission_type>
+    </mission>
+    
+    <mission id="2">
+        <name>$l10n_missionName_exploration1</name>
+        <time>10</time>
+        <description>$l10n_missionDescription_exploration1</description>
+        <image active="dataS2/missions/mission_exploration1a.png"/>
+        <script filename="dataS/missions/mission_exploration1.lua" class="MissionExploration1"/>
+        <lockable>false</lockable>
+        <briefing>dataS2/menu/briefingScreen/mission_exploration1_briefing</briefing>
+        <briefingText1>$l10n_missionBriefing_exploration1_1</briefingText1>
+        <briefingText2>$l10n_missionBriefing_exploration1_2</briefingText2>
+        <briefingText3>$l10n_missionBriefing_exploration1_3</briefingText3>
+        <bronze>660</bronze>
+        <silver>400</silver>
+        <gold>300</gold>
+        <mission_type>time</mission_type>
+    </mission>
+    
+    <mission id="3">
+        <name>$l10n_missionName_race2</name>
+        <time>14</time>
+        <description>$l10n_missionDescription_race2</description>
+        <image active="dataS2/missions/mission_race2a.png"/>
+        <script filename="dataS/missions/mission_race2.lua" class="MissionRace2"/>
+        <lockable>false</lockable>
+        <briefing>dataS2/menu/briefingScreen/mission_race2_briefing</briefing>
+        <briefingText1>$l10n_missionBriefing_race2_1</briefingText1>
+        <briefingText2>$l10n_missionBriefing_race2_2</briefingText2>
+        <briefingText3>$l10n_missionBriefing_race2_3</briefingText3>
+        <bronze>360</bronze>
+        <silver>140</silver>
+        <gold>80</gold>
+        <mission_type>time</mission_type>
+    </mission>
+
+    <mission id="4">
+        <name>$l10n_missionName_exploration2</name>
+        <time>16.75</time>
+        <description>$l10n_missionDescription_exploration2</description>
+        <image active="dataS2/missions/mission_exploration2a.png"/>
+        <script filename="dataS/missions/mission_exploration2.lua" class="MissionExploration2"/>
+        <lockable>true</lockable>
+        <briefing>dataS2/menu/briefingScreen/mission_exploration2_briefing</briefing>
+        <briefingText1>$l10n_missionBriefing_exploration2_1</briefingText1>
+        <briefingText2>$l10n_missionBriefing_exploration2_2</briefingText2>
+        <briefingText3>$l10n_missionBriefing_exploration2_3</briefingText3>
+        <bronze>690</bronze>
+        <silver>510</silver>
+        <gold>360</gold>
+        <mission_type>time</mission_type>
+    </mission>
+    
+    <mission id="5">
+        <name>$l10n_missionName_tutorial_ploughing</name>
+        <time>10</time>
+        <description>$l10n_missionDescription_tutorial_ploughing</description>
+        <image active="dataS2/missions/mission_tutorial_ploughinga.png"/>
+        <script filename="dataS/missions/mission_tutorial_ploughing.lua" class="MissionTutorialPloughing"/>
+        <lockable>false</lockable>
+        <briefing>dataS2/menu/briefingScreen/mission_tutorial_ploughing_briefing</briefing>
+        <briefingText1>$l10n_missionBriefing_tutorial_ploughing_1</briefingText1>
+        <briefingText2>$l10n_missionBriefing_tutorial_ploughing_2</briefingText2>
+        <briefingText3>$l10n_missionBriefing_tutorial_ploughing_3</briefingText3>
+        <bronze>720</bronze>
+        <silver>420</silver>
+        <gold>330</gold>
+        <mission_type>time</mission_type>
+    </mission>
+    
+    <mission id="6">
+        <name>$l10n_missionName_tutorial_sowing</name>
+        <time>10</time>
+        <description>$l10n_missionDescription_tutorial_sowing</description>
+        <image active="dataS2/missions/mission_tutorial_sowinga.png"/>
+        <script filename="dataS/missions/mission_tutorial_sowing.lua" class="MissionTutorialSowing"/>
+        <lockable>false</lockable>
+        <briefing>dataS2/menu/briefingScreen/mission_tutorial_sowing_briefing</briefing>
+        <briefingText1>$l10n_missionBriefing_tutorial_sowing_1</briefingText1>
+        <briefingText2>$l10n_missionBriefing_tutorial_sowing_2</briefingText2>
+        <briefingText3>$l10n_missionBriefing_tutorial_sowing_3</briefingText3>
+        <bronze>720</bronze>
+        <silver>450</silver>
+        <gold>270</gold>
+        <mission_type>time</mission_type>
+    </mission>
+    
+    <mission id="7">
+        <name>$l10n_missionName_rockSlide</name>
+        <time>6.5</time>
+        <description>$l10n_missionDescription_rockSlide</description>
+        <image active="dataS2/missions/mission_rockSlidea.png"/>
+        <script filename="dataS/missions/mission_rockSlide.lua" class="MissionRockSlide"/>
+        <lockable>true</lockable>
+        <briefing>dataS2/menu/briefingScreen/mission_rockSlide_briefing</briefing>
+        <briefingText1>$l10n_missionBriefing_rockSlide_1</briefingText1>
+        <briefingText2>$l10n_missionBriefing_rockSlide_2</briefingText2>
+        <briefingText3>$l10n_missionBriefing_rockSlide_3</briefingText3>
+        <bronze>510</bronze>
+        <silver>330</silver>
+        <gold>210</gold>
+        <mission_type>time</mission_type>
+    </mission>
+    
+    <mission id="8">
+        <name>$l10n_missionName_tutorial_spraying</name>
+        <time>10</time>
+        <description>$l10n_missionDescription_tutorial_spraying</description>
+        <image active="dataS2/missions/mission_tutorial_sprayinga.png"/>
+        <script filename="dataS/missions/mission_tutorial_spraying.lua" class="MissionTutorialSpraying"/>
+        <lockable>false</lockable>
+        <briefing>dataS2/menu/briefingScreen/mission_tutorial_spraying_briefing</briefing>
+        <briefingText1>$l10n_missionBriefing_tutorial_spraying_1</briefingText1>
+        <briefingText2>$l10n_missionBriefing_tutorial_spraying_2</briefingText2>
+        <briefingText3>$l10n_missionBriefing_tutorial_spraying_3</briefingText3>
+        <bronze>360</bronze>
+        <silver>180</silver>
+        <gold>90</gold>
+        <mission_type>time</mission_type>
+    </mission>
+    
+    <mission id="9">
+        <name>$l10n_missionName_shelter</name>
+        <time>10</time>
+        <description>$l10n_missionDescription_shelter</description>
+        <image active="dataS2/missions/mission_sheltera.png"/>
+        <script filename="dataS/missions/mission_shelter.lua" class="MissionShelter"/>
+        <lockable>true</lockable>
+        <briefing>dataS2/menu/briefingScreen/mission_shelter_briefing</briefing>
+        <briefingText1>$l10n_missionBriefing_shelter_1</briefingText1>
+        <briefingText2>$l10n_missionBriefing_shelter_2</briefingText2>
+        <briefingText3>$l10n_missionBriefing_shelter_3</briefingText3>
+        <bronze>480</bronze>
+        <silver>360</silver>
+        <gold>220</gold>
+        <mission_type>time</mission_type>
+    </mission>
+    
+    <mission id="10">
+        <name>$l10n_missionName_tutorial_threshing</name>
+        <time>10</time>
+        <description>$l10n_missionDescription_tutorial_threshing</description>
+        <image active="dataS2/missions/mission_tutorial_threshinga.png"/>
+        <script filename="dataS/missions/mission_tutorial_threshing.lua" class="MissionTutorialThreshing"/>
+        <lockable>false</lockable>
+        <briefing>dataS2/menu/briefingScreen/mission_tutorial_threshing_briefing</briefing>
+        <briefingText1>$l10n_missionBriefing_tutorial_threshing_1</briefingText1>
+        <briefingText2>$l10n_missionBriefing_tutorial_threshing_2</briefingText2>
+        <briefingText3>$l10n_missionBriefing_tutorial_threshing_3</briefingText3>
+        <bronze>720</bronze>
+        <silver>420</silver>
+        <gold>250</gold>
+        <mission_type>time</mission_type>
+    </mission>
+    
+    <mission id="11">
+        <name>$l10n_missionName_tutorial_cultivating</name>
+        <time>10</time>
+        <description>$l10n_missionDescription_tutorial_cultivating</description>
+        <image active="dataS2/missions/mission_tutorial_cultivatinga.png"/>
+        <script filename="dataS/missions/mission_tutorial_cultivating.lua" class="MissionTutorialCultivating"/>
+        <lockable>false</lockable>
+        <briefing>dataS2/menu/briefingScreen/mission_tutorial_cultivating_briefing</briefing>
+        <briefingText1>$l10n_missionBriefing_tutorial_cultivating_1</briefingText1>
+        <briefingText2>$l10n_missionBriefing_tutorial_cultivating_2</briefingText2>
+        <briefingText3>$l10n_missionBriefing_tutorial_cultivating_3</briefingText3>
+        <bronze>660</bronze>
+        <silver>390</silver>
+        <gold>220</gold>
+        <mission_type>time</mission_type>
+    </mission>
+    
+    <mission id="12">
+        <name>$l10n_missionName_chaff</name>
+        <time>10</time>
+        <description>$l10n_missionDescription_chaff</description>
+        <image active="dataS2/missions/mission_chaffa.png"/>
+        <script filename="dataS/missions/mission_chaff.lua" class="MissionChaff"/>
+        <lockable>true</lockable>
+        <briefing>dataS2/menu/briefingScreen/mission_chaff_briefing</briefing>
+        <briefingText1>$l10n_missionBriefing_chaff_1</briefingText1>
+        <briefingText2>$l10n_missionBriefing_chaff_2</briefingText2>
+        <briefingText3>$l10n_missionBriefing_chaff_3</briefingText3>
+        <bronze>780</bronze>
+        <silver>480</silver>
+        <gold>360</gold>
+        <mission_type>time</mission_type>
+    </mission>
+    
+    <mission id="13">
+        <name>$l10n_missionName_baling</name>
+        <time>10</time>
+        <description>$l10n_missionDescription_baling</description>
+        <image active="dataS2/missions/mission_balinga.png"/>
+        <script filename="dataS/missions/mission_baling.lua" class="MissionBaling"/>
+        <lockable>true</lockable>
+        <briefing>dataS2/menu/briefingScreen/mission_baling_briefing</briefing>
+        <briefingText1>$l10n_missionBriefing_baling_1</briefingText1>
+        <briefingText2>$l10n_missionBriefing_baling_2</briefingText2>
+        <briefingText3>$l10n_missionBriefing_baling_3</briefingText3>
+        <bronze>720</bronze>
+        <silver>480</silver>
+        <gold>320</gold>
+        <mission_type>time</mission_type>
+    </mission>
+    
+    <mission id="14">
+        <name>$l10n_missionName_vehicles</name>
+        <time>10</time>
+        <description>$l10n_missionDescription_vehicles</description>
+        <image active="dataS2/missions/mission_vehiclesa.png"/>
+        <script filename="dataS/missions/mission_vehicles.lua" class="MissionVehicles"/>
+        <lockable>true</lockable>
+        <briefing>dataS2/menu/briefingScreen/mission_vehicles_briefing</briefing>
+        <briefingText1>$l10n_missionBriefing_vehicles_1</briefingText1>
+        <briefingText2>$l10n_missionBriefing_vehicles_2</briefingText2>
+        <briefingText3>$l10n_missionBriefing_vehicles_3</briefingText3>
+        <bronze>420</bronze>
+        <silver>240</silver>
+        <gold>130</gold>
+        <mission_type>time</mission_type>
+    </mission>
+    
+    <mission id="15">
+        <name>$l10n_missionName_autoStacking</name>
+        <time>10</time>
+        <description>$l10n_missionDescription_autoStacking</description>
+        <image active="dataS2/missions/mission_autoStackinga.png"/>
+        <script filename="dataS/missions/mission_autoStacking.lua" class="MissionAutoStacking"/>
+        <lockable>true</lockable>
+        <briefing>dataS2/menu/briefingScreen/mission_autoStacking_briefing</briefing>
+        <briefingText1>$l10n_missionBriefing_autoStacking_1</briefingText1>
+        <briefingText2>$l10n_missionBriefing_autoStacking_2</briefingText2>
+        <briefingText3>$l10n_missionBriefing_autoStacking_3</briefingText3>
+        <bronze>480</bronze>
+        <silver>330</silver>
+        <gold>200</gold>
+        <mission_type>time</mission_type>
+    </mission>
+
+</missions>

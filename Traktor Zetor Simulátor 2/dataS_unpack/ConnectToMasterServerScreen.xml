@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpen" onClose="onClose">
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/background01.png" imageColor="1 1 1 1">
+        <GuiElement type="bitmap" position="0.11 0.024" size="0.78 0.06" imageFilename="dataS2/missions/please_wait_background.png" imageColor="1 1 1 1" onCreate="onCreateLoadingBg"/>
+        <GuiElement type="text" profile="defaultTextCentered" text="" position="0.4 0.033" size="0.2 0.1" textSize="0.025" text2Size="0.025" onCreate="onCreateStatus"/>
+        <GuiElement type="button" profile="defaultButton" position="0.4 0.1" text="$l10n_Button_Cancel" onClick="onCancelClick" focusId="1" focusInit="onOpen" />
+    </GuiElement>
+</GUI>

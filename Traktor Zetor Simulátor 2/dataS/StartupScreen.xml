@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpenStartupScreen" onClose="onCloseStartupScreen">
+    <GuiElement type="video" position="0 0" size="1 1" allowStop="true" onCreate="onVideoElementCreated" onEndVideo="onStartupEndEvent">
+    </GuiElement>
+    <GuiElement type="bitmap" position="0 0" size="1 1" onCreate="onPictureElementCreated">
+    </GuiElement>
+</GUI>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<messages>
+    
+    <message id="1">
+        <title>$l10n_messageTitle_exploration2_01</title>
+        <content>$l10n_messageContent_exploration2_01</content>
+        <duration>16000</duration>
+    </message>
+
+    <message id="2">
+        <title>$l10n_messageTitle_exploration2_02</title>
+        <content>$l10n_messageContent_exploration2_02</content>
+        <duration>20000</duration>
+    </message>
+    
+    <message id="3">
+        <title>$l10n_messageTitle_exploration2_03</title>
+        <content>$l10n_messageContent_exploration2_03</content>
+        <duration>18000</duration>
+    </message>
+    
+    <message id="4">
+        <title>$l10n_messageTitle_exploration2_04</title>
+        <content>$l10n_messageContent_exploration2_04</content>
+        <duration>16000</duration>
+    </message>
+    
+    <message id="5">
+        <title>$l10n_messageTitle_exploration2_05</title>
+        <content>$l10n_messageContent_exploration2_05</content>
+        <duration>16000</duration>
+    </message>
+    
+    <message id="6">
+        <title>$l10n_messageTitle_exploration2_06</title>
+        <content>$l10n_messageContent_exploration2_06</content>
+        <duration>14000</duration>
+    </message>
+    
+    <message id="7">
+        <title>$l10n_messageTitle_exploration2_07</title>
+        <content>$l10n_messageContent_exploration2_07</content>
+        <duration>16000</duration>
+    </message>
+    
+    <message id="8">
+        <title>$l10n_messageTitle_exploration2_08</title>
+        <content>$l10n_messageContent_exploration2_08</content>
+        <duration>16000</duration>
+    </message>
+    
+    <message id="9">
+        <title>$l10n_messageTitle_exploration2_09</title>
+        <content>$l10n_messageContent_exploration2_09</content>
+        <duration>18000</duration>
+    </message>
+    
+    <message id="10">
+        <title>$l10n_messageTitle_exploration2_10</title>
+        <content>$l10n_messageContent_exploration2_10</content>
+        <duration>14000</duration>
+    </message>
+    
+    <message id="11">
+        <title>$l10n_messageTitle_exploration2_11</title>
+        <content>$l10n_messageContent_exploration2_11</content>
+        <duration>18000</duration>
+    </message>
+    
+    <message id="12">
+        <title>$l10n_messageTitle_exploration2_12</title>
+        <content>$l10n_messageContent_exploration2_12</content>
+        <duration>12000</duration>
+    </message>
+    
+</messages>

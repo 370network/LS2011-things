@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<achievements>
+    <achievement id="1" idName="Money1Million" score="0" targetScore="1000000" showScore="false" imageFilename="dataS2/menu/achievements/achievement_money1Million.png" />
+    <achievement id="2" idName="Money5Million" score="0" targetScore="5000000" showScore="false" imageFilename="dataS2/menu/achievements/achievement_money5Million.png" />
+    <achievement id="3" idName="Money10Million" score="0" targetScore="10000000" showScore="false" imageFilename="dataS2/menu/achievements/achievement_money10Million.png" />
+    <achievement id="4" idName="TraveledDistance100" score="0" targetScore="100" showScore="false" imageFilename="dataS2/menu/achievements/achievement_traveledDistance100.png" />
+    <achievement id="5" idName="TraveledDistance1000" score="0" targetScore="1000" showScore="false" imageFilename="dataS2/menu/achievements/achievement_traveledDistance1000.png" />
+    <achievement id="6" idName="PlayTime10" score="0" targetScore="10" showScore="false" imageFilename="dataS2/menu/achievements/achievement_playTime10.png" />
+    <achievement id="7" idName="ThreshedHectares10" score="0" targetScore="10" showScore="false" imageFilename="dataS2/menu/achievements/achievement_threshedHectares10.png" />
+    <achievement id="8" idName="ThreshedHectares100" score="0" targetScore="100" showScore="false" imageFilename="dataS2/menu/achievements/achievement_threshedHectares100.png" />
+    <achievement id="9" idName="SeededHectares10" score="0" targetScore="10" showScore="false" imageFilename="dataS2/menu/achievements/achievement_seededHectares10.png" />
+    <achievement id="10" idName="SeededHectares100" score="0" targetScore="100" showScore="false" imageFilename="dataS2/menu/achievements/achievement_seededHectares100.png" />
+    <achievement id="11" idName="DeliveredBottles50" score="0" targetScore="50" showScore="false" imageFilename="dataS2/menu/achievements/achievement_deliveredBottles50.png" />
+    <achievement id="12" idName="DeliveredBottles100" score="0" targetScore="100" showScore="false" imageFilename="dataS2/menu/achievements/achievement_deliveredBottles100.png" />
+</achievements>

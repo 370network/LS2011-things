@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpen" onClose="onClose">
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/background01.png" imageColor="1 1 1 1">
+
+        <GuiElement type="text" profile="defaultText" position="0.05 0.93" text="" onCreate="onCreateNumServers" size="0.61 0.2" textSize="0.03" text2Size="0.03" alignment="left"/>
+        <GuiElement type="button" profile="defaultButton" position="0.415 0.93" imageFilename="dataS2/menu/button_up_normal.png" imageFocusedFilename="dataS2/menu/button_up_focused.png" imagePressedFilename="dataS2/menu/button_up_pressed.png" onCreate="onCreateUpButton" focusChangeOverride="focusOverrideUpButton" onClick="scrollListUp" focusId="1" focusChangeBottom="2" />
+
+        <GuiElement type="bitmap" position="0.05 0.195" size="0.9 0.73125" imageFilename="dataS2/menu/slot_normal.png" imageColor="1 1 1 1"/>
+        <GuiElement type="list" position="0.05 0.195" size="0.55 0.73125" visibleItems="9" listItemHeight="0.08125" onCreate="onCreateList" onSelectionChanged="onListSelectionChanged" onDoubleClick="onDoubleClick" focusId="2" focusChangeTop="1" focusChangeBottom="3" >
+            <GuiElement type="gameListItem" position="0 0" size="0.9 0.08125" selectedImageFilename="dataS2/menu/slot_selected.png" onCreate="onCreateListTemplate">
+                <GuiElement type="bitmap" profile="defaultText" position="0.002 0.025" imageFilename="dataS/menu/locked_icon.png" onCreate="onCreateServerPassword" size="0.03 0.04" imageColor="1 1 1 1"/>
+                <GuiElement type="bitmap" profile="defaultText" position="0.034 0.025" imageFilename="dataS/menu/internet_icon.png" onCreate="onCreateServerLanInternet" size="0.03 0.04" imageColor="1 1 1 1"/>
+                <GuiElement type="text" profile="defaultText" position="0.066 0.016" text="" onCreate="onCreateServerName" size="0.61 0.2" textSize="0.03" text2Size="0.03" alignment="left"/>
+                <GuiElement type="text" profile="defaultText" position="0.38 0.016" text="" onCreate="onCreateServerMap" size="0.61 0.2" textSize="0.03" text2Size="0.03" alignment="left"/>
+                <GuiElement type="text" profile="defaultText" position="0.61 0.016" text="" onCreate="onCreateServerNumPlayers" size="0.61 0.2" textSize="0.03" text2Size="0.03" alignment="left"/>
+                <GuiElement type="text" profile="defaultText" position="0.67 0.016" text="" onCreate="onCreateServerLanguage" size="0.61 0.2" textSize="0.03" text2Size="0.03" alignment="left"/>
+                <GuiElement type="button" profile="defaultButton" position="0.72 0.012" text="$l10n_Button_Detail" onCreate="onCreateDetailButton" />
+            </GuiElement>
+        </GuiElement>
+
+        <GuiElement type="button" profile="defaultButton" position="0.415 0.1275" imageFilename="dataS2/menu/button_down_normal.png" imageFocusedFilename="dataS2/menu/button_down_focused.png" imagePressedFilename="dataS2/menu/button_down_pressed.png" onCreate="onCreateDownButton" focusChangeOverride="focusOverrideDownButton" onClick="scrollListDown" focusId="3" focusChangeTop="2" focusChangeBottom="6" focusChangeLeft="4" focusChangeRight="7"/>
+
+        <GuiElement type="button" profile="defaultButton" position="0.05 0.02" text="$l10n_Button_Back" onClick="onBackClick" focusId="4" focusChangeTop="3" focusChangeRight="5" />
+        <GuiElement type="button" profile="defaultButton" position="0.265 0.02" text="$l10n_Button_Filter" onClick="onSearchClick" focusId="5" focusChangeTop="3" focusChangeLeft="4" focusChangeRight="6" />
+        <GuiElement type="button" profile="defaultLargeButton" position="0.44 0.02" text="$l10n_Button_Refresh" onClick="onRefreshClick" focusId="6" focusChangeTop="3" focusChangeLeft="5" focusChangeRight="7" />
+        <GuiElement type="button" profile="defaultButton" position="0.785 0.02" text="$l10n_Button_Start" onClick="onStartClick" onCreate="onCreateStart" focusId="7" focusChangeTop="3" focusChangeLeft="6" focusInit="onOpen" />
+    </GuiElement>
+</GUI>

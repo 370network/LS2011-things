@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onCreate="onControlsScreenCreated" onOpen="onControlsScreenOpen">
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/background01.png" imageColor="1 1 1 1"/>
+    <GuiElement type="bitmap" position="0.025 0.025" size="0.95 0.95" imageFilename="dataS2/menu/controlpanel.png" imageColor="1 1 1 1">
+        <GuiElement type="text" profile="defaultText" position="0.048 0.83" text2Color="0 0 0 0.75" textColor="0.6 1 0.6 1" size="0.1225 0.027" textSize="0.027" text2Size="0.027" text="$l10n_action" textBold="true" text2Bold="true" alignment="left"/>
+        <GuiElement type="text" profile="defaultText" position="0.283 0.83" text2Color="0 0 0 0.75" textColor="0.6 1 0.6 1" size="0.1225 0.027" textSize="0.027" text2Size="0.027" text="$l10n_key1" textBold="true" text2Bold="true" alignment="left"/>
+        <GuiElement type="text" profile="defaultText" position="0.4055 0.83" text2Color="0 0 0 0.75" textColor="0.6 1 0.6 1" size="0.123 0.027" textSize="0.027" text2Size="0.027" text="$l10n_key2" textBold="true" text2Bold="true" alignment="left"/>
+        <GuiElement type="text" profile="defaultText" position="0.5285 0.83" text2Color="0 0 0 0.75" textColor="0.6 1 0.6 1" size="0.152 0.027" textSize="0.027" text2Size="0.027" text="$l10n_mouse" textBold="true" text2Bold="true" alignment="left"/>
+        <GuiElement type="text" profile="defaultText" position="0.6605 0.83" text2Color="0 0 0 0.75" textColor="0.6 1 0.6 1" size="0.125 0.027" textSize="0.027" text2Size="0.027" text="$l10n_gamepad" textBold="true" text2Bold="true" alignment="left"/>
+        <GuiElement type="list" position="0.04 0.24" size="0.87151 0.59" visibleItems = "22" numColumns="5" columnPositions="0.01 0.31 0.46 0.6 0.76" listItemHeight = "0.027" onCreate="onCreateList" onScroll="onListScroll" onSelectionChanged="onListSelectionChanged" onDoubleClick="onDoubleClick" focusId="5" focusChangeBottom="3" >
+            <GuiElement type="none" position="0 0" size="0.9 0.027" onCreate="onCreateListTemplate">
+                <GuiElement type="none" position="0.0095 0" size="0.235 0.027" onCreate="onCreateActionItem" selectedImageFilename="dataS2/menu/list_selection.png" >
+                    <GuiElement type="text" profile="defaultControlsText" position="0 0" onCreate="onCreateAction" size="0.61 0.2" textSize="0.02" text2Size="0.02" alignment="left"/>
+                </GuiElement>
+                <GuiElement type="controlsListItem" position="0.2445 0" size="0.1225 0.027" onCreate="onCreateKey1Item" selectedImageFilename="dataS2/menu/list_selection.png" onClick="onClickKey1" >
+                    <GuiElement type="text" profile="defaultControlsText" position="0 0" onCreate="onCreateKey1" size="0.61 0.2" textSize="0.02" text2Size="0.02" text2DisabledColor="0.5 0.5 0.5 0" textDisabledColor="0.3 0.3 0.3 1" alignment="left"/>
+                </GuiElement>
+                <GuiElement type="controlsListItem" position="0.367 0" size="0.123 0.027" onCreate="onCreateKey2Item" selectedImageFilename="dataS2/menu/list_selection.png" onClick="onClickKey2" >
+                    <GuiElement type="text" profile="defaultControlsText" position="0 0" onCreate="onCreateKey2" size="0.61 0.2" textSize="0.02" text2Size="0.02" alignment="left"/>
+                </GuiElement>
+                <GuiElement type="controlsListItem" position="0.49 0" size="0.132 0.027" onCreate="onCreateMouseItem" selectedImageFilename="dataS2/menu/list_selection.png" onClick="onClickMouse" >
+                    <GuiElement type="text" profile="defaultControlsText" position="0 0" onCreate="onCreateMouse" size="0.61 0.2" textSize="0.02" text2Size="0.02" alignment="left"/>
+                </GuiElement>
+                <GuiElement type="controlsListItem" position="0.622 0" size="0.2 0.027" onCreate="onCreateGamepadItem" selectedImageFilename="dataS2/menu/list_selection.png" onClick="onClickGamepad" >
+                    <GuiElement type="text" profile="defaultControlsText" position="0 0" onCreate="onCreateGamepad" size="0.61 0.2" textSize="0.02" text2Size="0.02" alignment="left"/>
+                </GuiElement>
+            </GuiElement>
+        </GuiElement>
+    </GuiElement>
+
+
+    <GuiElement type="button" profile="defaultButton" position="0.065 0.075" text="$l10n_Button_Defaults" onClick="onDefaultsClick" focusId="1" focusChangeTop="5" focusChangeRight="2" />
+
+    <GuiElement type="button" profile="defaultButton" position="0.27 0.075" text="$l10n_Button_Advanced" onClick="onAdvancedClick" focusId="2" focusChangeTop="5" focusChangeRight="3" focusChangeLeft="1" />
+
+    <GuiElement type="button" profile="defaultButton" position="0.58 0.075" text="$l10n_Button_Cancel" onClick="onCancelClick" focusId="3" focusChangeTop="5" focusChangeRight="4" focusChangeLeft="2" focusInit="onOpen"/>
+    <GuiElement type="button" profile="defaultButton" position="0.77 0.075" text="$l10n_Button_Save" onClick="onSaveClick" focusId="4" focusChangeTop="5" focusChangeLeft="3"/>
+
+    <GuiElement type="text" profile="defaultText" position="0.071 0.895" text2Color="0 0 0 0.75" textColor="1 1 1 1" size="0.61 0.2" textSize="0.04" text2Size="0.04" text="$l10n_Button_Controls" alignment="left"/>
+    <GuiElement type="text" profile="defaultTextNoBold" position="0.08 0.193" onCreate="onCreateControlsMessage1" textColor="0.6 1 0.6 1" size="0.61 0.2" textSize="0.022" text="$l10n_SelectActionToRemap" alignment="left"/>
+    <GuiElement type="text" profile="defaultTextNoBold" position="0.08 0.163" onCreate="onCreateControlsMessage2" textColor="0.6 1 0.6 1" size="0.61 0.2" textSize="0.022" text="" alignment="left"/>
+
+    <GuiElement type="slider" profile="defaultVerticalSlider" position="0.89 0.31" size="0.0375 0.49275" direction="y" stepSize="1.0" minSliderPos="0" maxSliderPos="1" sliderOffset="0" sliderSize="0.0375 0.0375*2.5" sliderImageFilename="dataS2/menu/list_slider_n.png" onCreate="onCreateListSlider" onChanged="onChangedListSlider" showValue="false" />
+    <GuiElement type="button" position="0.89 0.803" size="0.0375 0.05" text="" onClick="onListUpClick" imageFilename="dataS2/menu/list_button_up_n.png" imageFocusedFilename="dataS2/menu/list_button_up_f.png"/>
+    <GuiElement type="button" position="0.89 0.26" size="0.0375 0.05" text="" onClick="onListDownClick" imageFilename="dataS2/menu/list_button_down_n.png" imageFocusedFilename="dataS2/menu/list_button_down_f.png"/>
+</GUI>
+

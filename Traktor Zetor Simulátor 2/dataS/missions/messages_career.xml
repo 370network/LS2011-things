@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<messages>
+     
+     <message id="1">
+        <title>$l10n_careerMessageTitle01</title>
+        <content>$l10n_careerMessageContent01</content>
+        <duration>8000</duration>
+    </message>
+    
+    <message id="2">
+        <title>$l10n_careerMessageTitle02</title>
+        <content>$l10n_careerMessageContent02</content>
+        <duration>10000</duration>
+    </message>
+    
+    <message id="3">
+        <title>$l10n_careerMessageTitle03</title>
+        <content>$l10n_careerMessageContent03</content>
+        <duration>10000</duration>
+    </message>
+    
+    <message id="4">
+        <title>$l10n_careerMessageTitle04</title>
+        <content>$l10n_careerMessageContent04</content>
+        <duration>13000</duration>
+    </message>
+    
+    <message id="5">
+        <title>$l10n_careerMessageTitle05</title>
+        <content>$l10n_careerMessageContent05</content>
+        <duration>8000</duration>
+    </message>
+    
+    <message id="6">
+        <title>$l10n_careerMessageTitle06</title>
+        <content>$l10n_careerMessageContent06</content>
+        <duration>10000</duration>
+    </message>
+    
+    <message id="7">
+        <title>$l10n_careerMessageTitle07</title>
+        <content>$l10n_careerMessageContent07</content>
+        <duration>10000</duration>
+    </message>
+    
+    <message id="8">
+        <title>$l10n_careerMessageTitle08</title>
+        <content>$l10n_careerMessageContent08</content>
+        <duration>10000</duration>
+    </message>
+    
+    <message id="9">
+        <title>$l10n_careerMessageTitle09</title>
+        <content>$l10n_careerMessageContent09</content>
+        <duration>6000</duration>
+    </message>
+    
+    <message id="10">
+        <title>$l10n_careerMessageTitle10</title>
+        <content>$l10n_careerMessageContent10</content>
+        <duration>8000</duration>
+    </message>
+    
+    <message id="11">
+        <title>$l10n_careerMessageTitle11</title>
+        <content>$l10n_careerMessageContent11</content>
+        <duration>12000</duration>
+    </message>
+    
+    <message id="12">
+        <title>$l10n_careerMessageTitle12</title>
+        <content>$l10n_careerMessageContent12</content>
+        <duration>10000</duration>
+    </message>
+    
+    <message id="13">
+        <title>$l10n_careerMessageTitle13</title>
+        <content>$l10n_careerMessageContent13</content>
+        <duration>12000</duration>
+    </message>
+    
+    <message id="14">
+        <title>$l10n_careerMessageTitle14</title>
+        <content>$l10n_careerMessageContent14</content>
+        <duration>8000</duration>
+    </message>
+    
+    <message id="15">
+        <title>$l10n_careerMessageTitle15</title>
+        <content>$l10n_careerMessageContent15</content>
+        <duration>12000</duration>
+    </message>
+    
+    <message id="16">
+        <title>$l10n_careerMessageTitle16</title>
+        <content>$l10n_careerMessageContent16</content>
+        <duration>14000</duration>
+    </message>
+    
+    <message id="17">
+        <title>$l10n_careerMessageTitle17</title>
+        <content>$l10n_careerMessageContent17</content>
+        <duration>10000</duration>
+    </message>
+    
+    <message id="18">
+        <title>$l10n_careerMessageTitle18</title>
+        <content>$l10n_careerMessageContent18</content>
+        <duration>8000</duration>
+    </message>
+    
+</messages>

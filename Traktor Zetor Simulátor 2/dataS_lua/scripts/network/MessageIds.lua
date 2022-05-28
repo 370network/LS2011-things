@@ -1,0 +1,13 @@
+MessageIds = {}
+MessageIds.OBJECT_DELETED = 1
+MessageIds.OBJECT_UPDATE = 2
+MessageIds.OBJECT_INITIAL_ARRAY = 3
+MessageIds.OBJECT_PING = 4
+MessageIds.OBJECT_ACK = 5
+MessageIds.OBJECT_CREATED = 6
+MessageIds.OBJECT_SERVER_ID = 7
+MessageIds.OBJECT_SERVER_ID_ACK = 8
+MessageIds.EVENT_IDS = 9
+MessageIds.EVENT = 10
+MessageIds.OBJECT_CLASS_IDS = 11
+MessageIds.CLIP_COEFF = 12

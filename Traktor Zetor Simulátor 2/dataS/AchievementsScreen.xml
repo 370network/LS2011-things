@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onCreate="onAchievementsScreenCreated" onOpen="onOpen">
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/background01.png" imageColor="1 1 1 1">
+        <GuiElement type="bitmap" position="0.05 0.195" size="0.9 0.725" imageFilename="dataS2/menu/achievements/achievements_background.png" imageColor="1 1 1 1"/>
+        <GuiElement type="list" position="0.05 0.195" size="0.55 0.725" visibleItems = "4" listItemHeight = "0.18125" onCreate="onCreateList" onSelectionChanged="onListSelectionChanged" focusId="1" focusChangeBottom="2" >
+            <GuiElement type="listItem" position="0 0" size="0.9 0.18125" onCreate="onCreateListTemplate">
+                <GuiElement type="bitmap" position="0.015 0.015" size="0.1096875 0.14625" onCreate="onCreateAchievementBitmap" imageColor="1 1 1 1"/>
+                <GuiElement type="text" profile="defaultText" position="0.1375 0.085"  onCreate="onCreateAchievementTitle" onCreateArgs="1" size="0.61 0.2" textSize="0.03" text2Size="0.03" alignment="left"/>
+                <GuiElement type="text" profile="defaultTextNoBold" position="0.1396875 0.06" onCreate="onCreateAchievementDesc" textSize="0.025" textWrapWidth="0.6" alignment="left"/>
+            </GuiElement>
+        </GuiElement>
+        
+        <GuiElement type="text" profile="defaultText" position="0.05 0.135"  onCreate="onCreateStats" size="0.61 0.2" textSize="0.03" text2Size="0.03" text="TEDT" alignment="left"/>
+        
+        <GuiElement type="button" profile="defaultButton" position="0.415 0.93" imageFilename="dataS2/menu/button_up_normal.png" imageFocusedFilename="dataS2/menu/button_up_focused.png" imagePressedFilename="dataS2/menu/button_up_pressed.png" onClick="scrollListUp" focusId="1" focusChangeBottom="2" />
+        <GuiElement type="button" profile="defaultButton" position="0.415 0.1275" imageFilename="dataS2/menu/button_down_normal.png" imageFocusedFilename="dataS2/menu/button_down_focused.png" imagePressedFilename="dataS2/menu/button_down_pressed.png" onClick="scrollListDown" focusId="2" focusInit="onOpen" focusChangeTop="1" focusChangeBottom="3"/>
+    
+        <GuiElement type="button" profile="defaultButton" text="$l10n_Button_Back" position="0.415 0.0275" onClick="onBackClick" focusId="3" focusChangeTop="2" />
+    </GuiElement>
+</GUI>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<descriptions>
+    <description name="careerMap01BriefingText1" text="V režimu kariéry se můžete svobodně rozhodovat, co budete chtít dělat. Čím budete více dřít, tím rychleji získáte prostředky k tomu, abyste si mohli dovolit vozidla a stroje." id="3521"/>
+    <description name="careerMap01BriefingText2" text="Starejte se o svá pole, krmte krávy a investujte vydělané peníze do nových nástrojů a dalšího dobytka." id="3522"/>
+    <description name="careerMap01BriefingText3" text="Pokud hru hrajete poprvé, hlídejte si v režimu jednoho hráče na obrazovce symboly &quot;i&quot;. Když na ně totiž najedete, dozvíte se důležité informace o hře a rady." id="3523"/>
+    <description name="missionName_race1" text="Testovací jízda" id="3524"/>
+    <description name="missionName_exploration1" text="Prohlídka památek 1" id="3525"/>
+    <description name="missionName_race2" text="Testovací jízda s přívěsem" id="3526"/>
+    <description name="missionName_exploration2" text="Prohlídka památek 2" id="3527"/>
+    <description name="missionName_tutorial_ploughing" text="Výcvik 1: Orba" id="3528"/>
+    <description name="missionName_tutorial_sowing" text="Výcvik 2: Setí" id="3529"/>
+    <description name="missionName_rockSlide" text="Sesuv" id="3530"/>
+    <description name="missionName_tutorial_spraying" text="Výcvik 3: Postřikování" id="3531"/>
+    <description name="missionName_tutorial_threshing" text="Výcvik 4: Sklizeň" id="3532"/>
+    <description name="missionName_tutorial_cultivating" text="Výcvik 5: Kultivace" id="3533"/>
+    <description name="missionName_shelter" text="Hledání přístřešku" id="3534"/>
+    <description name="missionName_vehicles" text="Výstava" id="3535"/>
+    <description name="missionName_chaff" text="Řezání kukuřice" id="3536"/>
+    <description name="missionName_baling" text="Lisování kulatých balíků" id="3537"/>
+    <description name="missionName_autoStacking" text="Převoz balíků" id="3538"/>
+    <description name="missionDescription_race1" text="Jako profesionální rolník musíte mít své vozidlo pod kontrolou za každé situace. Překážková dráha v přístavu vám dá možnost předvést vaše šoférské dovednosti." id="3539"/>
+    <description name="missionDescription_exploration1" text="Abyste se obeznámili s novým herním světem, dozvíte se na této prohlídce památek o zajímavých regionálních místech. Po cestě získáte také užitečné informace o hře." id="3540"/>
+    <description name="missionDescription_race2" text="Jízda se zapřaženým traktorem vyžaduje notnou dávku zkušeností. Přesně pro tento účel byla vytvořena překážková dráha na pile." id="3541"/>
+    <description name="missionDescription_exploration2" text="Prohlédněte si další pamětihodnosti dané oblasti a poznejte hru o něco více." id="3542"/>
+    <description name="missionDescription_tutorial_ploughing" text="Práce na poli vyžaduje několik kroků, které se dozvíte v této výcvikové sérii. Začneme s orbou, abychom zkypřili půdu." id="3543"/>
+    <description name="missionDescription_tutorial_sowing" text="Nyní můžete začít s osíváním. Zapřáhněte za traktor sečku a osijte celé pole." id="3544"/>
+    <description name="missionDescription_rockSlide" text="Vzhledem ke včerejší buřině napadalo v horském průsmyku na cestu kamení. Tohle je přesně práce pro váš Deutz Agrofarm s přední radlicí." id="3545"/>
+    <description name="missionDescription_tutorial_spraying" text="Zasetá kukuřice vám mezitím poměrně vyrostla. Abyste zvýšili eventuální sklizeň, můžete pole pohnojit postřikovačem." id="3546"/>
+    <description name="missionDescription_tutorial_threshing" text="Kukuřice je připravena ke sklizni. Využijte ke sběru kukuřice kombajn a vysypte ji do vleku vedle pole." id="3547"/>
+    <description name="missionDescription_tutorial_cultivating" text="V rámci přípravy na zasetí semene můžete provést kultivaci kultivátorem. Klasicky nejezděte příliš rychlě, jinak by se vám stroj mohl odpojit od traktoru." id="3548"/>
+    <description name="missionDescription_shelter" text="Počasí se kazí a vaše vozidla a stroje stále stojí venku. Dostaňte svoje stroje pod střechu dřív, než začne pršet." id="3549"/>
+    <description name="missionDescription_vehicles" text="Na severním parkovišti se bude konat malá výstava Deutzu. Parkovací pole byla označena cedulemi se jmény několika modelů Deutz. Vaším úkolem je srovnat vozidla podle těchto cedulí." id="3550"/>
+    <description name="missionDescription_chaff" text="Kukuřici nemusíte sklízet kombajnem, ale můžete ji nasilážovat a nakrmit s ní dobytek. V této misi se naučíte ovládat sběrací řezačku Krone Big X 1000." id="3551"/>
+    <description name="missionDescription_baling" text="Na jednom ze sklizených polí je pořád sláma, kterou je třeba slisovat do balíků. V této misi se naučíte používat kulatý balíkovač Krone Comprima V 180." id="3552"/>
+    <description name="missionDescription_autoStacking" text="Automatický vůz na balíky převoz a uskladnění balíků podstatně zjednodušuje. V této misi budete muset naložit všechny balíky slámy a převézt je na vaši farmu." id="3553"/>
+    <description name="missionBriefing_race1_1" text="Dojděte k traktoru (klávesy W A S D) a nasedněte do něj stisknutím E. Rada: Podržte Shift, poběžíte." id="3554"/>
+    <description name="missionBriefing_race1_2" text="Sledujte zelenou linku a projeďte všemi žlutými kontrolními body. Snažte se nenajíždět do překážek." id="3555"/>
+    <description name="missionBriefing_race1_3" text="Projeďte cílovou páskou dřív, než vyprší časový limit. Mise skončí tehdy, když projedete všemi kontrolními body. V případě, že trať projedete pod dvě minuty, získáte za misi zlaté ocenění." id="3556"/>
+    <description name="missionBriefing_exploration1_1" text="Dojděte k traktoru a klávesou E do něj nasedněte. Potom stisknutím I aktivujte svou PDA mapu. Máte na ní označeny všechny cílové body." id="3557"/>
+    <description name="missionBriefing_exploration1_2" text="Najděte všechny cílové body a projeďte jimi. Na mapě vám bliká cílový bod, který máte aktuálně nejblíže." id="3558"/>
+    <description name="missionBriefing_exploration1_3" text="Na každém cílovém bodu získáte informace o hře. Zkuste si důležitá místa zapamatovat, abyste je mohli později v režimu kariéry snadno najít." id="3559"/>
+    <description name="missionBriefing_race2_1" text="Nasedněte klávesou E do traktoru a stisknutím Q zapřáhnětě vlek. Jakmile budete ve správné pozici k zapřažení vleku nebo stroje, zobrazí se vám zelená ikona." id="3560"/>
+    <description name="missionBriefing_race2_2" text="Sledujte zelenou linku a projeďte všemi žlutými kontrolními body před vypršením časového limitu." id="3561"/>
+    <description name="missionBriefing_race2_3" text="Dávejte si pozor, abyste se nezasekli na překážkách, obzvlášť v zatáčkách." id="3562"/>
+    <description name="missionBriefing_exploration2_1" text="Běžte k traktoru a nasedněte do něj stisknutím E. Poté klávesou I aktivujte svou PDA mapu. Na ní budete mít označeny všechny cílové body." id="3563"/>
+    <description name="missionBriefing_exploration2_2" text="Najděte všechny cílové body a projeďte jimi. Na mapě vám bliká cílový bod, ke kterému máte momentálně nejblíže." id="3564"/>
+    <description name="missionBriefing_exploration2_3" text="Na každém cílovém bodu získáte informace o hře. Zkuste si důležitá místa zapamatovat, abyste je mohli později v režimu kariéry snadno najít." id="3565"/>
+    <description name="missionBriefing_tutorial_ploughing_1" text="Nasedněte do traktoru klávesou E a stisknutím Q zapřáhněte pluh." id="3566"/>
+    <description name="missionBriefing_tutorial_ploughing_2" text="Jeďte na pole a stisknutím V spusťte pluh. Stisknutím B můžete stroj otočit." id="3567"/>
+    <description name="missionBriefing_tutorial_ploughing_3" text="Pracujte co nejefektivněji. Na horním displeji můžete sledovat svůj postup." id="3568"/>
+    <description name="missionBriefing_tutorial_sowing_1" text="Nasedněte stisknutím E do traktoru a klávesou Q zapřáhněte sečku." id="3569"/>
+    <description name="missionBriefing_tutorial_sowing_2" text="Jakmile budete na poli, stroj můžete spustit stisknutím V a aktivovat ho klávesou B." id="3570"/>
+    <description name="missionBriefing_tutorial_sowing_3" text="Zkuste se vyhýbat oblastem, které již byly osety." id="3571"/>
+    <description name="missionBriefing_rockSlide_1" text="Klávesou E nasedněte do traktoru a stisknutím Q zapřáhněte lžíci." id="3572"/>
+    <description name="missionBriefing_rockSlide_2" text="Přední rameno a jeho radlice se ovládají tak, že podržíte levé tlačítko myši a myší pohybujete. V levém horním rohu máte několik ikon, které vám ovládání vysvětlují." id="3573"/>
+    <description name="missionBriefing_rockSlide_3" text="Odtlačte kamení ze silnice. Nejezděte však příliš rychle, jinak budete riskovat, že kamení vyskočí z radlice." id="3574"/>
+    <description name="missionBriefing_tutorial_spraying_1" text="Klávesou E nasedněte do traktoru a stisknutím Q zapřáhněte postřikovač." id="3575"/>
+    <description name="missionBriefing_tutorial_spraying_2" text="Klávesou B aktivujte postřikovač a můžete začít. Jeďte maximálně na rychlost 2. Postříkané oblasti poznáte podle tmavší barvy." id="3576"/>
+    <description name="missionBriefing_tutorial_spraying_3" text="Pokud vám během mise dojde hnojivo, můžete si postřikovač na farmě doplnit. Dojeďte na místo zobrazené na levém obrázku a stisknutím R zahajte proces doplnění." id="3577"/>
+    <description name="missionBriefing_tutorial_threshing_1" text="Klávesou E nasedněte do kombajnu a stisknutím Q nasaďte lištu." id="3578"/>
+    <description name="missionBriefing_tutorial_threshing_2" text="Stisknutím J lištu aktivujete a spustíte. Jezděte po poli (stupeň omezovače 2)." id="3579"/>
+    <description name="missionBriefing_tutorial_threshing_3" text="Pokud bude kombajn plný, vyložte obilí do nejbližšího náklaďáku a pokračujte ve sklízení." id="3580"/>
+    <description name="missionBriefing_tutorial_cultivating_1" text="Klávesou E nasedněte do traktoru a stisknutím Q zapřáhněte kultivátor." id="3581"/>
+    <description name="missionBriefing_tutorial_cultivating_2" text="Jeďte na pole a spusťte kultivátor stisknutím V." id="3582"/>
+    <description name="missionBriefing_tutorial_cultivating_3" text="Zkultivujte celé pole. Jeďte maximálně na úroveň omezovače 1." id="3583"/>
+    <description name="missionBriefing_shelter_1" text="Nependlujte mezi svými vozy pěšky. Přepínejte si mezi nimi přímo stisknutím tabulátoru." id="3584"/>
+    <description name="missionBriefing_shelter_2" text="Najděte další přístřešek a zaparkujte tam svoje vozidla a stroje." id="3585"/>
+    <description name="missionBriefing_shelter_3" text="Rada: Za traktor můžete zapřáhnout více strojů či vleků naráz." id="3586"/>
+    <description name="missionBriefing_vehicles_1" text="Kam máte zaparkovat jaké vozidlo poznáte podle cedulí na parkovacích místech." id="3587"/>
+    <description name="missionBriefing_vehicles_2" text="Přepínejte si mezi vozidly pomocí tabulátoru a řiďte co nejefektivněji. Nezáleží na tom, jestli vozidla zaparkujete popředu nebo pozadu." id="3588"/>
+    <description name="missionBriefing_vehicles_3" text="Rada: Pokud vozidla neznáte, poznáte je podle loga na jejich karoseriích." id="3589"/>
+    <description name="missionBriefing_chaff_1" text="Nasedněte do řezačky a klávesou B zvedněte rouru. Potom klávesou Q připojte lištu a vlek." id="3590"/>
+    <description name="missionBriefing_chaff_2" text="Stisknutím J aktivujte lištu a začněte řezat. Jeďte maximálně na omezovač úrovně 2. Až bude vlek plný, vypněte lištu (J) a spusťte rouru (B). Klávesou X sklopte lištu, abyste mohli jet po normálních silnicích. Pokud nebude sklopení k dispozici, budete si nejdřív muset na lištu přepnout klávesou G." id="3591"/>
+    <description name="missionBriefing_chaff_3" text="Jeďte k silážní jámě u pastvy na severu. Místo máte na PDA mapě (I) označené žlutě. Klávesou Q potom vlek vyložte do silážní jámy. Až budete v ideální pozici k vyklopení vleku, objeví se zelená ikona." id="3592"/>
+    <description name="missionBriefing_baling_1" text="Klávesou E nasedněte do traktoru. Kulatý balíkovač byl již zapřažen, takže ho můžete stisknutím B hned zapnout." id="3593"/>
+    <description name="missionBriefing_baling_2" text="Jeďte po řádkách, aby mohl balíkovač sbírat slámu a lisovat ji do balíků. Až bude balíkovač plný (míra naplnění dosáhne 100 %), budte muset balík stisknutím X vyložit. Až balík vyjede z balíkovače, můžete víko pomocí X zavřít a pokračovat ve sběru slámy." id="3594"/>
+    <description name="missionBriefing_baling_3" text="V rámci dokončení mise musíte slisovat dvanáct balíků. Rada: Pokud chcete za tuto misi získat zlaté ocenění, musíte balíky slisovat bez zastávky." id="3595"/>
+    <description name="missionBriefing_autoStacking_1" text="Klávesou Q zapřáhněte vůz na balíky a stisknutím B spusťte nakládací plošinu do pracovní polohy." id="3596"/>
+    <description name="missionBriefing_autoStacking_2" text="Sbírejte balíky na poli tak, že k nim dojedete. Přesně jako na obrázku vlevo." id="3597"/>
+    <description name="missionBriefing_autoStacking_3" text="Až posbíráte všech 24 balíků, jeďte na farmu a dvojitým stisknutím O je vyložte. Farmu máte na PDA mapě (I) zobrazenou žlutě." id="3598"/>
+    <description name="shopItemName_lizard422" text="Lizard 422" id="3599"/>
+    <description name="shopItemDescription_lizard422" text="Lizard 422 má pro nového farmáře stále význam, ač omezený. Nicméně, brzy byste si měli pořídit novější model." id="3600"/>
+    <description name="shopItemSpecs_lizard422" text="Max. výkon: 55 kW / 75 hp" id="3601"/>
+    <description name="shopItemName_lizard2850" text="Lizard 2850" id="3602"/>
+    <description name="shopItemDescription_lizard2850" text="Lizard 2850 není nijak zvlášť výkonný traktor a obecně je považován za model pro začátečníky." id="3603"/>
+    <description name="shopItemSpecs_lizard2850" text="Max. výkon: 55 kW / 75 hp" id="3604"/>
+    <description name="shopItemName_deutzAgroplus77" text="Deutz Agroplus 77" id="3605"/>
+    <description name="shopItemDescription_deutzAgroplus77" text="Deutz Agroplus 77 je díky své kompaktní velikosti velmi dobře ovladatelný." id="3606"/>
+    <description name="shopItemSpecs_deutzAgroplus77" text="Max. výkon: 70 kW / 95 hp" id="3607"/>
+    <description name="shopItemName_deutzAgrotronK420" text="Deutz Agrotron K 420" id="3608"/>
+    <description name="shopItemDescription_deutzAgrotronK420" text="Tento model ze série Agrotron K je výborným víceúčelovým traktorem." id="3609"/>
+    <description name="shopItemSpecs_deutzAgrotronK420" text="Max. výkon: 73 kW / 100 hp" id="3610"/>
+    <description name="shopItemName_deutzAgrofarmFL" text="Deutz Agrofarm 430 s předním ramenem" id="3611"/>
+    <description name="shopItemDescription_deutzAgrofarmFL" text="Přední rameno vám umožní naprosto snadný transport. Další nástroje se prodávají samostatně." id="3612"/>
+    <description name="shopItemSpecs_deutzAgrofarmFL" text="Max. výkon: 80 kW / 110 hp" id="3613"/>
+    <description name="shopItemSpecs_deutzFrontloaderBalefork" text=""/>
+    <description name="shopItemName_deutzFrontloaderBalefork" text="Balíkové čelisti na přední rameno Deutz" id="3614"/>
+    <description name="shopItemDescription_deutzFrontloaderBalefork" text="S čelistmi na balíky můžete zdvihat balíky slámy a sena na vlek a pokládat je na dopravník na vaší farmě." id="3615"/>
+    <description name="shopItemSpecs_deutzFrontloaderPalletfork" text="" id="3619"/>
+    <description name="shopItemName_deutzFrontloaderPalletfork" text="Paletové čelisti na přední rameno Deutz" id="3617"/>
+    <description name="shopItemDescription_deutzFrontloaderPalletfork" text="Umožňují vám transport palet z místa A do místa B." id="3618"/>
+    <description name="shopItemName_deutzFrontloaderShovel" text="Radlice na přední rameno Deutz" id="3620"/>
+    <description name="shopItemDescription_deutzFrontloaderShovel" text="S radlicí můžete dopravit hnůj do rozmetadla." id="3621"/>
+    <description name="shopItemSpecs_deutzFrontloaderShovel" text="" id="3622"/>
+    <description name="shopItemName_deutzAgrotronM620" text="Deutz Agrotron M 620" id="3623"/>
+    <description name="shopItemDescription_deutzAgrotronM620" text="Deutz Agrotron M 620 přichází s šestiválcovým dieselovým motorem, díky kterému je traktor velice výkonný, ale stále úsporný." id="3624"/>
+    <description name="shopItemSpecs_deutzAgrotronM620" text="Max. výkon: 114 kW / 155 hp" id="3625"/>
+    <description name="shopItemName_deutzAgrotronL720" text="Deutz Agrotron L 720" id="3626"/>
+    <description name="shopItemDescription_deutzAgrotronL720" text="Deutz Agrotron L 720 byl navržen a vyvinut tak, aby zvládal těžké práce, kde je vyžadována síla a pohon." id="3627"/>
+    <description name="shopItemSpecs_deutzAgrotronL720" text="Max. výkon: 150 kW / 205 hp" id="3628"/>
+    <description name="shopItemName_deutzAgrotronX720" text="Deutz Agrotron X 720" id="3629"/>
+    <description name="shopItemDescription_deutzAgrotronX720" text="Rozsáhlé práce kladou na traktory zvláštní požadavky. Deutz Agrotron X 720 v sobě zahrnuje optimální distribuci váhy pro maximalizaci výkonu v terénu." id="3630"/>
+    <description name="shopItemSpecs_deutzAgrotronX720" text="Max. výkon: 193 kW / 262 hp" id="3631"/>
+    <description name="shopItemName_deutzAgrovector" text="Deutz Agrovector 30.7" id="3632"/>
+    <description name="shopItemDescription_deutzAgrovector" text="Deutz Agrovector 30.7 je kompaktní a flexibilní teleskopický nakladač s excelentní všestrannou viditelností a komfortní kabinou." id="3633"/>
+    <description name="shopItemSpecs_deutzAgrovector" text="Max. výklon: 75 kW / 105 hp" id="3634"/>
+    <description name="shopItemName_deutzAgrovectorBalefork" text="Balíkové čelisti pro Agrovector" id="3635"/>
+    <description name="shopItemSpecs_deutzAgrovectorBalefork" text="" id="3637"/>
+    <description name="shopItemDescription_deutzAgrovectorBalefork" text="Díky balíkovým čelistem můžete zdvihat balíky slámy a sena na vlek a pokládat je na dopravník na vaší farmě. Kulaté balíky se dají tímto nástrojem dopravit přímo do stodoly." id="3636"/>
+    <description name="shopItemName_deutzAgrovectorPalletfork" text="Paletové čelisti pro Agrovector" id="3638"/>
+    <description name="shopItemSpecs_deutzAgrovectorPalletfork" text="" id="3640"/>
+    <description name="shopItemDescription_deutzAgrovectorPalletfork" text="Umožňují transport palet z místa A do místa B." id="3639"/>
+    <description name="shopItemName_deutzAgrovectorShovel" text="Radlice pro Agrovector" id="3641"/>
+    <description name="shopItemDescription_deutzAgrovectorShovel" text="Díky této radlici můžete dopravit hnůj do rozmetadla." id="3642"/>
+    <description name="shopItemSpecs_deutzAgrovectorShovel" text="" id="3643"/>
+    <description name="shopItemName_deutzF1m414" text="Deutz F1 M414" id="3644"/>
+    <description name="shopItemDescription_deutzF1m414" text="Když s tímto staříkem projedete po vesnici, určitě se za vámi lidi otočí." id="3645"/>
+    <description name="shopItemSpecs_deutzF1m414" text="Max. výkon: 8 kW / 11 hp" id="3646"/>
+    <description name="shopItemName_lizard2000" text="Lizard 2000" id="3647"/>
+    <description name="shopItemDescription_lizard2000" text="Tento exkluzivní model ještěrky byl vyroben v omezeném množství. Nyní můžete být hrdými majiteli takového monstrózního vozidla." id="3648"/>
+    <description name="shopItemSpecs_lizard2000" text="Max. výkon: 280 kW / 395 hp" id="3649"/>
+    <description name="shopItemName_lizard58" text="Lizard Sovereign 58" id="3650"/>
+    <description name="shopItemDescription_lizard58" text="Tento kombajn patří do vašeho vybavení do začátku. Jeho poměrně malý zásobník na zrno trošku omezuje jeho použitelnost." id="3651"/>
+    <description name="shopItemSpecs_lizard58" text="Kapacita zásobníku na zrno: 3200 l - Max. výkon: 85 kW / 115 hp" id="3652"/>
+    <description name="shopItemName_lizard7210" text="Lizard 7210" id="3653"/>
+    <description name="shopItemDescription_lizard7210" text="Tento kombajn patří do muzea!" id="3654"/>
+    <description name="shopItemSpecs_lizard7210" text="Kapacita zásobníku na zrno: 4500 l - Max. výkon: 100 kW / 130 hp" id="3655"/>
+    <description name="shopItemName_deutz5465H" text="Deutz 5465 H" id="3656"/>
+    <description name="shopItemDescription_deutz5465H" text="Toto je výkonný a robustní kombajn ze série 54." id="3657"/>
+    <description name="shopItemSpecs_deutz5465H" text="Kapacita zásobníku na zrno: 4200 l - Max. výkon: 110 kW / 150 hp" id="3658"/>
+    <description name="shopItemName_deutz5695HTS" text="Deutz 5695 HTS" id="3659"/>
+    <description name="shopItemDescription_deutz5695HTS" text="Deutz 5695 HTS představuje kombajn, který v sobě snoubí vysoký výkon a účinnost." id="3660"/>
+    <description name="shopItemSpecs_deutz5695HTS" text="Kapacita zásobníku na zrno: 8500 l - Max. výkon: 269 kW / 366 hp" id="3661"/>
+    <description name="shopItemName_deutz7545RTS" text="Deutz 7545 RTS" id="3662"/>
+    <description name="shopItemDescription_deutz7545RTS" text="Rotační kombajn 7545 RTS dosahuje vysoké produktivity a co se týče spotřeby paliva, je velmi ekonomický." id="3663"/>
+    <description name="shopItemSpecs_deutz7545RTS" text="Kapacita zásobníku na zrno: 9000 l - Max. výkon: 331 kW / 450 hp" id="3664"/>
+    <description name="shopItemName_kroneBigX1000" text="Sběrací řezačka Krone Big X 1000" id="3665"/>
+    <description name="shopItemDescription_kroneBigX1000" text="Se sběrací řezačkou Krone Big X 1000 můžete nasekat kukuřici a dát ji jako krmivo kravám. V případě, že jste na práci sami, můžete zapřáhnout vlek přímo za řezačku." id="3666"/>
+    <description name="shopItemSpecs_kroneBigX1000" text="Max. výkon: 750 kW / 1020 hp" id="3667"/>
+    <description name="shopItemName_lizard58Cutter" text="Řezačka Lizard 58 Sovereign" id="3668"/>
+    <description name="shopItemDescription_lizard58Cutter" text="Toto je řezačka pro Lizard Sovereign 58." id="3669"/>
+    <description name="shopItemSpecs_lizard58Cutter" text="Pracovní šířka: 4,8 m" id="3670"/>
+    <description name="shopItemName_lizardcutter7210" text="Řezačka Lizard 7210" id="3671"/>
+    <description name="shopItemDescription_lizardcutter7210" text="Toto je řezačka pro Lizard 7210." id="3672"/>
+    <description name="shopItemSpecs_lizardcutter7210" text="Pracovní šířka: 4,8 m" id="3673"/>
+    <description name="shopItemName_deutzCutter5465H" text="Řezačka Deutz 5465 H" id="3674"/>
+    <description name="shopItemDescription_deutzCutter5465H" text="Toto je řezačka pro Deutz 5465 H." id="3675"/>
+    <description name="shopItemSpecs_deutzCutter5465H" text="Pracovní šířka: 5,4 m" id="3676"/>
+    <description name="shopItemName_deutzCutter5695HTS" text="Řezačka Deutz 5695 HTS" id="3677"/>
+    <description name="shopItemDescription_deutzCutter5695HTS" text="Toto je řezačka pro Deutz 5695 HTS." id="3678"/>
+    <description name="shopItemSpecs_deutzCutter5695HTS" text="Pracovní šířka: 7,2 m" id="3679"/>
+    <description name="shopItemName_deutzCutter7545RTS" text="Řezačka Deutz 7545 RTS" id="3680"/>
+    <description name="shopItemDescription_deutzCutter7545RTS" text="Toto je řezačka pro Deutz 7545 RTS." id="3681"/>
+    <description name="shopItemSpecs_deutzCutter7545RTS" text="Pracovní šířka: 7,2 m" id="3682"/>
+    <description name="shopItemName_deutzCornCutter7545RTS" text="Lišta Deutz 7545 RTS" id="3683"/>
+    <description name="shopItemDescription_deutzCornCutter7545RTS" text="Toto je lišta pro Deutz 7545 RTS." id="3684"/>
+    <description name="shopItemSpecs_deutzCornCutter7545RTS" text="Pracovní šířka: 7,2 m" id="3685"/>
+    <description name="shopItemName_kroneEasyCollect1053" text="Lišta Krone Easy Collect 1053" id="3686"/>
+    <description name="shopItemDescription_kroneEasyCollect1053" text="Toto je lišta pro sběrací řezačku Krone Big X 1000." id="3687"/>
+    <description name="shopItemSpecs_kroneEasyCollect1053" text="Pracovní šířka: 10,5 m" id="3688"/>
+    <description name="shopItemName_smallTipper" text="Malý vlek" id="3689"/>
+    <description name="shopItemDescription_smallTipper" text="Toto je nejmenší dostupný vlek. Jedná se o ideální základní vlek, který zvládnou i menší traktory." id="3690"/>
+    <description name="shopItemSpecs_smallTipper" text="Nákladní objem: 12700 l" id="3691"/>
+    <description name="shopItemName_mediumTipper" text="Střední vlek" id="3692"/>
+    <description name="shopItemDescription_mediumTipper" text="Mějte na paměti, že váha vleku se zvyšuje s nákladním objemem. Menší traktory mohou mít s tažením tohoto modelu již problémy." id="3693"/>
+    <description name="shopItemSpecs_mediumTipper" text="Nákladní objem: 21300 l" id="3694"/>
+    <description name="shopItemName_bigTipper" text="Velký vlek" id="3695"/>
+    <description name="shopItemDescription_bigTipper" text="Nákladní objem tohoto vleku vám jistě při převozu ušetří spoustu času, pokud tedy máte dostatečně silný traktor." id="3696"/>
+    <description name="shopItemSpecs_bigTipper" text="Nákladní objem: 30100 l" id="3697"/>
+    <description name="shopItemName_euroboss330t" text="Sběrák Pöttinger EUROBOSS 330 T" id="3698"/>
+    <description name="shopItemDescription_euroboss330t" text="Samonakládací sběrák vám umožňuje sběr posečené trávy a její převoz na krmiště po pastvě." id="3699"/>
+    <description name="shopItemSpecs_euroboss330t" text="Nákladní objem: 15000 l" id="3700"/>
+    <description name="shopItemName_plow01" text="Štít" id="3701"/>
+    <description name="shopItemDescription_plow01" text="Umožňuje vám vyvézet kamenité překážky z polí." id="3702"/>
+    <description name="shopItemSpecs_plow01" text="Pracovní šířka: 4,5 m" id="3703"/>
+    <description name="shopItemName_plough01" text="Pluh Lizard 039-D" id="3704"/>
+    <description name="shopItemDescription_plough01" text="Tento krátký pluh je součástí základní výbavy. Až budete mít finanční prostředky, rozhodně ho nahraďte." id="3705"/>
+    <description name="shopItemSpecs_plough01" text="" id="3706"/>
+    <description name="shopItemName_servo25" text="Pluh Pöttinger SERVO 25" id="3707"/>
+    <description name="shopItemDescription_servo25" text="Tento pluh se třemi radlicemi je pro střední farmy do začátku ideální." id="3708"/>
+    <description name="shopItemSpecs_servo25" text="" id="3709"/>
+    <description name="shopItemName_servo35s" text="Pluh Pöttinger SERVO 35 S" id="3710"/>
+    <description name="shopItemDescription_servo35s" text="Díky třem radlicím je tento pluh ideální pro náročný kontinuální provoz." id="3711"/>
+    <description name="shopItemSpecs_servo35s" text="" />
+    <description name="shopItemName_sowingMachine01" text="Sečka Lizard SWG-216" id="3713"/>
+    <description name="shopItemDescription_sowingMachine01" text="Tato sečka se brzy rozpadne. Brzy byste se měli poohlédnout po novém modelu." id="3714"/>
+    <description name="shopItemSpecs_sowingMachine01" text="Pracovní šířka: 2,5 m" id="3715"/>
+    <description name="shopItemName_aerosem3000" text="Sečka Pöttinger AEROSEM 3000" id="3716"/>
+    <description name="shopItemDescription_aerosem3000" text="Tento model je ideální pro efektivní a ekonomické setí." id="3717"/>
+    <description name="shopItemSpecs_aerosem3000" text="Pracovní šířka: 3 m" id="3718"/>
+    <description name="shopItemName_vitasemA301" text="Sečka Pöttinger VITASEM A 301" id="3719"/>
+    <description name="shopItemDescription_vitasemA301" text="Technologie vrtání této sečky vám v rámci optimální sklizně umožňuje přesnější setí." id="3720"/>
+    <description name="shopItemSpecs_vitasemA301" text="Pracovní šířka: 3 m" id="3721"/>
+    <description name="shopItemName_triton200" text="Postřikovač Monsoon TRITON 200" id="3722"/>
+    <description name="shopItemDescription_triton200" text="Pravidelné hnojení značně zvyšuje výnosy z vašich polí. Tento model je do začátku ideální. Když si postřikovač zakoupíte, nezapomeňte ho na farmě naplnit." id="3723"/>
+    <description name="shopItemSpecs_triton200" text="Pracovní šířka: 6 m" id="3724"/>
+    <description name="shopItemName_triton500" text="Postřikovač Monsoon TRITON 500" id="3725"/>
+    <description name="shopItemDescription_triton500" text="Postřikovač pro náročné zemědělce: Jeho ohromná šířka umožňuje pohnojení pole během chvilky. Před použitím je nutné postřikovač taky naplnit na farmě." id="3726"/>
+    <description name="shopItemSpecs_triton500" text="Pracovní šířka: 15 m" id="3727"/>
+    <description name="shopItemName_cultivator01" text="Kultivátor Lizard 121 ZX" id="3728"/>
+    <description name="shopItemDescription_cultivator01" text="Tento kultivátor je součástí vaší výbavy do začátku. Časem bude reznout a měli byste ho brzy vyměnit." id="3729"/>
+    <description name="shopItemSpecs_cultivator01" text="Pracovní šířka: 2,5 m" id="3730"/>
+    <description name="shopItemName_synkro2600" text="Kultivátor Pöttinger SYNKRO 2600" id="3731"/>
+    <description name="shopItemDescription_synkro2600" text="Jedná se o ideální nástroj pro účinnou orbu." id="3732"/>
+    <description name="shopItemSpecs_synkro2600" text="Pracovní šířka: 2,6 m" id="3733"/>
+    <description name="shopItemName_synkro4003k" text="Kultivátor Pöttinger SYNKRO 4003 K" id="3734"/>
+    <description name="shopItemDescription_synkro4003k" text="Nyní můžete pole kultivovat ještě rychleji." id="3735"/>
+    <description name="shopItemSpecs_synkro4003k" text="Pracovní šířka: 4 m" id="3736"/>
+    <description name="shopItemName_manureSpreader" text="Rozmetadlo" id="3737"/>
+    <description name="shopItemDescription_manureSpreader" text="Rozmetadlo vám umožňuje hnojit pole organickým hnojem. K naplnění rozmetadla budete potřebovat přední nebo teleskopické rameno se lžící." id="3738"/>
+    <description name="shopItemSpecs_manureSpreader" text="Nákladní objem: 12000 l" id="3739"/>
+    <description name="shopItemName_smallManureBarrel" text="Fekál" id="3740"/>
+    <description name="shopItemDescription_smallManureBarrel" text="Díky fekálu můžete pole pohnojit močkou. Cisternu můžete naplnit u modré nádrže poblíž pastvy." id="3741"/>
+    <description name="shopItemSpecs_smallManureBarrel" text="Nákladní objem: 8000 l" id="3742"/>
+    <description name="shopItemName_kroneBigPack1290" text="Hranatý balíkovač Krone Big Pack 1290" id="3743"/>
+    <description name="shopItemDescription_kroneBigPack1290" text="Nová technologie tohoto velkého hranatého balíkovače přináší balíky o vysoké hustotě. A to se při převážení velkého množství slámy vyplatí." id="3744"/>
+    <description name="shopItemSpecs_kroneBigPack1290" text="" id="3745"/>    
+	<description name="shopItemName_kroneComprimaV180" text="Kulatý balíkovač Krone Comprima V 180" id="3746"/>
+    <description name="shopItemDescription_kroneComprimaV180" text="Krone Comprima V 180 je první volbou, co se týče lisování kulatých balíků." id="3747"/>
+    <description name="shopItemSpecs_kroneComprimaV180" text="" id="3748"/>
+    <description name="shopItemName_baleTrailer01" text="Vlek na balíky" id="3749"/>
+    <description name="shopItemDescription_baleTrailer01" text="Umožňuje vám převoz balíků z pole na farmu. Abyste mohli balíky naložit na vlek, budete potřebovat nakladač s předním ramenem nebo teleskopický nakladač." id="3750"/>
+    <description name="shopItemSpecs_baleTrailer01" text="Délka: 8 m" id="3751"/>
+    <description name="shopItemName_baleTrailer02" text="Vlek na balíky" id="3752"/>
+    <description name="shopItemDescription_baleTrailer02" text="Jedná se o prodlouženou verzi." id="3753"/>
+    <description name="shopItemSpecs_baleTrailer02" text="Délka: 10 m" id="3754"/>
+    <description name="shopItemName_extraWeight01" text="Závaží" id="3755"/>
+    <description name="shopItemDescription_extraWeight01" text="Při tažení těžkých strojů se doporučuje na předek traktoru dát závaží. Toto je nejlehčí závaží." id="3756"/>
+    <description name="shopItemSpecs_extraWeight01" text="Váha: 600 kg" id="3757"/>
+    <description name="shopItemName_extraWeight02" text="Závaží" id="3758"/>
+    <description name="shopItemDescription_extraWeight02" text="Toto závaží je vhodné pro těžší stroje." id="3759"/>
+    <description name="shopItemSpecs_extraWeight02" text="Váha: 900 kg" id="3760"/>
+    <description name="shopItemName_barrelWeight" text="Sudové závaží" id="3761"/>
+    <description name="shopItemDescription_barrelWeight" text="Tento sud představuje největší dostupnou hmotnost. Měl by kola vašeho traktoru udržet pevně na zemi." id="3762"/>
+    <description name="shopItemSpecs_barrelWeight" text="Váha: 1500 kg" id="3763"/>
+    <description name="shopItemName_novacat306f" text="Rotačka Pöttinger NOVACAT 306" id="3764"/>
+    <description name="shopItemDescription_novacat306f" text="Sekání je prvním krokem při sběracím řezání." id="3765"/>
+    <description name="shopItemSpecs_novacat306f" text="Pracovní šířka: 3,04 m" id="3766"/>
+    <description name="shopItemName_novadisc900" text="Rotačka Pöttinger NOVADISC 900" id="3767"/>
+    <description name="shopItemDescription_novadisc900" text="Díky ohromné pracovní šířce je tato sekačka vhodná na rozsáhlé pastviny." id="3768"/>
+    <description name="shopItemSpecs_novadisc900" text="Pracovní šířka: 8,92 m" id="3769"/>
+    <description name="shopItemName_eurohit690n" text="Obracečka Pöttinger EUROHIT 690 N" id="3770"/>
+    <description name="shopItemDescription_eurohit690n" text="Díky rotační obracečce můžete poměrně snadno obracet čerstvě posečenou trávu, aby se mohla lépe sušit. Šest rotorů zajišťuje velmi efektivní výkon." id="3771"/>
+    <description name="shopItemSpecs_eurohit690n" text="" id="3772"/>
+    <description name="shopItemName_eurotop461a" text="Rotační řádkovač Pöttinger EUROTOP 461 A" id="3773"/>
+    <description name="shopItemDescription_eurotop461a" text="S tímto strojem můžete nahrabat seno do řad, které potom můžete snadno posbírat se sběrákem nebo balíkovačem." id="3774"/>
+    <description name="shopItemSpecs_eurotop461a" text="" id="3775"/>
+    <description name="shopItemName_terraTop800" text="VOGEL & NOOT TerraTop 800" id="3776"/>
+    <description name="shopItemDescription_terraTop800" text="Tento robustní tažný kultivátor na vlastních kolech představuje velice vyspělý stroj." id="3777"/>
+    <description name="shopItemSpecs_terraTop800" text="Pracovní šířka: 7,8 m" id="3778"/>
+    <description name="shopItemName_tiger6MT" text="HORSCH Tiger 6 MT" id="3779"/>
+    <description name="shopItemDescription_tiger6MT" text="Tiger MT je schopný stabilně pracovat s velkými množstvími slámy a se zbytky obilí s dlouhými stonky na všech typech půdy." id="3780"/>
+    <description name="shopItemSpecs_tiger6MT" text="Pracovní šířka: 6 m" id="3781"/>
+    <description name="shopItemName_terrano8FX" text="HORSCH Terrano 8 FX" id="3782"/>
+    <description name="shopItemDescription_terrano8FX" text="HORSCH Terrano FX je kompaktní 3-tyčový kultivátor s pestrou škálou použití." id="3783"/>
+    <description name="shopItemSpecs_terrano8FX" text="Pracovní šířka: 7,5 m" id="3784"/>
+    <description name="shopItemName_joker6CT" text="HORSCH Joker 6 CT" id="3785"/>
+    <description name="shopItemDescription_joker6CT" text="Joker CT je vhodný zejména pro kultivace mělkého strniště a pro přípravu mělké půdy pro setí." id="3786"/>
+    <description name="shopItemSpecs_joker6CT" text="Pracovní šířka: 6 m" id="3787"/>
+    <description name="shopItemName_pronto9DC" text="HORSCH Pronto 9 DC" id="3788"/>
+    <description name="shopItemDescription_pronto9DC" text="HORSCH Pronto DC představuje univerzální secí technologii do všech podmínek - může se zapojit za pluh, kultivátor nebo se může použít přímo k setí do strniště." id="3789"/>
+    <description name="shopItemSpecs_pronto9DC" text="Pracovní šířka: 9 m" id="3790"/>
+    <description name="shopItemName_sprinter8ST" text="HORSCH Sprinter 8 ST" id="3791"/>
+    <description name="shopItemDescription_sprinter8ST" text="Sprinter jsou robustní, kompaktní a všestranné rotační brány s pracovní šířkou 8 metrů." id="3792"/>
+    <description name="shopItemSpecs_sprinter8ST" text="Pracovní šířka: 8 m" id="3793"/>
+    <description name="shopItemName_selfPropelledSprayer" text="Samohybný postřikovač" id="3794"/>
+    <description name="shopItemDescription_selfPropelledSprayer" text="Díky tomuto samohybnému postřikovači pohnojíte i ta největší pole za zlomek času." id="3795"/>
+    <description name="shopItemSpecs_selfPropelledSprayer" text="Pracovní šířka: 33 m" id="3796"/>
+    <description name="shopItemName_baleLoader" text="Automatický nakladač balíků" id="3797"/>
+    <description name="shopItemDescription_baleLoader" text="Tento automatický nakladač balíků činí ze sběru balíků na poli hotovou brnkačku." id="3798"/>
+    <description name="shopItemSpecs_baleLoader" text="Nákladní kapacita: 24 balíků" id="3799"/>
+    <description name="shopItemName_cow" text="Kráva" id="3800"/>
+    <description name="shopItemDescription_cow" text="Prodáváme jenom veselé krávy. Nezapomeňte je pravidelně krmit, abyste zvýšili množství mléka, které pak prodáte." id="3801"/>
+    <description name="shopItemSpecs_cow" text="" id="3802"/>
+    <description name="careerMessageTitle01" text="Vítejte!" id="3803"/>
+    <description name="careerMessageContent01" text="Nechtěli jste se odjakživa zlepšit v zemědělství? Nyní máte šanci: Převezměte tuto farmu a dejte ji do pucu!" id="3804"/>
+    <description name="careerMessageTitle02" text="Natankovat" id="3805"/>
+    <description name="careerMessageContent02" text="Na benzince můžete natankovat do svých vozidel palivo. Jakmile se vaše vozidlo dostatečně přiblíží k čerpací stanici, objeví se ikona paliva a v tu chvíli můžete stisknutím R zahájit tankování." id="3806"/>
+    <description name="careerMessageTitle03" text="Sila" id="3807"/>
+    <description name="careerMessageContent03" text="V případě, že nebudete chtít sklizeň rovnou prodat do sýpky, můžete ji uskladnit zde. Aktuální stav vašich zásob obilí ve skladu najdete ve vašem PDA (stiskněte opakovaně I)." id="3808"/>
+    <description name="careerMessageTitle04" text="Vozidlo" id="3809"/>
+    <description name="careerMessageContent04" text="Nakladačem s předním ramenem nebo s teleskopickým ramenem můžete umístit balíky sena nebo slámy na dopravník. Pomocí teleskopického nakladače se dají kulaté balíky dopravit přímo do stodoly. Peníze, které dostanete za každý balík, závisí na zvolené obtížnosti." id="3810"/>
+    <description name="careerMessageTitle05" text="Přístřešek" id="3811"/>
+    <description name="careerMessageContent05" text="Až budete mít v pozdějších fázích hry větší vozový park, můžete tyto haly a stodoly využít k parkování." id="3812"/>
+    <description name="careerMessageTitle06" text="Zemědělský obchod" id="3813"/>
+    <description name="careerMessageContent06" text="V tomto obchodě si můžete zakoupit nová vozidla, stroje nebo krávy. Můžete zde i prodávat starší stroje, samozřejmě za nižší cenu." id="3814"/>
+    <description name="careerMessageTitle07" text="Mlýn" id="3815"/>
+    <description name="careerMessageContent07" text="Pokud chcete vydělat peníze, stačí na této stanici vyložit pšenici, ječmen nebo řepku. Další obilné stanice najdete v přístavu a v pivovaru." id="3816"/>
+    <description name="careerMessageTitle08" text="Přístav" id="3817"/>
+    <description name="careerMessageContent08" text="Obilná stanice v přístavu vykupuje všechny typy obilovin, ačkoli za trochu nižší cenu. Aktuální ceny najdete ve svém PDA (I)." id="3818"/>
+    <description name="careerMessageTitle09" text="Pivovar" id="3819"/>
+    <description name="careerMessageContent09" text="Pivovar vykupuje ječmen dráž než ostatní obilné stanice." id="3820"/>
+    <description name="careerMessageTitle10" text="Mlékárna" id="3821"/>
+    <description name="careerMessageContent10" text="Pokud vlastníte krávy, budou k vám na pastvu jezdit mlékaři pro mléko. Na účet se vám peníze utržené za mléko přičtou na konci každého dne." id="3822"/>
+    <description name="careerMessageTitle11" text="Močka" id="3823"/>
+    <description name="careerMessageContent11" text="V této cisterně se ukládá močka produkovaná vašimi krávami. Pokud ji budete chtít rozmést po poli, musíte si v obchodě zakoupit fekál, který potom můžete u této cisterny naplnit." id="3824"/>
+    <description name="careerMessageTitle12" text="Hnůj" id="3825"/>
+    <description name="careerMessageContent12" text="Hnůj můžete zpracovat teprve tehdy, budete-li mít nakladač s předním ramenem nebo teleskopický nakladač se lžící a rozmetadlo. Rozmetadlo je nutné naplnit lžící ručně." id="3826"/>
+    <description name="careerMessageTitle13" text="Silážní jáma" id="3827"/>
+    <description name="careerMessageContent13" text="Zde můžete vyložit nařezanou kukuřici, kterou pak nakrmíte svůj dobytek. Pokud bude silo prázdné, mléčná produkce vašich krav spadne na polovinu. Míru naplnění sila najdete ve svém PDA (I)." id="3828"/>
+    <description name="careerMessageTitle14" text="Žlab na krmení" id="3829"/>
+    <description name="careerMessageContent14" text="Zde můžete vyložit posekanou trávu a krmit s ní své krávy. Pozor: Pokud vaše krávy nebudou mít k dispozici žádnou trávu ani nařezanou kukuřici, nebudou vůbec produkovat mléko." id="3830"/>
+    <description name="careerMessageTitle15" text="Mléko" id="3831"/>
+    <description name="careerMessageContent15" text="Dokud budete svým kravám dávat žrádlo, budou produkovat mléko, které bude uloženo v této cisterně. Mléko sem pak bude automaticky jezdit vyzvedávat mlékař." id="3832"/>
+    <description name="careerMessageTitle16" text="Tráva" id="3833"/>
+    <description name="careerMessageContent16" text="Abyste mohli sekat trávu, budete si muset nejprve v obchodu zakoupit příslušnou výbavu. Posekanou trávu potom můžete slisovat do balíků, nebo s ní nakrmit své krávy, když ji ve sběráku převezete na pastvu. Na rozdíl od běžných typů obilovin, tráva časem dorůstá." id="3834"/>
+    <description name="careerMessageTitle17" text="Doplnit hnojivo" id="3835"/>
+    <description name="careerMessageContent17" text="Na tomto místě můžete doplnit prázdný postřikovač hnojivem. Zajeďte sem se zapřaženým postřikovačem a stiskněte R." id="3836"/>
+    <description name="careerMessageTitle18" text="Osivo" id="3837"/>
+    <description name="careerMessageContent18" text="Pokud vám dojde v sečce osivo, můžete ho zde doplnit." id="3838"/>
+    <description name="messageTitle_exploration1_01" text="Farma" id="3839"/>
+    <description name="messageContent_exploration1_01" text="Na vaší farmě začíná vaše zemědělská kariéra. Tato mise by vám měla pomoci zorientovat se v novém herním světě. Najděte všechny cílové body a získejte po cestě spoustu užitečných informací. Toto textové okno můžete zavřít stisknutím levého tlačítka myši." id="3840"/>
+    <description name="messageTitle_exploration1_02" text="Zemědělský obchod" id="3841"/>
+    <description name="messageContent_exploration1_02" text="V tomto obchodě seženete všechno, co úsěšný zemědělec potřebuje. Můžete zde také prodat svoje staré stroje." id="3842"/>
+    <description name="messageTitle_exploration1_03" text="Vesnické klepy" id="3843"/>
+    <description name="messageContent_exploration1_03" text="V takovéto vesničce se úspěchy nového zemědělce pod pokličkou neudrží. Spoustu obyvatel zajímá vaše kariéra a pokud budete dostatečně dřít, tak či onak vám to přinese ovoce." id="3844"/>
+    <description name="messageTitle_exploration1_04" text="Mlýn" id="3845"/>
+    <description name="messageContent_exploration1_04" text="Mlýn představuje jednu z obilných stanic, kde můžete prodávat svou sklizeň. Ceny se ze dne na den mění v závislosti na dodávce a poptávce. Aktuální ceny najdete ve svém PDA (I)." id="3846"/>
+    <description name="messageTitle_exploration1_05" text="Pastvina" id="3847"/>
+    <description name="messageContent_exploration1_05" text="Tato louka je říší všech vašich krav. Krmte je, abyste si zajistili stálý přísun mléka. A hnůj můžete využít k organickému hnojení polí." id="3848"/>
+    <description name="messageTitle_exploration1_06" text="Přístřešek" id="3849"/>
+    <description name="messageContent_exploration1_06" text="Jelikož je oblast poměrně rozsáhlá, najdete v několika oblastech tyto parkovací garáže a stodoly. Využijte je k zaparkování svých vozidel a strojů." id="3850"/>
+    <description name="messageTitle_exploration1_07" text="Mlékárna" id="3851"/>
+    <description name="messageContent_exploration1_07" text="Vaše krávy zásobují místní mlékárnu mlékem. Na pastvu dojíždí každý den mlékař pro uskladněné mléko." id="3852"/>
+    <description name="messageTitle_exploration1_08" text="Mosty" id="3853"/>
+    <description name="messageContent_exploration1_08" text="Přes řeku tady vedou čtyři mosty. Zapamatujte si jejich polohu, abyste se mohli vždycky dát tou nejkratší cestou." id="3854"/>
+    <description name="messageTitle_exploration1_09" text="Pole" id="3855"/>
+    <description name="messageContent_exploration1_09" text="Všechna pole můžete kultivovat dle libosti. V případě, že bude pole na váš vkus moc veliké, můžete si ho rozdělit na několik menších." id="3856"/>
+    <description name="messageTitle_exploration1_10" text="Pěšky" id="3857"/>
+    <description name="messageContent_exploration1_10" text="Oblast můžete pro změnu objevovat i po svých. K některým významným místům se ve vozidle dostanete buď ztěží, nebo vůbec." id="3858"/>
+    <description name="messageTitle_exploration1_11" text="Hydrofobie" id="3859"/>
+    <description name="messageContent_exploration1_11" text="Nejezděte se svými vozidly příliš hluboko do vody, jinak v ní uvíznou. V režimu kariéry můžete v menu pomocí tlačítka &quot;Resetovat vozidla&quot; zaseklá vozidla resetovat zpátky na svou farmu. Pozor: Tato funkce resetuje zpátky na farmu VŠECHNA vozidla a stroje." id="3860"/>
+    <description name="messageTitle_exploration1_12" text="Přípravné práce" id="3861"/>
+    <description name="messageContent_exploration1_12" text="Na začátku nové kariéry si hlídejte pole připravená ke sklizni. Skliďte je co nejrychleji a obilí prodejte s pěkným startovním bonusem." id="3862"/>
+    <description name="messageTitle_exploration2_01" text="Průsmyk" id="3863"/>
+    <description name="messageContent_exploration2_01" text="Jeďte po této silnici k horskému průsmyku. V případě, že budete pracovat na polích na jihu, průsmyk bude obvykle představovat nejkratší cestu na farmu." id="3864"/>
+    <description name="messageTitle_exploration2_02" text="Horské ruiny" id="3865"/>
+    <description name="messageContent_exploration2_02" text="Po pravé straně najdete horské ruiny staré několik set let. V případě, že pak budete chtít tento zámek navštívit, můžete se nahoru k němu vydat po stezce jižně od ruin." id="3866"/>
+    <description name="messageTitle_exploration2_03" text="Ager Maximus" id="3867"/>
+    <description name="messageContent_exploration2_03" text="Tady v jižních částech oblasti najdete největší pole. Dle libosti si je můžete rozdělit na menší části." id="3868"/>
+    <description name="messageTitle_exploration2_04" text="Lanovka" id="3869"/>
+    <description name="messageContent_exploration2_04" text="Když si budete chtít po vyčerpávající práci na poli odfrknout, můžete třeba navštívit vyhlídku. Na nejvyšší místo v oblasti vás během chvíle vyveze sedačková lanovka." id="3870"/>
+    <description name="messageTitle_exploration2_05" text="Mlýn" id="3871"/>
+    <description name="messageContent_exploration2_05" text="Tento starý vodní mlýn už je celé roky mimo provoz a dnes slouží zejména jako turistická atrakce." id="3872"/>
+    <description name="messageTitle_exploration2_06" text="Pila" id="3873"/>
+    <description name="messageContent_exploration2_06" text="Na této pile se momentálně nepracuje. Kdo ví, třeba ji do provozu uvedou příští rok?" id="3874"/>
+    <description name="messageTitle_exploration2_07" text="Labyrint" id="3875"/>
+    <description name="messageContent_exploration2_07" text="Ve středu tohoto labyrintu z živého plotu se prý nachází obrovský poklad. Nejspíš ale půjde o vesnickou báchorku, kterou si lidé rádi mezi sebou vyprávějí." id="3876"/>
+    <description name="messageTitle_exploration2_08" text="Pláž" id="3877"/>
+    <description name="messageContent_exploration2_08" text="Jižní pobřeží je o víkendu oblíbeným místem pro lidi, co mají rádi pláže. Bohužel, vytížený zemědělec, jako jste vy, nemá na rekreování příliš času." id="3878"/>
+    <description name="messageTitle_exploration2_09" text="Dvojitá děla" id="3879"/>
+    <description name="messageContent_exploration2_09" text="Tato děla jsou skoro tak stará jako horské ruiny na severu. Na Silvestra se při oslavách z těchto děl střílí." id="3880"/>
+    <description name="messageTitle_exploration2_10" text="Pohledy kamery" id="3881"/>
+    <description name="messageContent_exploration2_10" text="Klávesou C si můžete přepínat mezi pohledy kamery vozidla." id="3882"/>
+    <description name="messageTitle_exploration2_11" text="Přístav" id="3883"/>
+    <description name="messageContent_exploration2_11" text="Přístav je dalším místem, kde můžete prodávat obilí. Vykupují tu všechny druhy obilí, ale v přístavu platí obecně méně než v přístavu nebo ve mlýně." id="3884"/>
+    <description name="messageTitle_exploration2_12" text="Les" id="3885"/>
+    <description name="messageContent_exploration2_12" text="V lese jeďte velmi opatrně!" id="3886"/>
+    <description name="messageTitle_tut_sowing_01" text="Doplnit sečky" id="3887"/>
+    <description name="messageContent_tut_sowing_01" text="V průběhu setí se zásobník sečky bude pomalu vyprazdňovat. Doplníte ho tak, že se sečkou zajedete do skladu osiva a stisknete R." id="3888"/>
+    <description name="messageTitle_tut_sowing_02" text="Co byste rádi zaseli?" id="3889"/>
+    <description name="messageContent_tut_sowing_02" text="V režimu kariéry můžete zasít, co je vám libo. Můžete si vybrat mezi pšenicí, ječmenem, řepkou, kukuřicí a trávou. Pro účely tohoto výcviku budete omezeni na kukuřici." id="3890"/>
+    <description name="messageTitle_tut_spraying_01" text="Alternativy" id="3891"/>
+    <description name="messageContent_tut_spraying_01" text="V případě, že máte dobytek, můžete svá pole hnojit organickým hnojem. Zápachu se bát nemusíte, neboť ten simulován nebude." id="3892"/>
+</descriptions>

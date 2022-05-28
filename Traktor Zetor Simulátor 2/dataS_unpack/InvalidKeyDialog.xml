@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI>
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/background01.png" imageColor="1 1 1 1" onOpen="onOpen" onClose="onClose"/>
+    <GuiElement type="bitmap" position="0.2 0.5" size="0.6 0.2666" imageFilename="dataS2/menu/dialog_width_bg.png" imageColor="1 1 1 1">
+        <GuiElement type="button" profile="defaultExtraLargeButton" position="0.02 0.02" text="$l10n_Button_Purchase_Now" onClick="onPurchaseClick" focusId="1" focusInit="onOpen" focusChangeRight="2" />
+		<GuiElement type="button" profile="defaultButton" position="0.41 0.02" text="$l10n_Button_Cancel" onClick="onOkClick" focusId="2" focusChangeLeft="1" />
+        <GuiElement type="text" profile="defaultText" onCreate="onCreateText" position="0 0.17" size="0.6 1" textSize="0.03" text2Size="0.03" text="$l10n_Invalid_key" textWrapWidth="0.55" alignment="center" />
+    </GuiElement> 
+</GUI>
+

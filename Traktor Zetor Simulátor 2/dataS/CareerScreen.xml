@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpenCareerScreen" onCreate="onCreateCareerScreen">
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/background01.png" imageColor="1 1 1 1">
+        <GuiElement type="bitmap" position="0.225 0.195" size="0.55 0.725" imageFilename="dataS2/menu/slot_normal.png" imageColor="1 1 1 1"/>
+        <GuiElement type="list" position="0.225 0.195" size="0.55 0.725" usePreSelection="true" focusScrollsList="false" visibleItems = "4" listItemHeight = "0.18125"  onCreate="onCreateList" onSelectionChanged="onListSelectionChanged" onDoubleClick="onDoubleClick" focusId="1" focusChangeBottom="7" focusChangeTop="6" >
+            <GuiElement type="gameListItem" size="0.55 0.18125" selectedImageFilename="dataS2/menu/slot_selected.png" onCreateArgs="1" onCreate="onCreateGameListItem">
+                <GuiElement type="bitmap" position="0.015 0.019" size="0.1096875 0.14625" imageFilename="dataS2/missions/mission00_avatar01.png" imageColor="1 1 1 1"/>
+                <GuiElement type="text" profile="defaultText" position="0.1396875 0.128"  onCreate="onCreateTitle" onCreateArgs="1" size="0.61 0.2" textSize="0.03" text2Size="0.03" alignment="left"/>
+                <GuiElement type="text" profile="defaultTextNoBold" position="0.141 0.1"  onCreate="onCreateTextLeft" onCreateArgs="1" size="0.61 0.2" textSize="0.02" alignment="left"/>
+                <GuiElement type="text" profile="defaultTextNoBold" position="0.31 0.1"  onCreate="onCreateTextRight" onCreateArgs="1" size="0.61 0.2" textSize="0.02" alignment="left"/>
+            </GuiElement>
+            <GuiElement type="gameListItem" size="0.55 0.18125" selectedImageFilename="dataS2/menu/slot_selected.png" onCreateArgs="2" onCreate="onCreateGameListItem">
+                <GuiElement type="bitmap" position="0.015 0.019" size="0.1096875 0.14625" imageFilename="dataS2/missions/mission00_avatar02.png" imageColor="1 1 1 1"/>
+                <GuiElement type="text" profile="defaultText" position="0.1396875 0.128"  onCreate="onCreateTitle" onCreateArgs="2" size="0.61 0.2" textSize="0.03" text2Size="0.03" alignment="left"/>
+                <GuiElement type="text" profile="defaultTextNoBold" position="0.141 0.1"  onCreate="onCreateTextLeft" onCreateArgs="2" size="0.61 0.2" textSize="0.02" alignment="left"/>
+                <GuiElement type="text" profile="defaultTextNoBold" position="0.31 0.1"  onCreate="onCreateTextRight" onCreateArgs="2" size="0.61 0.2" textSize="0.02" alignment="left"/>
+            </GuiElement>
+            <GuiElement type="gameListItem" size="0.55 0.18125" selectedImageFilename="dataS2/menu/slot_selected.png" onCreateArgs="3" onCreate="onCreateGameListItem">
+                <GuiElement type="bitmap" position="0.015 0.019" size="0.1096875 0.14625" imageFilename="dataS2/missions/mission00_avatar03.png" imageColor="1 1 1 1"/>
+                <GuiElement type="text" profile="defaultText" position="0.1396875 0.128"  onCreate="onCreateTitle" onCreateArgs="3" size="0.61 0.2" textSize="0.03" text2Size="0.03" alignment="left"/>
+                <GuiElement type="text" profile="defaultTextNoBold" position="0.141 0.1"  onCreate="onCreateTextLeft" onCreateArgs="3" size="0.61 0.2" textSize="0.02" alignment="left"/>
+                <GuiElement type="text" profile="defaultTextNoBold" position="0.31 0.1"  onCreate="onCreateTextRight" onCreateArgs="3" size="0.61 0.2" textSize="0.02" alignment="left"/>
+            </GuiElement>
+            <GuiElement type="gameListItem" size="0.55 0.18125" selectedImageFilename="dataS2/menu/slot_selected.png" onCreateArgs="4" onCreate="onCreateGameListItem">
+                <GuiElement type="bitmap" position="0.015 0.019" size="0.1096875 0.14625" imageFilename="dataS2/missions/mission00_avatar04.png" imageColor="1 1 1 1"/>
+                <GuiElement type="text" profile="defaultText" position="0.1396875 0.128" onCreate="onCreateTitle" onCreateArgs="4" size="0.61 0.2" textSize="0.03" text2Size="0.03" alignment="left"/>
+                <GuiElement type="text" profile="defaultTextNoBold" position="0.141 0.1"  onCreate="onCreateTextLeft" onCreateArgs="4" size="0.61 0.2" textSize="0.02" alignment="left"/>
+                <GuiElement type="text" profile="defaultTextNoBold" position="0.31 0.1"  onCreate="onCreateTextRight" onCreateArgs="4" size="0.61 0.2" textSize="0.02" alignment="left"/>
+            </GuiElement>
+            <GuiElement type="gameListItem" size="0.55 0.18125" selectedImageFilename="dataS2/menu/slot_selected.png" onCreateArgs="5" onCreate="onCreateGameListItem">
+                <GuiElement type="bitmap" position="0.015 0.019" size="0.1096875 0.14625" imageFilename="dataS2/missions/mission00_avatar05.png" imageColor="1 1 1 1"/>
+                <GuiElement type="text" profile="defaultText" position="0.1396875 0.128"  onCreate="onCreateTitle" onCreateArgs="5" size="0.61 0.2" textSize="0.03" text2Size="0.03"alignment="left"/>
+                <GuiElement type="text" profile="defaultTextNoBold" position="0.141 0.1"  onCreate="onCreateTextLeft" onCreateArgs="5" size="0.61 0.2" textSize="0.02" alignment="left"/>
+                <GuiElement type="text" profile="defaultTextNoBold" position="0.31 0.1"  onCreate="onCreateTextRight" onCreateArgs="5" size="0.61 0.2" textSize="0.02" alignment="left"/>
+            </GuiElement>
+            <GuiElement type="gameListItem" size="0.55 0.18125" selectedImageFilename="dataS2/menu/slot_selected.png" onCreateArgs="6" onCreate="onCreateGameListItem">
+                <GuiElement type="bitmap" position="0.015 0.019" size="0.1096875 0.14625" imageFilename="dataS2/missions/mission00_avatar06.png" imageColor="1 1 1 1"/>
+                <GuiElement type="text" profile="defaultText" position="0.1396875 0.128" onCreate="onCreateTitle" onCreateArgs="6" size="0.61 0.2" textSize="0.03" text2Size="0.03" alignment="left"/>
+                <GuiElement type="text" profile="defaultTextNoBold" position="0.141 0.1"  onCreate="onCreateTextLeft" onCreateArgs="6" size="0.61 0.2" textSize="0.02" alignment="left"/>
+                <GuiElement type="text" profile="defaultTextNoBold" position="0.31 0.1"  onCreate="onCreateTextRight" onCreateArgs="6" size="0.61 0.2" textSize="0.02" alignment="left"/>
+            </GuiElement>
+        </GuiElement>
+
+        <GuiElement type="button" profile="defaultButton" position="0.415 0.93" imageFilename="dataS2/menu/button_up_normal.png" imageFocusedFilename="dataS2/menu/button_up_focused.png" imagePressedFilename="dataS2/menu/button_up_pressed.png" onClick="scrollListUp" focusId="6" focusChangeBottom="1" />
+        <GuiElement type="button" profile="defaultButton" position="0.415 0.1275" imageFilename="dataS2/menu/button_down_normal.png" imageFocusedFilename="dataS2/menu/button_down_focused.png" imagePressedFilename="dataS2/menu/button_down_pressed.png" onClick="scrollListDown" focusId="7" focusChangeLeft="2" focusChangeRight="5" focusChangeTop="1" focusChangeBottom="4"/>
+        
+        <GuiElement type="button" profile="defaultButton" position="0.03 0.02" text="$l10n_Button_Delete" onClick="onDeleteClick" focusId="2" focusChangeRight="3" focusChangeTop="7" />
+        <GuiElement type="button" profile="defaultExtraLargeButton" position="0.22 0.02" text="$l10n_Button_ResetVehicles" onClick="onResetVehiclesClick" focusId="3" focusChangeLeft="2" focusChangeRight="4" focusChangeTop="7" />
+        <GuiElement type="button" profile="defaultButton" position="0.61 0.02" text="$l10n_Button_Back" onClick="onBackClick" focusId="4" focusChangeLeft="3" focusChangeRight="5" focusChangeTop="7" />
+        <GuiElement type="button" profile="defaultButton" position="0.8 0.02" text="$l10n_Button_Start" onClick="onStartClick" focusId="5" focusChangeLeft="4" focusChangeTop="7" focusInit="onOpen" />
+    </GuiElement>                                            
+</GUI>
+

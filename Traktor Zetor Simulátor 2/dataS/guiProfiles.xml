@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUIProfiles>
+    <Profile name="defaultText">
+        <Value name="size" value="1 1"/>
+        <Value name="visible" value="true"/>
+
+        <Value name="textColor" value="1 1 1 1"/>
+        <Value name="textDisabledColor" value="1 1 1 0.5"/>
+        <Value name="textOffset" value="0 0.01"/>
+        <Value name="textSize" value="0.033"/>
+        <Value name="textBold" value="true"/>
+
+        <Value name="text2Color" value="0 0 0 0.75"/>
+        <Value name="text2DisabledColor" value="0 0 0 0"/>
+        <Value name="text2Offset" value="0 0.0065"/>
+        <Value name="text2Size" value="0.033"/>
+        <Value name="text2Bold" value="true"/>
+
+        <Value name="alignment" value="left"/>
+    </Profile>
+    <Profile name="defaultTextCentered">
+        <Value name="size" value="1 1"/>
+        <Value name="visible" value="true"/>
+
+        <Value name="textColor" value="1 1 1 1"/>
+        <Value name="textDisabledColor" value="1 1 1 0.5"/>
+        <Value name="textOffset" value="0 0.01"/>
+        <Value name="textSize" value="0.033"/>
+        <Value name="textBold" value="true"/>
+
+        <Value name="text2Color" value="0 0 0 0.75"/>
+        <Value name="text2DisabledColor" value="0 0 0 0"/>
+        <Value name="text2Offset" value="0 0.0065"/>
+        <Value name="text2Size" value="0.033"/>
+        <Value name="text2Bold" value="true"/>
+
+        <Value name="alignment" value="center"/>
+    </Profile>
+    <Profile name="defaultTextInput">
+        <Value name="size" value="0.34 0.06"/>
+        <Value name="visible" value="true"/>
+        
+        <!--Value name="maxTextWidth" value="0.277"/-->
+
+        <Value name="textColor" value="1 1 1 1"/>
+        <Value name="textDisabledColor" value="1 1 1 0.5"/>
+        <Value name="textOffset" value="0.04 0.0175"/>
+        <Value name="textSize" value="0.025"/>
+        <Value name="textBold" value="true"/>
+
+        <Value name="text2Color" value="0 0 0 0.75"/>
+        <Value name="text2DisabledColor" value="0 0 0 0"/>
+        <Value name="text2Offset" value="0.04 0.016"/>
+        <Value name="text2Size" value="0.025"/>
+        <Value name="text2Bold" value="true"/>
+
+        <Value name="alignment" value="left"/>
+
+        <Value name="imageColor" value="1 1 1 1"/>
+        <Value name="imageFocusedColor" value="1 1 1 1"/>
+        <Value name="imagePressedColor" value="1 1 1 1"/>
+        <Value name="imageDisabledColor" value="1 1 1 1"/>
+
+        <Value name="imageFilename" value="dataS2/menu/text_input_bg_normal.png"/>
+        <Value name="imageFocusedFilename" value="dataS2/menu/text_input_bg_focused.png"/>
+        <Value name="imagePressedFilename" value="dataS2/menu/text_input_bg_pressed.png"/>
+
+        <Value name="cursorFilename" value="dataS2/menu/text_input_cursor.png"/>
+        <Value name="cursorOffset" value="0.005 -0.002"/>
+    </Profile>
+    <Profile name="defaultTextInputJustText">
+        <Value name="size" value="0.34 0.06"/>
+        <Value name="visible" value="true"/>
+        
+        <!--Value name="maxTextWidth" value="0.277"/-->
+
+        <Value name="textColor" value="1 1 1 1"/>
+        <Value name="textDisabledColor" value="1 1 1 0.5"/>
+        <Value name="textOffset" value="0 0"/>
+        <Value name="textSize" value="0.03"/>
+        <Value name="textBold" value="true"/>
+
+        <Value name="text2Color" value="0 0 0 0.75"/>
+        <Value name="text2DisabledColor" value="0 0 0 0"/>
+        <Value name="text2Offset" value="0 -0.0015"/>
+        <Value name="text2Size" value="0.03"/>
+        <Value name="text2Bold" value="true"/>
+
+        <Value name="alignment" value="left"/>
+
+        <Value name="cursorFilename" value="dataS2/menu/text_input_cursor.png"/>
+        <Value name="cursorOffset" value="0.005 -0.002"/>
+    </Profile>
+    <Profile name="defaultTextNoBold">
+        <Value name="size" value="1 1"/>
+        <Value name="visible" value="true"/>
+
+        <Value name="textColor" value="1 1 1 1"/>
+        <Value name="textDisabledColor" value="1 1 1 0.5"/>
+        <Value name="textOffset" value="0 0.01"/>
+        <Value name="textSize" value="0.022"/>
+        <Value name="textBold" value="false"/>
+
+        <Value name="alignment" value="left"/>
+    </Profile>
+    <Profile name="defaultButton">
+        <Value name="size" value="0.17 0.06"/>
+        <Value name="visible" value="true"/>
+
+        <!-- ButtonElement -->
+        <Value name="textColor" value="1 1 1 1"/>
+        <Value name="textDisabledColor" value="1 1 1 0.5"/>
+        <Value name="textOffset" value="0.042 0.017"/>
+        <Value name="textSize" value="0.028"/>
+        <Value name="textBold" value="true"/>
+
+        <Value name="text2Color" value="0 0 0 0.75"/>
+        <Value name="text2DisabledColor" value="0 0 0 0"/>
+        <Value name="text2Offset" value="0.042 0.013"/>
+        <Value name="text2Size" value="0.028"/>
+        <Value name="text2Bold" value="true"/>
+
+        <Value name="imageColor" value="1 1 1 1"/>
+        <Value name="imageFocusedColor" value="1 1 1 1"/>
+        <Value name="imagePressedColor" value="1 1 1 1"/>
+        <Value name="imageDisabledColor" value="1 1 1 1"/>
+
+        <Value name="imageFilename" value="dataS2/menu/button_normal.png"/>
+        <Value name="imageFocusedFilename" value="dataS2/menu/button_focused.png"/>
+        <Value name="imagePressedFilename" value="dataS2/menu/button_pressed.png"/>
+    </Profile>
+    <Profile name="defaultLargeButton">
+        <Value name="size" value="0.34 0.06"/>
+        <Value name="visible" value="true"/>
+
+        <!-- ButtonElement -->
+        <Value name="textColor" value="1 1 1 1"/>
+        <Value name="textDisabledColor" value="1 1 1 0.5"/>
+        <Value name="textOffset" value="0.085 0.017"/>
+        <Value name="textSize" value="0.028"/>
+        <Value name="textBold" value="true"/>
+
+        <Value name="text2Color" value="0 0 0 0.75"/>
+        <Value name="text2DisabledColor" value="0 0 0 0"/>
+        <Value name="text2Offset" value="0.085 0.013"/>
+        <Value name="text2Size" value="0.028"/>
+        <Value name="text2Bold" value="true"/>
+
+        <Value name="imageColor" value="1 1 1 1"/>
+        <Value name="imageFocusedColor" value="1 1 1 1"/>
+        <Value name="imagePressedColor" value="1 1 1 1"/>
+        <Value name="imageDisabledColor" value="1 1 1 1"/>
+
+        <Value name="imageFilename" value="dataS2/menu/button_large_normal.png"/>
+        <Value name="imageFocusedFilename" value="dataS2/menu/button_large_focused.png"/>
+        <Value name="imagePressedFilename" value="dataS2/menu/button_large_pressed.png"/>
+    </Profile>
+    <Profile name="defaultExtraLargeButton">
+        <Value name="size" value="0.35 0.06"/>
+        <Value name="visible" value="true"/>
+
+        <!-- ButtonElement -->
+        <Value name="textColor" value="1 1 1 1"/>
+        <Value name="textDisabledColor" value="1 1 1 0.5"/>
+        <Value name="textOffset" value="0.042 0.017"/>
+        <Value name="textSize" value="0.028"/>
+        <Value name="textBold" value="true"/>
+
+        <Value name="text2Color" value="0 0 0 0.75"/>
+        <Value name="text2DisabledColor" value="0 0 0 0"/>
+        <Value name="text2Offset" value="0.042 0.013"/>
+        <Value name="text2Size" value="0.028"/>
+        <Value name="text2Bold" value="true"/>
+
+        <Value name="imageColor" value="1 1 1 1"/>
+        <Value name="imageFocusedColor" value="1 1 1 1"/>
+        <Value name="imagePressedColor" value="1 1 1 1"/>
+        <Value name="imageDisabledColor" value="1 1 1 1"/>
+
+        <Value name="imageFilename" value="dataS2/menu/button_xlarge_normal.png"/>
+        <Value name="imageFocusedFilename" value="dataS2/menu/button_xlarge_focused.png"/>
+        <Value name="imagePressedFilename" value="dataS2/menu/button_xlarge_pressed.png"/>
+    </Profile>
+    <Profile name="upButton">
+        <Value name="size" value="0.17 0.06"/>
+        <Value name="visible" value="true"/>
+
+        <!-- ButtonElement -->
+        <Value name="textColor" value="1 1 1 1"/>
+        <Value name="textDisabledColor" value="1 1 1 0.5"/>
+        <Value name="textOffset" value="0.042 0.017"/>
+        <Value name="textSize" value="0.028"/>
+        <Value name="textBold" value="true"/>
+
+        <Value name="text2Color" value="0 0 0 0.75"/>
+        <Value name="text2DisabledColor" value="0 0 0 0"/>
+        <Value name="text2Offset" value="0.042 0.013"/>
+        <Value name="text2Size" value="0.028"/>
+        <Value name="text2Bold" value="true"/>
+
+        <Value name="imageColor" value="1 1 1 1"/>
+        <Value name="imageFocusedColor" value="1 1 1 1"/>
+        <Value name="imagePressedColor" value="1 1 1 1"/>
+        <Value name="imageDisabledColor" value="1 1 1 1"/>
+
+        <Value name="imageFilename" value="dataS2/menu/button_up_normal.png"/>
+        <Value name="imageFocusedFilename" value="dataS2/menu/button_up_focused.png"/>
+        <Value name="imagePressedFilename" value="dataS2/menu/button_up_pressed.png"/>
+    </Profile>
+    <Profile name="downButton">
+        <Value name="size" value="0.17 0.06"/>
+        <Value name="visible" value="true"/>
+
+        <!-- ButtonElement -->
+        <Value name="textColor" value="1 1 1 1"/>
+        <Value name="textDisabledColor" value="1 1 1 0.5"/>
+        <Value name="textOffset" value="0.042 0.017"/>
+        <Value name="textSize" value="0.028"/>
+        <Value name="textBold" value="true"/>
+
+        <Value name="text2Color" value="0 0 0 0.75"/>
+        <Value name="text2DisabledColor" value="0 0 0 0"/>
+        <Value name="text2Offset" value="0.042 0.013"/>
+        <Value name="text2Size" value="0.028"/>
+        <Value name="text2Bold" value="true"/>
+
+        <Value name="imageColor" value="1 1 1 1"/>
+        <Value name="imageFocusedColor" value="1 1 1 1"/>
+        <Value name="imagePressedColor" value="1 1 1 1"/>
+        <Value name="imageDisabledColor" value="1 1 1 1"/>
+
+        <Value name="imageFilename" value="dataS2/menu/button_down_normal.png"/>
+        <Value name="imageFocusedFilename" value="dataS2/menu/button_down_focused.png"/>
+        <Value name="imagePressedFilename" value="dataS2/menu/button_down_pressed.png"/>
+    </Profile>
+    <Profile name="greenButton">
+        <Value name="size" value="0.17 0.06"/>
+        <Value name="visible" value="true"/>
+
+        <!-- ButtonElement -->
+        <Value name="textColor" value="1 1 1 1"/>
+        <Value name="textDisabledColor" value="1 1 1 0.5"/>
+        <Value name="textOffset" value="0.042 0.017"/>
+        <Value name="textSize" value="0.028"/>
+        <Value name="textBold" value="true"/>
+
+        <Value name="text2Color" value="0 0 0 0.75"/>
+        <Value name="text2DisabledColor" value="0 0 0 0"/>
+        <Value name="text2Offset" value="0.042 0.013"/>
+        <Value name="text2Size" value="0.028"/>
+        <Value name="text2Bold" value="true"/>
+
+        <Value name="imageColor" value="1 1 1 1"/>
+        <Value name="imageFocusedColor" value="1 1 1 1"/>
+        <Value name="imagePressedColor" value="1 1 1 1"/>
+        <Value name="imageDisabledColor" value="1 1 1 1"/>
+
+        <Value name="imageFilename" value="dataS2/menu/button_normal.png"/>
+        <Value name="imageFocusedFilename" value="dataS2/menu/button_focused.png"/>
+        <Value name="imagePressedFilename" value="dataS2/menu/button_pressed.png"/>
+    </Profile>
+    <Profile name="yellowButton">
+        <Value name="size" value="0.17 0.06"/>
+        <Value name="visible" value="true"/>
+
+        <!-- ButtonElement -->
+        <Value name="textColor" value="1 1 1 1"/>
+        <Value name="textDisabledColor" value="1 1 1 0.5"/>
+        <Value name="textOffset" value="0.042 0.017"/>
+        <Value name="textSize" value="0.028"/>
+        <Value name="textBold" value="true"/>
+
+        <Value name="text2Color" value="0 0 0 0.75"/>
+        <Value name="text2DisabledColor" value="0 0 0 0"/>
+        <Value name="text2Offset" value="0.042 0.013"/>
+        <Value name="text2Size" value="0.028"/>
+        <Value name="text2Bold" value="true"/>
+
+        <Value name="imageColor" value="1 1 1 1"/>
+        <Value name="imageFocusedColor" value="1 1 1 1"/>
+        <Value name="imagePressedColor" value="1 1 1 1"/>
+        <Value name="imageDisabledColor" value="1 1 1 1"/>
+
+        <Value name="imageFilename" value="dataS2/menu/button_yellow_normal.png"/>
+        <Value name="imageFocusedFilename" value="dataS2/menu/button_yellow_focused.png"/>
+        <Value name="imagePressedFilename" value="dataS2/menu/button_yellow_pressed.png"/>
+    </Profile>
+    <Profile name="redButton">
+        <Value name="size" value="0.17 0.06"/>
+        <Value name="visible" value="true"/>
+
+        <!-- ButtonElement -->
+        <Value name="textColor" value="1 1 1 1"/>
+        <Value name="textDisabledColor" value="1 1 1 0.5"/>
+        <Value name="textOffset" value="0.042 0.017"/>
+        <Value name="textSize" value="0.028"/>
+        <Value name="textBold" value="true"/>
+
+        <Value name="text2Color" value="0 0 0 0.75"/>
+        <Value name="text2DisabledColor" value="0 0 0 0"/>
+        <Value name="text2Offset" value="0.042 0.013"/>
+        <Value name="text2Size" value="0.028"/>
+        <Value name="text2Bold" value="true"/>
+
+        <Value name="imageColor" value="1 1 1 1"/>
+        <Value name="imageFocusedColor" value="1 1 1 1"/>
+        <Value name="imagePressedColor" value="1 1 1 1"/>
+        <Value name="imageDisabledColor" value="1 1 1 1"/>
+
+        <Value name="imageFilename" value="dataS2/menu/button_red_normal.png"/>
+        <Value name="imageFocusedFilename" value="dataS2/menu/button_red_focused.png"/>
+        <Value name="imagePressedFilename" value="dataS2/menu/button_red_pressed.png"/>
+    </Profile>
+    <Profile name="leftButton">
+        <Value name="size" value="0.17 0.06"/>
+        <Value name="visible" value="true"/>
+
+        <!-- ButtonElement -->
+        <Value name="imageColor" value="1 1 1 1"/>
+        <Value name="imageFocusedColor" value="1 1 1 1"/>
+        <Value name="imagePressedColor" value="1 1 1 1"/>
+        <Value name="imageDisabledColor" value="1 1 1 1"/>
+
+        <Value name="imageFilename" value="dataS2/menu/button_left_normal.png"/>
+        <Value name="imageFocusedFilename" value="dataS2/menu/button_left_focused.png"/>
+        <Value name="imagePressedFilename" value="dataS2/menu/button_left_pressed.png"/>
+    </Profile>
+    <Profile name="rightButton">
+        <Value name="size" value="0.17 0.06"/>
+        <Value name="visible" value="true"/>
+
+        <!-- ButtonElement -->
+        <Value name="imageColor" value="1 1 1 1"/>
+        <Value name="imageFocusedColor" value="1 1 1 1"/>
+        <Value name="imagePressedColor" value="1 1 1 1"/>
+        <Value name="imageDisabledColor" value="1 1 1 1"/>
+
+        <Value name="imageFilename" value="dataS2/menu/button_right_normal.png"/>
+        <Value name="imageFocusedFilename" value="dataS2/menu/button_right_focused.png"/>
+        <Value name="imagePressedFilename" value="dataS2/menu/button_right_pressed.png"/>
+    </Profile>
+    <Profile name="defaultToggleButton">
+        <Value name="size" value="0.045 0.06"/>
+        <Value name="visible" value="true"/>
+
+        <!-- ToggleButtonElement -->
+        <Value name="textCheckedColor" value="1 1 1 1"/>
+        <Value name="textCheckedDisabledColor" value="1 1 1 0.5"/>
+        <Value name="textCheckedOffset" value="0 0.022"/>
+        <Value name="textCheckedSize" value="0.033"/>
+        <Value name="textCheckedBold" value="true"/>
+
+        <Value name="text2CheckedColor" value="0 0 0 0.75"/>
+        <Value name="text2CheckedDisabledColor" value="0 0 0 0"/>
+        <Value name="text2CheckedOffset" value="0 0.019"/>
+        <Value name="text2CheckedSize" value="0.033"/>
+        <Value name="text2CheckedBold" value="true"/>
+
+        <Value name="textUncheckedColor" value="1 1 1 1"/>
+        <Value name="textUncheckedDisabledColor" value="1 1 1 0.5"/>
+        <Value name="textUncheckedOffset" value="0 0.022"/>
+        <Value name="textUncheckedSize" value="0.033"/>
+        <Value name="textUncheckedBold" value="true"/>
+
+        <Value name="text2UncheckedColor" value="0 0 0 0.75"/>
+        <Value name="text2UncheckedDisabledColor" value="0 0 0 0"/>
+        <Value name="text2UncheckedOffset" value="0 0.019"/>
+        <Value name="text2UncheckedSize" value="0.033"/>
+        <Value name="text2UncheckedBold" value="true"/>
+
+        <Value name="imageCheckedColor" value="1 1 1 1"/>
+        <Value name="imageFocusedColor" value="1 1 1 1"/>
+        <Value name="imagePressedColor" value="1 1 1 1"/>
+        <Value name="imageDisabledColor" value="1 1 1 1"/>
+
+        <Value name="imageFilename" value="dataS2/menu/main_mission_button$l10nSuffix.png"/>
+        <Value name="imageFocusedFilename" value="dataS2/menu/main_mission_button$l10nSuffix.png"/>
+        <Value name="imagePressedFilename" value="dataS2/menu/main_mission_button$l10nSuffix.png"/>
+    </Profile>
+    <Profile name="defaultCheckedButton">
+        <Value name="size" value="0.17 0.06"/>
+        <Value name="visible" value="true"/>
+
+        <!-- ButtonElement -->
+        <Value name="textColor" value="1 1 1 1"/>
+        <Value name="textDisabledColor" value="1 1 1 0.5"/>
+        <Value name="textOffset" value="0 0.022"/>
+        <Value name="textSize" value="0.033"/>
+        <Value name="textBold" value="true"/>
+
+        <Value name="text2Color" value="0 0 0 0.75"/>
+        <Value name="text2DisabledColor" value="0 0 0 0"/>
+        <Value name="text2Offset" value="0 0.019"/>
+        <Value name="text2Size" value="0.033"/>
+        <Value name="text2Bold" value="true"/>
+
+        <Value name="imageColor" value="1 1 1 1"/>
+        <Value name="imageFocusedColor" value="1 1 1 1"/>
+        <Value name="imagePressedColor" value="1 1 1 1"/>
+        <Value name="imageDisabledColor" value="1 1 1 1"/>
+
+        <Value name="imageFilename" value="dataS2/menu/checkbox_cn.png"/>
+        <Value name="imageFocusedFilename" value="dataS2/menu/checkbox_cf.png"/>
+        <Value name="imagePressedFilename" value="dataS2/menu/checkbox_cp.png"/>
+    </Profile>
+    <Profile name="defaultUncheckedButton">
+        <Value name="size" value="0.17 0.06"/>
+        <Value name="visible" value="true"/>
+
+        <!-- ButtonElement -->
+        <Value name="textColor" value="1 1 1 1"/>
+        <Value name="textDisabledColor" value="1 1 1 0.5"/>
+        <Value name="textOffset" value="0 0.022"/>
+        <Value name="textSize" value="0.033"/>
+        <Value name="textBold" value="true"/>
+
+        <Value name="text2Color" value="0 0 0 0.75"/>
+        <Value name="text2DisabledColor" value="0 0 0 0"/>
+        <Value name="text2Offset" value="0 0.019"/>
+        <Value name="text2Size" value="0.033"/>
+        <Value name="text2Bold" value="true"/>
+
+        <Value name="imageColor" value="1 1 1 1"/>
+        <Value name="imageFocusedColor" value="1 1 1 1"/>
+        <Value name="imagePressedColor" value="1 1 1 1"/>
+        <Value name="imageDisabledColor" value="1 1 1 1"/>
+
+        <Value name="imageFilename" value="dataS2/menu/checkbox_un.png"/>
+        <Value name="imageFocusedFilename" value="dataS2/menu/checkbox_uf.png"/>
+        <Value name="imagePressedFilename" value="dataS2/menu/checkbox_up.png"/>
+    </Profile>
+</GUIProfiles>

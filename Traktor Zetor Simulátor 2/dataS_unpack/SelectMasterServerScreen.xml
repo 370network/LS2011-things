@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onCreate="onCreate" onOpen="onOpen" onClose="onClose">
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/background01.png" imageColor="1 1 1 1">
+        <GuiElement type="bitmap" position="0.05 0.195" size="0.9 0.73125" imageFilename="dataS2/menu/slot_normal.png" imageColor="1 1 1 1"/>
+        <GuiElement type="list" position="0.05 0.195" size="0.55 0.73125" usePreSelection="true" visibleItems="9" listItemHeight="0.08125" onCreate="onCreateList" onSelectionChanged="onListSelectionChanged" onDoubleClick="onDoubleClick" focusId="1" focusChangeBottom="2" >
+            <GuiElement type="gameListItem" position="0 0" size="0.9 0.08125" selectedImageFilename="dataS2/menu/slot_selected.png" onCreate="onCreateListTemplate">
+                <GuiElement type="text" profile="defaultText" position="0.02 0.016" text="" onCreate="onCreateServer" onCreateArgs="1" size="0.61 0.2" textSize="0.03" text2Size="0.03" alignment="left"/>
+            </GuiElement>
+        </GuiElement>
+
+        <GuiElement type="button" profile="defaultButton" position="0.8 0.02" text="$l10n_Button_Start" onClick="onStartClick" focusId="2" focusInit="onOpen" focusChangeLeft="3" focusChangeTop="1" />
+        <GuiElement type="button" profile="defaultButton" position="0.61 0.02" text="$l10n_Button_Back" onClick="onBackClick" focusId="3" focusChangeRight="2" focusChangeTop="1" />
+    </GuiElement>
+</GUI>

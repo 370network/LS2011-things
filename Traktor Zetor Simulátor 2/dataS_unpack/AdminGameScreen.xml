@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpen" onClose="onClose">
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/background01.png" imageColor="1 1 1 1">
+        <GuiElement type="bitmap" position="0.16 0.5" size="0.7 0.46666" imageFilename="dataS2/menu/main_logo$l10nSuffix.png" imageColor="1 1 1 1"/>
+        <GuiElement type="bitmap" position="0.25 0.02" size="0.7 0.69" imageFilename="dataS2/menu/settings_background.png" imageColor="1 1 1 1"/>
+
+
+        <GuiElement type="textInput" profile="defaultTextInput" position="0.51 0.63" text="Lsim Server" onCreate="onCreateServerName" maxCharacters="16" focusId="3" focusChangeLeft="1" focusChangeBottom="4" />
+
+        <GuiElement type="textInput" profile="defaultTextInput" position="0.51 0.56" text="" onCreate="onCreatePassword" maxCharacters="16" focusId="4" focusChangeLeft="1" focusChangeTop="3" focusChangeBottom="5" />
+
+		<GuiElement type="multiTextOption" position="0.51 0.49" onClick="numPlayerOnClick" onCreate="numPlayerOnCreate">
+            <GuiElement type="button" profile="leftButton" position="0 0" focusId="5" focusChangeLeft="1" focusChangeRight="6" focusChangeTop="4" focusChangeBottom="7" />
+            <GuiElement type="button" profile="rightButton" position="0.237 0" focusId="6" focusChangeLeft="5" focusChangeTop="4" focusChangeBottom="7" />
+            <GuiElement type="text" profile="defaultText" position="0.064 0.008" size="0.2 0.2" textSize="0.025" text2Size="0.025" alignment="center"/>
+        </GuiElement>
+
+        <GuiElement type="toggleButton" profile="defaultToggleButton" position="0.51 0.42" onCreate="toggleAutoAcceptOnClickOnCreate" focusId="7" focusChangeLeft="2" focusChangeTop="5" focusChangeBottom="8" >
+            <GuiElement type="button" profile="defaultCheckedButton" position="0 0" />
+            <GuiElement type="button" profile="defaultUncheckedButton" position="0 0" />
+        </GuiElement>
+
+        <GuiElement type="toggleButton" profile="defaultToggleButton" position="0.51 0.35" onCreate="onCreateAutoSave" focusId="8" focusChangeLeft="2" focusChangeTop="7" focusChangeBottom="9" >
+            <GuiElement type="button" profile="defaultCheckedButton" position="0 0" />
+            <GuiElement type="button" profile="defaultUncheckedButton" position="0 0" />
+        </GuiElement>
+
+
+        <GuiElement type="toggleButton" profile="defaultToggleButton" position="0.51 0.18" onCreate="onCreateCreateFields" focusId="9" focusChangeLeft="22" focusChangeTop="8" focusChangeBottom="10" >
+            <GuiElement type="button" profile="defaultCheckedButton" position="0 0" />
+            <GuiElement type="button" profile="defaultUncheckedButton" position="0 0" />
+        </GuiElement>
+        <GuiElement type="toggleButton" profile="defaultToggleButton" position="0.51 0.11" onCreate="onCreateSellVehicles" focusId="10" focusChangeLeft="22" focusChangeTop="9" focusChangeBottom="11" >
+            <GuiElement type="button" profile="defaultCheckedButton" position="0 0" />
+            <GuiElement type="button" profile="defaultUncheckedButton" position="0 0" />
+        </GuiElement>
+        <GuiElement type="toggleButton" profile="defaultToggleButton" position="0.51 0.04" onCreate="onCreateOwnMoney" focusId="11" focusChangeLeft="22" focusChangeTop="10" >
+            <GuiElement type="button" profile="defaultCheckedButton" position="0 0" />
+            <GuiElement type="button" profile="defaultUncheckedButton" position="0 0" />
+        </GuiElement>
+
+        <GuiElement type="text" profile="defaultText" position="0.28 0.268" size="0.5 0.2" textSize="0.027" text2Size="0.027" text="$l10n_ClientPermissions" alignment="left"/>
+		<GuiElement type="text" profile="defaultText" position="0 0.188" size="0.5 0.2" textSize="0.025" text2Size="0.025" text="$l10n_Permission_CreateFields" alignment="right"/>
+        <GuiElement type="text" profile="defaultText" position="0 0.118" size="0.5 0.2" textSize="0.025" text2Size="0.025" text="$l10n_Permission_SellVehicles" alignment="right"/>
+        <GuiElement type="text" profile="defaultText" position="0 0.048" size="0.5 0.2" textSize="0.025" text2Size="0.025" text="$l10n_Permission_OwnMoney" alignment="right"/>
+
+
+
+        <GuiElement type="text" profile="defaultText" position="0 0.638" size="0.5 0.2" textSize="0.025" text2Size="0.025" text="$l10n_ServerName" alignment="right"/>
+        <GuiElement type="text" profile="defaultText" position="0 0.568" size="0.5 0.2" textSize="0.025" text2Size="0.025" text="$l10n_Password" alignment="right"/>
+        <GuiElement type="text" profile="defaultText" position="0 0.498" size="0.5 0.2" textSize="0.025" text2Size="0.025" text="$l10n_MaxNumPlayers" alignment="right"/>
+		<GuiElement type="text" profile="defaultText" position="0 0.428" size="0.5 0.2" textSize="0.025" text2Size="0.025" text="$l10n_AutoAccept" alignment="right"/>
+		<GuiElement type="text" profile="defaultText" position="0 0.358" size="0.5 0.2" textSize="0.025" text2Size="0.025" text="$l10n_AutoSave" alignment="right"/>
+
+
+        <GuiElement type="button" profile="defaultButton" position="0.05 0.5"  text="$l10n_Button_Save" onClick="onSaveClick" focusId="1" focusChangeRight="5" focusChangeBottom="2" />
+        <GuiElement type="button" profile="defaultButton" position="0.05 0.43" text="$l10n_Button_Back" onClick="onBackClick" focusId="2" focusChangeRight="7" focusChangeTop="1" focusChangeBottom="22" focusInit="onOpen" />
+
+        <GuiElement type="button" profile="defaultButton" position="0.05 0.3" text="$l10n_Button_Players" onClick="onUsersClick" focusId="22" focusChangeRight="9" focusChangeTop="2" />
+    </GuiElement>
+</GUI>
+

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onCreate="onCreditsScreenCreated">
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/background01.png" imageColor="1 1 1 1"/>
+    <GuiElement type="button" profile="defaultButton" text="$l10n_Button_Back" position="0.415 0.0275" onClick="onClickBack" focusId="1" />
+</GUI>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onCreate="onCreditsScreenCreated">
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/demo_end_screen$l10nSuffix.png" imageColor="1 1 1 1" onCreate="onCreateBackground"/>
+    <GuiElement type="button" profile="defaultButton" text="$l10n_Button_Quit" position="0.8 0.015" onCreate="onCreateQuit" onClick="onClickQuit" focusId="1" focusChangeLeft="2"/>
+    <GuiElement type="button" profile="defaultExtraLargeButton" position="0.405 0.015" text="$l10n_Button_GamesloadDownload" onClick="onGetGameClick" onCreate="onCreateGetGame" focusId="2" focusChangeRight="1" />
+</GUI>

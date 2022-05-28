@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onCreate="onCreate">
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/background01.png" imageColor="1 1 1 1" onOpen="onOpen" onClose="onClose">
+        <GuiElement type="bitmap" position="0 0.135" size="1 0.6" imageFilename="dataS2/menu/settings_background.png" imageColor="1 1 1 1"/>
+
+
+        <GuiElement type="button" profile="defaultButton" position="0.03 0.74" imageFilename="dataS2/menu/button_up_normal.png" imageFocusedFilename="dataS2/menu/button_up_focused.png" imagePressedFilename="dataS2/menu/button_up_pressed.png" onCreate="onUpButtonCreate" onClick="onUpClick" focusId="1" focusChangeBottom="2" focusChangeRight="3" />
+
+        <!-- list with the selected available -->
+        <GuiElement type="list" position="0.02 0.65" positionOrigin="topLeft" size="0.5 8*0.054285+7*0.007635" visibleItems="8" numColumns="1" columnPositions="0" showSlider="false" listItemHeight="0.054285" listItemSpacing="0.007635" onCreate="onCreateList" onSelectionChanged="onListSelectionChanged" >
+            <GuiElement type="listItem" position="0 0" size="0.8 0.054285" onCreate="onCreateListItem" >
+                <GuiElement type="text" profile="defaultText" position="0.0 0.007" textSize="0.025" text2Size="0.025" onCreate="onCreateText" text="" textWrapWidth="0.8" alignment="left"/>
+                <GuiElement type="button" profile="defaultButton" position="0.6 0.0" text="$l10n_Button_Kick" onCreate="onCreateKickClient" />
+                <GuiElement type="button" profile="defaultButton" position="0.78 0.0" text="$l10n_Button_Ban" onCreate="onCreateBanClient" />
+            </GuiElement>
+        </GuiElement>
+        <GuiElement type="button" profile="defaultButton" position="0.03 0.07" imageFilename="dataS2/menu/button_down_normal.png" imageFocusedFilename="dataS2/menu/button_down_focused.png" imagePressedFilename="dataS2/menu/button_down_pressed.png" onClick="onDownClick" focusId="2" focusChangeTop="1" focusChangeRight="3" />
+
+        <GuiElement type="button" profile="defaultButton" position="0.8 0.07" text="$l10n_Button_Back" onClick="onBackClick" focusId="3" focusChangeTop="1" focusChangeLeft="2" />
+
+    </GuiElement>
+</GUI>

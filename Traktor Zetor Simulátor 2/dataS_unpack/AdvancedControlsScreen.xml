@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpen" >
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/background01.png" imageColor="1 1 1 1">
+        <GuiElement type="bitmap" position="0.16 0.5" size="0.7 0.46666" imageFilename="dataS2/menu/main_logo$l10nSuffix.png" imageColor="1 1 1 1"/>
+        <GuiElement type="bitmap" position="0.25 0.484" size="0.7 0.16" imageFilename="dataS2/menu/settings_background.png" imageColor="1 1 1 1"/>
+
+        <GuiElement type="button" profile="defaultButton" position="0.05 0.57" text="$l10n_Button_Save" onClick="onClickSave" focusId="1" focusChangeRight="4" focusChangeBottom="2" />
+        <GuiElement type="button" profile="defaultButton" position="0.05 0.5" text="$l10n_Button_Back" onClick="onClickBack" focusId="2" focusChangeRight="6" focusChangeTop="1" focusInit="onOpen" />
+
+
+        <GuiElement type="multiTextOption" position="0.534 0.57" onCreate="onCreateDeadzone">
+            <GuiElement type="button" profile="leftButton" position="0 0" focusId="4" focusChangeLeft="1" focusChangeRight="5" focusChangeBottom="6" />
+            <GuiElement type="button" profile="rightButton" position="0.29 0" focusId="5" focusChangeLeft="4" focusChangeTop="31" focusChangeBottom="7" />
+            <GuiElement type="text" profile="defaultText" position="0.091 0.008" size="0.2 0.2" textSize="0.025" text2Size="0.025" alignment="center"/>
+        </GuiElement>
+        <GuiElement type="multiTextOption" position="0.534 0.5" onCreate="onCreateMouseSensitivity">
+            <GuiElement type="button" profile="leftButton" position="0 0" focusId="6" focusChangeLeft="2" focusChangeRight="7" focusChangeTop="4" />
+            <GuiElement type="button" profile="rightButton" position="0.29 0" focusId="7" focusChangeLeft="6" focusChangeTop="5" />
+            <GuiElement type="text" profile="defaultText" position="0.091 0.008" size="0.2 0.2" textSize="0.025" text2Size="0.025" alignment="center"/>
+        </GuiElement>
+
+        <GuiElement type="text" profile="defaultText" position="-0.1 0.578" size="0.61 0.2" textSize="0.025" text2Size="0.025" text="$l10n_GamepadDeadzone" alignment="right"/>
+        <GuiElement type="text" profile="defaultText" position="-0.1 0.508" size="0.61 0.2" textSize="0.025" text2Size="0.025" text="$l10n_MouseSensitivity" alignment="right"/>
+
+    </GuiElement>
+</GUI>
+

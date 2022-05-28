@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI>
+    <GuiElement type="none" position="0 0" size="1 1" onOpen="onOpen" onClose="onClose">
+        <GuiElement type="bitmap" position="0.019 0.34" size="0.413 0.048" imageFilename="dataS2/menu/dark_background.png" imageColor="1 1 1 1"/>
+        <!--GuiElement type="button" profile="defaultLargeButton" position="0.55 0.1" text="$l10n_Button_ContinueGame" onClick="onSendClick"/-->
+        <GuiElement type="textInput" profile="defaultTextInputJustText" text="" position="0.025 0.35" maxTextWidth="0.4" onCreate="onCreateTextInput" onEnterPressed="onEnterPressed" alignment="left"/>
+    </GuiElement>
+</GUI>
+

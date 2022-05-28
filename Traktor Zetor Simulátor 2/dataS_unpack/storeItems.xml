@@ -1,0 +1,910 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<storeItems>
+    
+    <storeItem>
+        <name>$l10n_shopItemName_lizard422</name>
+        <description>$l10n_shopItemDescription_lizard422</description>
+        <specs>$l10n_shopItemSpecs_lizard422</specs>
+        <image active="data/vehicles/store_lizard422.png"/>
+        <price>28000</price>
+        <xmlFilename>data/vehicles/steerable/lizard/lizard422.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tractors</section>
+    </storeItem>
+      
+    
+    
+    <storeItem>  
+        <name>$l10n_shopItemName_lizard2850</name>
+        <description>$l10n_shopItemDescription_lizard2850</description>
+        <specs>$l10n_shopItemSpecs_lizard2850</specs>
+        <image active="data/vehicles/store_lizard2850.png"/>
+        <price>26000</price>
+        <xmlFilename>data/vehicles/steerable/lizard/lizard2850.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tractors</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>  
+        <name>$l10n_shopItemName_deutzAgroplus77</name>
+        <description>$l10n_shopItemDescription_deutzAgroplus77</description>
+        <specs>$l10n_shopItemSpecs_deutzAgroplus77</specs>
+        <image active="data/vehicles/store_deutzAgroplus77.png"/>
+        <price>86000</price>
+        <xmlFilename>data/vehicles/steerable/deutz/deutzAgroplus77.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tractors</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>  
+        <name>$l10n_shopItemName_deutzAgrotronK420</name>
+        <description>$l10n_shopItemDescription_deutzAgrotronK420</description>
+        <specs>$l10n_shopItemSpecs_deutzAgrotronK420</specs>
+        <image active="data/vehicles/store_deutzAgrotronK420.png"/>
+        <price>110000</price>
+        <xmlFilename>data/vehicles/steerable/deutz/deutzAgrotronK420.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tractors</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>  
+        <name>$l10n_shopItemName_deutzAgrofarmFL</name>
+        <description>$l10n_shopItemDescription_deutzAgrofarmFL</description>
+        <specs>$l10n_shopItemSpecs_deutzAgrofarmFL</specs>
+        <image active="data/vehicles/store_deutzAgrofarmFL.png"/>
+        <price>160000</price>
+        <xmlFilename>data/vehicles/steerable/deutz/deutzAgrofarmFrontloader.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tractors</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_deutzFrontloaderBalefork</name>
+        <description>$l10n_shopItemDescription_deutzFrontloaderBalefork</description>
+        <specs>$l10n_shopItemSpecs_deutzFrontloaderBalefork</specs>
+        <image active="data/vehicles/store_deutzFrontloaderBalefork.png"/>
+        <price>1000</price>
+        <xmlFilename>data/vehicles/steerable/deutz/deutzFrontloaderBalefork.xml</xmlFilename>
+        <rotation>180</rotation>
+        <section>section_tractors</section>
+    </storeItem>
+   
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_deutzFrontloaderPalletfork</name>
+        <description>$l10n_shopItemDescription_deutzFrontloaderPalletfork</description>
+        <specs>$l10n_shopItemSpecs_deutzFrontloaderPalletfork</specs>
+        <image active="data/vehicles/store_deutzFrontloaderPalletfork.png"/>
+        <price>1200</price>
+        <xmlFilename>data/vehicles/steerable/deutz/deutzFrontloaderPalletfork.xml</xmlFilename>
+        <rotation>180</rotation>
+        <section>section_tractors</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>  
+        <name>$l10n_shopItemName_deutzFrontloaderShovel</name>
+        <description>$l10n_shopItemDescription_deutzFrontloaderShovel</description>
+        <specs>$l10n_shopItemSpecs_deutzFrontloaderShovel</specs>
+        <image active="data/vehicles/store_deutzFrontloaderShovel.png"/>
+        <price>800</price>
+        <xmlFilename>data/vehicles/steerable/deutz/deutzFrontloaderShovel.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tractors</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>  
+        <name>$l10n_shopItemName_deutzAgrotronM620</name>
+        <description>$l10n_shopItemDescription_deutzAgrotronM620</description>
+        <specs>$l10n_shopItemSpecs_deutzAgrotronM620</specs>
+        <image active="data/vehicles/store_deutzAgrotronM620.png"/>
+        <price>170000</price>
+        <xmlFilename>data/vehicles/steerable/deutz/deutzAgrotronM620.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tractors</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>  
+        <name>$l10n_shopItemName_deutzAgrotronL720</name>
+        <description>$l10n_shopItemDescription_deutzAgrotronL720</description>
+        <specs>$l10n_shopItemSpecs_deutzAgrotronL720</specs>
+        <image active="data/vehicles/store_deutzAgrotronL720.png"/>
+        <price>230000</price>
+        <xmlFilename>data/vehicles/steerable/deutz/deutzAgrotronL720.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tractors</section>
+    </storeItem>
+    
+    
+
+    <storeItem>
+        <name>$l10n_shopItemName_deutzAgrotronX720</name>
+        <description>$l10n_shopItemDescription_deutzAgrotronX720</description>
+        <specs>$l10n_shopItemSpecs_deutzAgrotronX720</specs>
+        <image active="data/vehicles/store_deutzAgrotronX720.png"/>
+        <price>280000</price>
+        <xmlFilename>data/vehicles/steerable/deutz/deutzAgrotronX720.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tractors</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>  
+        <name>$l10n_shopItemName_deutzAgrovector</name>
+        <description>$l10n_shopItemDescription_deutzAgrovector</description>
+        <specs>$l10n_shopItemSpecs_deutzAgrovector</specs>
+        <image active="data/vehicles/store_deutzAgrovector.png"/>
+        <price>190000</price>
+        <xmlFilename>data/vehicles/steerable/deutz/deutzAgrovector.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tractors</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_deutzAgrovectorBalefork</name>
+        <description>$l10n_shopItemDescription_deutzAgrovectorBalefork</description>
+        <specs>$l10n_shopItemSpecs_deutzAgrovectorBalefork</specs>
+        <image active="data/vehicles/store_deutzAgrovectorBalefork.png"/>
+        <price>1000</price>
+        <xmlFilename>data/vehicles/steerable/deutz/deutzAgrovectorBalefork.xml</xmlFilename>
+        <rotation>180</rotation>
+        <section>section_tractors</section>
+    </storeItem>
+   
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_deutzAgrovectorPalletfork</name>
+        <description>$l10n_shopItemDescription_deutzAgrovectorPalletfork</description>
+        <specs>$l10n_shopItemSpecs_deutzAgrovectorPalletfork</specs>
+        <image active="data/vehicles/store_deutzAgrovectorPalletfork.png"/>
+        <price>1200</price>
+        <xmlFilename>data/vehicles/steerable/deutz/deutzAgrovectorPalletfork.xml</xmlFilename>
+        <rotation>180</rotation>
+        <section>section_tractors</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_deutzAgrovectorShovel</name>
+        <description>$l10n_shopItemDescription_deutzAgrovectorShovel</description>
+        <specs>$l10n_shopItemSpecs_deutzAgrovectorShovel</specs>
+        <image active="data/vehicles/store_deutzAgrovectorShovel.png"/>
+        <price>800</price>
+        <xmlFilename>data/vehicles/steerable/deutz/deutzAgrovectorShovel.xml</xmlFilename>
+        <rotation>180</rotation>
+        <section>section_tractors</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>  
+        <name>$l10n_shopItemName_deutzF1m414</name>
+        <description>$l10n_shopItemDescription_deutzF1m414</description>
+        <specs>$l10n_shopItemSpecs_deutzF1m414</specs>
+        <image active="data/vehicles/store_deutzF1m414.png"/>
+        <price>50000</price>
+        <xmlFilename>data/vehicles/steerable/deutz/deutzF1m414.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tractors</section>
+        <achievementsNeeded>50</achievementsNeeded>
+    </storeItem>
+    
+    
+    
+    <!--storeItem>  
+        <name>$l10n_shopItemName_lizard2000</name>
+        <description>$l10n_shopItemDescription_lizard2000</description>
+        <specs>$l10n_shopItemSpecs_lizard2000</specs>
+        <image active="data/vehicles/store_lizard2000.png"/>
+        <price>200000</price>
+        <xmlFilename>data/vehicles/steerable/lizard/lizard2000.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tractors</section>
+        <achievementsNeeded>100</achievementsNeeded>
+    </storeItem-->
+    
+    
+    
+    <storeItem>  
+        <name>$l10n_shopItemName_lizard58</name>
+        <description>$l10n_shopItemDescription_lizard58</description>
+        <specs>$l10n_shopItemSpecs_lizard58</specs>
+        <image active="data/vehicles/store_lizard58.png"/>
+        <price>70000</price>
+        <xmlFilename>data/vehicles/steerable/lizard/lizard58.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_combines</section>
+    </storeItem>
+    
+    
+    
+        <storeItem>  
+        <name>$l10n_shopItemName_lizard7210</name>
+        <description>$l10n_shopItemDescription_lizard7210</description>
+        <specs>$l10n_shopItemSpecs_lizard7210</specs>
+        <image active="data/vehicles/store_lizard7210.png"/>
+        <price>65000</price>
+        <xmlFilename>data/vehicles/steerable/lizard/lizard7210.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_combines</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>  
+        <name>$l10n_shopItemName_deutz5465H</name>
+        <description>$l10n_shopItemDescription_deutz5465H</description>
+        <specs>$l10n_shopItemSpecs_deutz5465H</specs>
+        <image active="data/vehicles/store_deutz5465H.png"/>
+        <price>250000</price>
+        <xmlFilename>data/vehicles/steerable/deutz/deutz5465H.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_combines</section>
+    </storeItem>
+
+
+    
+    <storeItem>  
+        <name>$l10n_shopItemName_deutz5695HTS</name>
+        <description>$l10n_shopItemDescription_deutz5695HTS</description>
+        <specs>$l10n_shopItemSpecs_deutz5695HTS</specs>
+        <image active="data/vehicles/store_deutz5695HTS.png"/>
+        <price>265000</price>
+        <xmlFilename>data/vehicles/steerable/deutz/deutz5695HTS.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_combines</section>
+    </storeItem>
+
+
+
+    <storeItem>  
+        <name>$l10n_shopItemName_deutz7545RTS</name>
+        <description>$l10n_shopItemDescription_deutz7545RTS</description>
+        <specs>$l10n_shopItemSpecs_deutz7545RTS</specs>
+        <image active="data/vehicles/store_deutz7545RTS.png"/>
+        <price>315000</price>
+        <xmlFilename>data/vehicles/steerable/deutz/deutz7545RTS.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_combines</section>
+    </storeItem>
+
+
+
+    <storeItem>  
+        <name>$l10n_shopItemName_kroneBigX1000</name>
+        <description>$l10n_shopItemDescription_kroneBigX1000</description>
+        <specs>$l10n_shopItemSpecs_kroneBigX1000</specs>
+        <image active="data/vehicles/store_kroneBigX1000.png"/>
+        <price>225000</price>
+        <xmlFilename>data/vehicles/steerable/krone/kroneBigX1000.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_combines</section>
+    </storeItem>
+
+    
+    
+    <storeItem>  
+        <name>$l10n_shopItemName_lizard58Cutter</name>
+        <description>$l10n_shopItemDescription_lizard58Cutter</description>
+        <specs>$l10n_shopItemSpecs_lizard58Cutter</specs>
+        <image active="data/vehicles/store_lizard58Cutter.png"/>
+        <price>13000</price>
+        <xmlFilename>data/vehicles/cutters/lizard/lizard58Cutter.xml</xmlFilename>
+        <rotation>180</rotation>
+        <section>section_combines</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>  
+        <name>$l10n_shopItemName_lizardcutter7210</name>
+        <description>$l10n_shopItemDescription_lizardcutter7210</description>
+        <specs>$l10n_shopItemSpecs_lizardcutter7210</specs>
+        <image active="data/vehicles/store_lizardcutter7210.png"/>
+        <price>11000</price>
+        <xmlFilename>data/vehicles/cutters/lizard/lizardcutter7210.xml</xmlFilename>
+        <rotation>180</rotation>
+        <section>section_combines</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>  
+        <name>$l10n_shopItemName_deutzCutter5465H</name>
+        <description>$l10n_shopItemDescription_deutzCutter5465H</description>
+        <specs>$l10n_shopItemSpecs_deutzCutter5465H</specs>
+        <image active="data/vehicles/store_deutzCutter5465H.png"/>
+        <price>32000</price>
+        <xmlFilename>data/vehicles/cutters/deutz/deutzCutter5465H.xml</xmlFilename>
+        <rotation>180</rotation>
+        <section>section_combines</section>
+    </storeItem>
+
+
+
+    <storeItem>  
+        <name>$l10n_shopItemName_deutzCutter5695HTS</name>
+        <description>$l10n_shopItemDescription_deutzCutter5695HTS</description>
+        <specs>$l10n_shopItemSpecs_deutzCutter5695HTS</specs>
+        <image active="data/vehicles/store_deutzCutter5695HTS.png"/>
+        <price>40000</price>
+        <xmlFilename>data/vehicles/cutters/deutz/deutzCutter5695HTS.xml</xmlFilename>
+        <rotation>180</rotation>
+        <section>section_combines</section>
+    </storeItem>
+
+
+
+    <storeItem>  
+        <name>$l10n_shopItemName_deutzCutter7545RTS</name>
+        <description>$l10n_shopItemDescription_deutzCutter7545RTS</description>
+        <specs>$l10n_shopItemSpecs_deutzCutter7545RTS</specs>
+        <image active="data/vehicles/store_deutzCutter7545RTS.png"/>
+        <price>42000</price>
+        <xmlFilename>data/vehicles/cutters/deutz/deutzCutter7545RTS.xml</xmlFilename>
+        <rotation>180</rotation>
+        <section>section_combines</section>
+    </storeItem>
+
+
+
+    <storeItem>  
+        <name>$l10n_shopItemName_deutzCornCutter7545RTS</name>
+        <description>$l10n_shopItemDescription_deutzCornCutter7545RTS</description>
+        <specs>$l10n_shopItemSpecs_deutzCornCutter7545RTS</specs>
+        <image active="data/vehicles/store_deutzCornCutter7545RTS.png"/>
+        <price>46000</price>
+        <xmlFilename>data/vehicles/cutters/deutz/deutzCornCutter7545RTS.xml</xmlFilename>
+        <rotation>180</rotation>
+        <section>section_combines</section>
+    </storeItem>
+
+
+
+    <storeItem>  
+        <name>$l10n_shopItemName_kroneEasyCollect1053</name>
+        <description>$l10n_shopItemDescription_kroneEasyCollect1053</description>
+        <specs>$l10n_shopItemSpecs_kroneEasyCollect1053</specs>
+        <image active="data/vehicles/store_kroneEasyCollect1053.png"/>
+        <price>41000</price>
+        <xmlFilename>data/vehicles/steerable/krone/kroneEasyCollect1053.xml</xmlFilename>
+        <rotation>180</rotation>
+        <section>section_combines</section>
+    </storeItem>
+
+
+
+<storeItem>
+        <name>$l10n_shopItemName_smallTipper</name>
+        <description>$l10n_shopItemDescription_smallTipper</description>
+        <specs>$l10n_shopItemSpecs_smallTipper</specs>
+        <image active="data/vehicles/store_smallTipper.png"/>
+        <price>10000</price>
+        <xmlFilename>data/vehicles/trailers/smallTipper.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_trailers</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>     
+        <name>$l10n_shopItemName_mediumTipper</name>
+        <description>$l10n_shopItemDescription_mediumTipper</description>
+        <specs>$l10n_shopItemSpecs_mediumTipper</specs>
+        <image active="data/vehicles/store_mediumtipper.png"/>
+        <price>31000</price>
+        <xmlFilename>data/vehicles/trailers/mediumTipper.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_trailers</section>
+    </storeItem>
+    
+    
+    
+    <storeItem> 
+        <name>$l10n_shopItemName_bigTipper</name>
+        <description>$l10n_shopItemDescription_bigTipper</description>
+        <specs>$l10n_shopItemSpecs_bigTipper</specs>
+        <image active="data/vehicles/store_bigtipper.png"/>
+        <price>57000</price>
+        <xmlFilename>data/vehicles/trailers/bigTipper.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_trailers</section>
+    </storeItem>
+
+
+
+    <storeItem> 
+        <name>$l10n_shopItemName_euroboss330t</name>
+        <description>$l10n_shopItemDescription_euroboss330t</description>
+        <specs>$l10n_shopItemSpecs_euroboss330t</specs>
+        <image active="data/vehicles/store_euroboss330t.png"/>
+        <price>60000</price>
+        <xmlFilename>data/vehicles/trailers/euroboss330t.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_trailers</section>
+    </storeItem>
+  
+  
+  
+    <storeItem> 
+        <name>$l10n_shopItemName_plow01</name>
+        <description>$l10n_shopItemDescription_plow01</description>
+        <specs>$l10n_shopItemSpecs_plow01</specs>
+        <image active="data/vehicles/store_plow01.png"/>
+        <price>1000</price>
+        <xmlFilename>data/vehicles/tools/plow01.xml</xmlFilename>
+        <rotation>180</rotation>
+        <section>section_tools</section>
+    </storeItem>
+
+
+
+    <storeItem>
+        <name>$l10n_shopItemName_plough01</name>
+        <description>$l10n_shopItemDescription_plough01</description>
+        <specs>$l10n_shopItemSpecs_plough01</specs>
+        <image active="data/vehicles/store_lizard039d.png"/>
+        <price>9500</price>
+        <xmlFilename>data/vehicles/tools/plough01.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tools</section>
+    </storeItem>
+
+
+
+    <storeItem>  
+        <name>$l10n_shopItemName_servo25</name>
+        <description>$l10n_shopItemDescription_servo25</description>
+        <specs>$l10n_shopItemSpecs_servo25</specs>
+        <image active="data/vehicles/store_servo25.png"/>
+        <price>24000</price>
+        <xmlFilename>data/vehicles/tools/poettinger/servo25.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_servo35s</name>
+        <description>$l10n_shopItemDescription_servo35s</description>
+        <specs>$l10n_shopItemSpecs_servo35s</specs>
+        <image active="data/vehicles/store_servo35s.png"/>
+        <price>32000</price>
+        <xmlFilename>data/vehicles/tools/poettinger/servo35s.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem> 
+        <name>$l10n_shopItemName_sowingMachine01</name>
+        <description>$l10n_shopItemDescription_sowingMachine01</description>
+        <specs>$l10n_shopItemSpecs_sowingMachine01</specs>
+        <image active="data/vehicles/store_lizardswg216a.png"/>
+        <price>16000</price>
+        <xmlFilename>data/vehicles/tools/sowingMachine01.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_aerosem3000</name>
+        <description>$l10n_shopItemDescription_aerosem3000</description>
+        <specs>$l10n_shopItemSpecs_aerosem3000</specs>
+        <image active="data/vehicles/store_aerosem3000.png"/>
+        <price>42000</price>
+        <xmlFilename>data/vehicles/tools/poettinger/aerosem3000.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_vitasemA301</name>
+        <description>$l10n_shopItemDescription_vitasemA301</description>
+        <specs>$l10n_shopItemSpecs_vitasemA301</specs>
+        <image active="data/vehicles/store_vitasema301.png"/>
+        <price>46000</price>
+        <xmlFilename>data/vehicles/tools/poettinger/vitasemA301.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem> 
+        <name>$l10n_shopItemName_triton200</name>
+        <description>$l10n_shopItemDescription_triton200</description>
+        <specs>$l10n_shopItemSpecs_triton200</specs>
+        <image active="data/vehicles/store_triton200.png"/>
+        <price>6600</price>
+        <xmlFilename>data/vehicles/tools/triton200.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem> 
+        <name>$l10n_shopItemName_triton500</name>
+        <description>$l10n_shopItemDescription_triton500</description>
+        <specs>$l10n_shopItemSpecs_triton500</specs>
+        <image active="data/vehicles/store_triton500.png"/>
+        <price>12000</price>
+        <xmlFilename>data/vehicles/tools/triton500.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_cultivator01</name>
+        <description>$l10n_shopItemDescription_cultivator01</description>
+        <specs>$l10n_shopItemSpecs_cultivator01</specs>
+        <image active="data/vehicles/store_lizard121zx.png"/>
+        <price>6000</price>
+        <xmlFilename>data/vehicles/tools/cultivator01.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_synkro2600</name>
+        <description>$l10n_shopItemDescription_synkro2600</description>
+        <specs>$l10n_shopItemSpecs_synkro2600</specs>
+        <image active="data/vehicles/store_synkro2600.png"/>
+        <price>21000</price>
+        <xmlFilename>data/vehicles/tools/poettinger/synkro2600.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem> 
+        <name>$l10n_shopItemName_synkro4003k</name>
+        <description>$l10n_shopItemDescription_synkro4003k</description>
+        <specs>$l10n_shopItemSpecs_synkro4003k</specs>
+        <image active="data/vehicles/store_synkro4003k.png"/>
+        <price>27000</price>
+        <xmlFilename>data/vehicles/tools/poettinger/synkro4003k.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem> 
+        <name>$l10n_shopItemName_manureSpreader</name>
+        <description>$l10n_shopItemDescription_manureSpreader</description>
+        <specs>$l10n_shopItemSpecs_manureSpreader</specs>
+        <image active="data/vehicles/store_manureSpreader.png"/>
+        <price>75000</price>
+        <xmlFilename>data/vehicles/trailers/manureSpreader.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_trailers</section>
+    </storeItem>
+    
+    
+    
+    <storeItem> 
+        <name>$l10n_shopItemName_smallManureBarrel</name>
+        <description>$l10n_shopItemDescription_smallManureBarrel</description>
+        <specs>$l10n_shopItemSpecs_smallManureBarrel</specs>
+        <image active="data/vehicles/store_smallManureBarrel.png"/>
+        <price>86000</price>
+        <xmlFilename>data/vehicles/trailers/smallManureBarrel.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_trailers</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_kroneBigPack1290</name>
+        <description>$l10n_shopItemDescription_kroneBigPack1290</description>
+        <specs>$l10n_shopItemSpecs_kroneBigPack1290</specs>
+        <image active="data/vehicles/store_kroneBigPack1290.png"/>
+        <price>120000</price>
+        <xmlFilename>data/vehicles/balers/kroneBigPack1290.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_misc</section>
+    </storeItem>
+
+
+    
+    <storeItem>
+        <name>$l10n_shopItemName_kroneComprimaV180</name>
+        <description>$l10n_shopItemDescription_kroneComprimaV180</description>
+        <specs>$l10n_shopItemSpecs_kroneComprimaV180</specs>
+        <image active="data/vehicles/store_kroneComprimaV180.png"/>
+        <price>112000</price>
+        <xmlFilename>data/vehicles/balers/kroneComprimaV180.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_misc</section>
+    </storeItem>
+
+
+
+<storeItem>
+        <name>$l10n_shopItemName_baleTrailer01</name>
+        <description>$l10n_shopItemDescription_baleTrailer01</description>
+        <specs>$l10n_shopItemSpecs_baleTrailer01</specs>
+        <image active="data/vehicles/store_baletrailer01.png"/>
+        <price>3600</price>
+        <xmlFilename>data/vehicles/trailers/baleTrailer01.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_trailers</section>
+    </storeItem>
+    
+    
+    
+    <storeItem> 
+        <name>$l10n_shopItemName_baleTrailer02</name>
+        <description>$l10n_shopItemDescription_baleTrailer02</description>
+        <specs>$l10n_shopItemSpecs_baleTrailer02</specs>
+        <image active="data/vehicles/store_baletrailer02.png"/>
+        <price>4800</price>
+        <xmlFilename>data/vehicles/trailers/baleTrailer02.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_trailers</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_extraWeight01</name>
+        <description>$l10n_shopItemDescription_extraWeight01</description>
+        <specs>$l10n_shopItemSpecs_extraWeight01</specs>
+        <image active="data/vehicles/store_extraweight01.png"/>
+        <price>250</price>
+        <xmlFilename>data/vehicles/tools/extraWeight01.xml</xmlFilename>
+        <rotation>180</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_extraWeight02</name>
+        <description>$l10n_shopItemDescription_extraWeight02</description>
+        <specs>$l10n_shopItemSpecs_extraWeight02</specs>
+        <image active="data/vehicles/store_extraweight02.png"/>
+        <price>320</price>
+        <xmlFilename>data/vehicles/tools/extraWeight02.xml</xmlFilename>
+        <rotation>180</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_barrelWeight</name>
+        <description>$l10n_shopItemDescription_barrelWeight</description>
+        <specs>$l10n_shopItemSpecs_barrelWeight</specs>
+        <image active="data/vehicles/store_barrelweight.png"/>
+        <price>400</price>
+        <xmlFilename>data/vehicles/tools/barrelWeight.xml</xmlFilename>
+        <rotation>180</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem> 
+        <name>$l10n_shopItemName_novacat306f</name>
+        <description>$l10n_shopItemDescription_novacat306f</description>
+        <specs>$l10n_shopItemSpecs_novacat306f</specs>
+        <image active="data/vehicles/store_novacat306f.png"/>
+        <price>16000</price>
+        <xmlFilename>data/vehicles/tools/poettinger/novacat306f.xml</xmlFilename>
+        <rotation>180</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>  
+        <name>$l10n_shopItemName_novadisc900</name>
+        <description>$l10n_shopItemDescription_novadisc900</description>
+        <specs>$l10n_shopItemSpecs_novadisc900</specs>
+        <image active="data/vehicles/store_novadisc900.png"/>
+        <price>28000</price>
+        <xmlFilename>data/vehicles/tools/poettinger/novadisc900.xml</xmlFilename>
+        <rotation>180</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>  
+        <name>$l10n_shopItemName_eurohit690n</name>
+        <description>$l10n_shopItemDescription_eurohit690n</description>
+        <specs>$l10n_shopItemSpecs_eurohit690n</specs>
+        <image active="data/vehicles/store_eurohit690n.png"/>
+        <price>20000</price>
+        <xmlFilename>data/vehicles/tools/poettinger/eurohit690n.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_eurotop461a</name>
+        <description>$l10n_shopItemDescription_eurotop461a</description>
+        <specs>$l10n_shopItemSpecs_eurotop461a</specs>
+        <image active="data/vehicles/store_eurotop461a.png"/>
+        <price>18000</price>
+        <xmlFilename>data/vehicles/tools/poettinger/eurotop461a.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_terraTop800</name>
+        <description>$l10n_shopItemDescription_terraTop800</description>
+        <specs>$l10n_shopItemSpecs_terraTop800</specs>
+        <image active="data/vehicles/store_terraTop800.png"/>
+        <price>57000</price>
+        <xmlFilename>data/vehicles/tools/vogelNoot/terraTop800.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>  
+        <name>$l10n_shopItemName_tiger6MT</name>
+        <description>$l10n_shopItemDescription_tiger6MT</description>
+        <specs>$l10n_shopItemSpecs_tiger6MT</specs>
+        <image active="data/vehicles/store_tigerMT.png"/>
+        <price>72000</price>
+        <xmlFilename>data/vehicles/tools/horsch/tiger6MT.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_terrano8FX</name>
+        <description>$l10n_shopItemDescription_terrano8FX</description>
+        <specs>$l10n_shopItemSpecs_terrano8FX</specs>
+        <image active="data/vehicles/store_terranoFX.png"/>
+        <price>53000</price>
+        <xmlFilename>data/vehicles/tools/horsch/terrano8FX.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem> 
+        <name>$l10n_shopItemName_joker6CT</name>
+        <description>$l10n_shopItemDescription_joker6CT</description>
+        <specs>$l10n_shopItemSpecs_joker6CT</specs>
+        <image active="data/vehicles/store_jokerCT.png"/>
+        <price>22000</price>
+        <xmlFilename>data/vehicles/tools/horsch/joker6CT.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_pronto9DC</name>
+        <description>$l10n_shopItemDescription_pronto9DC</description>
+        <specs>$l10n_shopItemSpecs_pronto9DC</specs>
+        <image active="data/vehicles/store_prontoDC.png"/>
+        <price>97000</price>
+        <xmlFilename>data/vehicles/tools/horsch/pronto9DC.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem> 
+        <name>$l10n_shopItemName_sprinter8ST</name>
+        <description>$l10n_shopItemDescription_sprinter8ST</description>
+        <specs>$l10n_shopItemSpecs_sprinter8ST</specs>
+        <image active="data/vehicles/store_sprinterST.png"/>
+        <price>88000</price>
+        <xmlFilename>data/vehicles/tools/horsch/sprinter8ST.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tools</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_selfPropelledSprayer</name>
+        <description>$l10n_shopItemDescription_selfPropelledSprayer</description>
+        <specs>$l10n_shopItemSpecs_selfPropelledSprayer</specs>
+        <image active="data/vehicles/store_selfPropelledSprayer.png"/>
+        <price>125000</price>
+        <xmlFilename>data/vehicles/steerable/lizard/selfPropelledSprayer.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_misc</section>
+    </storeItem>
+    
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_baleLoader</name>
+        <description>$l10n_shopItemDescription_baleLoader</description>
+        <specs>$l10n_shopItemSpecs_baleLoader</specs>
+        <image active="data/vehicles/store_baleLoader.png"/>
+        <price>110000</price>
+        <xmlFilename>data/vehicles/trailers/baleLoader.xml</xmlFilename>
+        <rotation>0</rotation>
+        <section>section_tools</section>
+    </storeItem>       
+    
+    
+    
+    <storeItem>
+        <name>$l10n_shopItemName_cow</name>
+        <description>$l10n_shopItemDescription_cow</description>
+        <specs>$l10n_shopItemSpecs_cow</specs>
+        <image active="data/vehicles/store_cow.png"/>
+        <price>25000</price>
+        <xmlFilename>..</xmlFilename>
+        <species>cow</species>
+        <rotation>0</rotation>
+        <section>section_animals</section>
+    </storeItem>       
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</storeItems>

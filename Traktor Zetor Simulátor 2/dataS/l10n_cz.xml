@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<l10n>
+    <currency factor="1" /> <!-- todo make this dynamic -->
+    <speed factor="1" /> <!-- todo make this dynamic -->
+    <texts>
+        <text name="mission02Goal" text="Balíky sena" id="3071"/>
+        <text name="mission11Goal" text="Kmeny" id="3072"/>
+        <text name="Key" text="Klávesa" id="3073"/>
+        <text name="Keys" text="Klávesy" id="3074"/>
+        <text name="or" text="nebo" id="3075"/>
+        <text name="Button" text="Tlačítko" id="3076"/>
+        <text name="Buttons" text="Tlačítka" id="3077"/>
+        <text name="Turn_on_lights" text="Zapnout světla" id="3078"/>
+        <text name="Dump" text="Vyložit" id="3079"/>
+        <text name="Attach" text="Zapřáhnout" id="3080"/>
+        <text name="lift_OBJECT" text="Zdvihnout %s" id="3081"/>
+        <text name="lower_OBJECT" text="Spustit %s" id="3082"/>
+        <text name="Enter" text="Nasednout" id="3083"/>
+        <text name="turn_off_OBJECT" text="Vypnout %s" id="3084"/>
+        <text name="turn_on_OBJECT" text="Zapnout %s" id="3085"/>
+        <text name="turn_off" text="vypnout" id="3086"/>
+        <text name="turn_on" text="zapnout" id="3087"/>
+        <text name="fold_OBJECT" text="Sklopit %s" id="3088"/>
+        <text name="unfold_OBJECT" text="Naklopit %s" id="3089"/>
+        <text name="Refuel" text="Natankovat" id="3090"/>
+        <text name="stop_Refuel" text="Přestat tankovat" id="3091"/>
+        <text name="Honk" text="Zatroubit" id="3092"/>
+        <text name="refill_OBJECT" text="Doplnit %s" id="3093"/>
+        <text name="stop_refill_OBJECT" text="Přestat doplňovat" id="3094"/>
+        <text name="baler_unload" text="Odpojit balíkovač" id="3095"/>
+        <text name="baler_unload_stop" text="Zaklapnout" id="3096"/>
+        <text name="Time" text="Čas" id="3097"/>
+        <text name="minutes" text="Minuty" id="3098"/>
+        <text name="Change_tools" text="Změnit výběr nástrojů" id="3099"/>
+        <text name="Dont_drive_to_depth_into_the_water" text="Nejezděte příliš hluboko do té vody!" id="3100"/>
+        <text name="Mission_is_loading_please_wait" text="Mise se načítá, čekejte..." id="3101"/>
+        <text name="Game_is_loading_please_wait" text="Hra se načítá, čekejte..." id="3102"/>
+        <text name="Game_is_connecting_please_wait" text="Navazuji spojení, čekejte..." id="3103"/>
+        <text name="Waiting_for_accept" text="Čekejte, až vás hostitel přijme..." id="3104"/>
+        <text name="Waiting_for_data" text="Synchronizuji data s ostatními hráči..." id="3105"/>
+        <text name="Creating_game" text="Čekejte, až se vytvoří hra..." id="3106"/>
+        <text name="ConnectionLost" text="Spojení s hrou bylo ztraceno." id="3107"/>
+        <text name="Server_Shutdown" text="Server byl vypnut." id="3108"/>
+        <text name="Connecting_To_Master_Server" text="Čekejte, navazuji spojení se serverem." id="3109"/>
+        <text name="Wrong_Game_Version" text="Verze vaší hry je zastaralá. Nainstaluje prosím aktualizace." id="3110"/>
+        <text name="Server_maintenance" text="Na serveru momentálně probíhá údržba. Zkuste to prosím později." id="3111"/>
+        <text name="temporary_ban" text="Aktivační/produktový klíč je dočasně zablokován. Zkuste to prosím později." id="3112"/>
+        <text name="permanent_ban" text="Aktivační/produktový klíč je zablokován." id="3113"/>
+        <text name="MasterServerConnectionLost" text="Spojení se serverem bylo ztraceno. Přesvědčte se, že připojení k internetu funguje a hru restartujte." id="3114"/>
+        <text name="Connection_failed" text="Nepodařilo se navázat spojení se serverem." id="3115"/>
+        <text name="Game_Connection_failed" text="Nepodařilo se navázat spojení s hrou pro více hráčů." id="3116"/>
+        <text name="Dont_drive_to_fast" text="Nejezděte příliš rychle!" id="3117"/>
+        <text name="Cruise_control_levelN" text="Úroveň omezovače %s: %s" id="3118"/>
+        <text name="Dont_do_threshing_during_rain_or_hail" text="Nemlaťte za deště nebo krup!" id="3119"/>
+        <text name="Turn_plough" text="Otočit pluh" id="3120"/>
+        <text name="Turn_on_cutter" text="Zapnout řezačku" id="3121"/>
+        <text name="Turn_off_cutter" text="Vypnout řezačku" id="3122"/>
+        <text name="Turn_on_mower" text="Zapnout sekačku" id="3123"/>
+        <text name="Turn_off_mower" text="Vypnout sekačku" id="3124"/>
+        <text name="Pipe_in" text="Zajet s rourou" id="3125"/>
+        <text name="Dump_corn" text="Vyložit kukuřici" id="3126"/>
+        <text name="Dump_corn_to_continue_threshing" text="Vyprázdněte zásobník na obilí, abyste mohli pokračovat v mlácení" id="3127"/>
+        <text name="Move_the_pipe_over_a_trailer" text="Přesuňte se s rourou nad náklaďák" id="3128"/>
+        <text name="Session" text="Hra" id="3129"/>
+        <text name="Total" text="Celkem" id="3130"/>
+        <text name="Seed" text="Osivo" id="3131"/>
+        <text name="Seeds" text="Osivo" id="3132"/>
+        <text name="Threshing" text="Mlácení" id="3133"/>
+        <text name="Wheat_storage" text="Skladiště pšenice" id="3134"/>
+        <text name="Barley_storage" text="Skladiště ječmene" id="3135"/>
+        <text name="Rapeseed_storage" text="Skladiště řepky" id="3136"/>
+        <text name="Maize_storage" text="Skladiště kukuřice" id="3137"/>
+        <text name="LiquidManure_storage" text="Skladiště močky" id="3138"/>
+        <text name="Manure_storage" text="Skladiště hnoje" id="3139"/>
+        <text name="MaizeSilage_storage" text="Silážní jáma (kukuřičná siláž)" id="3140"/>
+        <text name="GrassSilage_storage" text="Krmicí žlab (tráva)" id="3141"/>
+        <text name="Milk_storage" text="Nádrž na mléko" id="3142"/>
+        <text name="Corn_sold" text="Prodané obilí" id="3143"/>
+        <text name="Cows_owned" text="Vlastněné krávy" id="3144"/>
+        <text name="Fuel" text="Využití paliva" id="3145"/>
+        <text name="Distance" text="Vzdálenost" id="3146"/>
+        <text name="Revenue" text="Tržba" id="3147"/>
+        <text name="Expenses" text="Výdaje" id="3148"/>
+        <text name="Profit" text="Zisk" id="3149"/>
+        <text name="Duration" text="Odehraný čas" id="3150"/>
+        <text name="threshedArea" text="Sklizená oblast" id="3151"/>
+        <text name="sownArea" text="Zasetá oblast" id="3152"/>
+        <text name="Record" text="Rekord" id="3153"/>
+        <text name="Bronze" text="Bronz" id="3154"/>
+        <text name="Silver" text="Stříbro" id="3155"/>
+        <text name="Gold" text="Zlato" id="3156"/>
+        <text name="This_savegame_is_currently_unused" text="Toto uložení je aktuálně nevyužité." id="3157"/>
+        <text name="Money" text="Peníze" id="3158"/>
+        <text name="In_game_time" text="Herní čas" id="3159"/>
+        <text name="Save_date" text="Datum uložení" id="3160"/>
+        <text name="Savegame" text="Uložení" id="3161"/>
+        <text name="Currency_symbol" text="Kč" id="3162"/>
+        <text name="Measuring_unit" text="km" id="3163"/>
+        <text name="area_unit_short" text="ha" id="3164"/>
+        <text name="fluid_unit_short" text="l" id="3165"/>
+        <text name="fluid_unit_long" text="litrů" id="3166"/>
+        <text name="speedometer" text="km/h" id="3167"/>
+        <text name="mission14Goal" text="Zbylé nářadí" id="3168"/>
+        <text name="missionStationFill" text="Zbylé kilogramy" id="3169"/>
+        <text name="missionFailed" text="Mise byla neúspěšná!" id="3170"/>
+        <text name="missionAccomplished" text="Mise byla dokončena!" id="3171"/>
+        <text name="MultiplayerNickname" text="Jméno ve hře pro více hráčů" id="3172"/>
+        <text name="MultiplayerLanguage" text="Jazyk hry pro více hráčů" id="3173"/>
+        <text name="IllegalNick" text="Vyberte si prosím jiné jméno." id="3174"/>
+        <text name="Resolution" text="Rozlišení obrazu" id="3175"/>
+        <text name="MSAA" text="Antialiasing" id="3176"/>
+        <text name="AnisotropicFiltering" text="Anisotropické filtrování" id="3177"/>
+        <text name="JoystickGamepad" text="Volant/Gamepad" id="3178"/>
+        <text name="HardwareProfile" text="Hardwarový profil" id="3179"/>
+        <text name="TimeScale" text="Časová škála" id="3180"/>
+        <text name="Volume" text="Hlasitost" id="3181"/>
+        <text name="AutomaticHelp" text="Automatická nápověda" id="3182"/>
+        <text name="DisplayOK" text="Změnili jste nastavení obrazu. Chcete toto nastavení ponechat?" id="3183"/>
+        <text name="Store" text="Obchodník se zemědělskou technikou" id="3184"/>
+        <text name="Capital" text="Kapitál" id="3185"/>
+        <text name="Reputation" text="Pověst" id="3186"/>
+        <text name="Bottles" text="Doručené láhve" id="3187"/>
+        <text name="PDATitle1" text="Mapa" id="3188"/>
+        <text name="PDATitle2" text="Předpověď počasí" id="3189"/>
+        <text name="PDATitle3" text="Ceny" id="3190"/>
+        <text name="PDATitle4" text="Statistiky 1" id="3191"/>
+        <text name="PDATitle5" text="Statistiky 2" id="3192"/>
+        <text name="PDATitle6" text="Hráči" id="3193"/>
+        <text name="PDATitleNickname" text="Jméno" id="3194"/>
+        <text name="PDATitlePlaytime" text="Odehraný čas" id="3195"/>
+        <text name="PDATitleLanguage" text="Jazyk" id="3196"/>
+        <text name="PDAFreeSlot" text="Volná pozice" id="3197"/>
+        <text name="Day1" text="PO" id="3198"/>
+        <text name="Day2" text="ÚT" id="3199"/>
+        <text name="Day3" text="ST" id="3200"/>
+        <text name="Day4" text="ČT" id="3201"/>
+        <text name="Day5" text="PÁ" id="3202"/>
+        <text name="Day6" text="SO" id="3203"/>
+        <text name="Day7" text="NE" id="3204"/>
+        <text name="Today" text="DNES" id="3205"/>
+        <text name="TemperatureSymbol" text="°C" id="3206"/>
+        <text name="hotspotMissionGoal" text="Zbývající body:" id="3207"/>
+        <text name="beerKegsMissionGoal" text="Zbývající sudy:" id="3208"/>
+        <text name="bottlesMissionGoal1" text="Získané láhve:" id="3209"/>
+        <text name="bottlesMissionGoal2" text="Vrácené láhve:" id="3210"/>
+        <text name="rocksMissionGoal" text="Kameny na poli:" id="3211"/>
+        <text name="palletsMissionGoal" text="Poskládané palety:" id="3212"/>
+        <text name="strawElevatorMissionGoal" text="Doručené balíky:" id="3213"/>
+        <text name="balingMissionGoal" text="Slisované balíky:" id="3214"/>
+        <text name="mowingGrassMissionGoal" text="Tráva [lb]:" id="3215"/>
+        <text name="shelterMissionGoal" text="Zbývající stroje:" id="3216"/>
+        <text name="rockSlideMissionGoal" text="Kameny na silnici:" id="3217"/>
+        <text name="chaffMissionGoal" text="Kukuřičná siláž k vyložení [lb]:" id="3218"/>
+        <text name="autoStackingMissionGoal" text="Vyložené balíky:" id="3219"/>
+        <text name="stackSize" text="Výška stohu:" id="3220"/>
+        <text name="pallets" text="Palety" id="3221"/>
+        <text name="bales" text="Balíky" id="3222"/>
+        <text name="ChooseSeed" text="Vyberte osivo" id="3223"/>
+        <text name="StationPort" text="Přístav" id="3224"/>
+        <text name="StationBrewery" text="Pivovar" id="3225"/>
+        <text name="StationMill" text="Mlýn" id="3226"/>
+        <text name="PricePerTon" text="[Kč/t]" id="3227"/>
+        <text name="wheat" text="Pšenice" id="3228"/>
+        <text name="barley" text="Ječmen" id="3229"/>
+        <text name="rape" text="Řepka" id="3230"/>
+        <text name="maize" text="Kukuřice" id="3231"/>
+        <text name="grass" text="Tráva" id="3232"/>
+        <text name="chaff" text="Kukuřičná siláž" id="3233"/>
+        <text name="notAcceptedHere" text="se tady nepřijímá!" id="3234"/>
+        <text name="fieldMissionGoal" text="Mise %d%% dokončena" id="3235"/>
+        <text name="Difficulty" text="Obtížnost" id="3236"/>
+        <text name="Diff1" text="Snadná" id="3237"/>
+        <text name="Diff2" text="Normální" id="3238"/>
+        <text name="Diff3" text="Těžká" id="3239"/>
+        <text name="ChooseDifficulty" text="Vyberte si obtížnost:" id="3240"/>
+        <text name="StoreBuyingVehicle" text="Probíhá nákup vašeho výběru..." id="3241"/>
+        <text name="StoreNoSpace" text="Nedostatek místa! Odstraňte nejdřív zakoupené předměty." id="3242"/>
+        <text name="StorePurchaseReady" text="Můžete si svůj nákup vyzvednout v obchodě." id="3243"/>
+        <text name="StoreSellingVehicle" text="Probíhá prodej vozidla/stroje." id="3244"/>
+        <text name="StoreSoldVehicle" text="Vozidlo/stroj byly prodány." id="3245"/>
+        <text name="StoreFailedToSellVehicle" text="Prodej se nezdařil! Zkuste to prosím později." id="3246"/>
+        <text name="StoreBoughtCow" text="Kráva %s byla převezena na pastvu." id="3247"/>
+        <text name="StoreSoldCow" text="Právě jste prodali krávu %s." id="3248"/>
+        <text name="StoreSellingCow" text="Probíhá prodej krávy." id="3249"/>
+        <text name="StoreCannotSellCows" text="Momentálně nemůžete prodat žádné krávy." id="3250"/>
+        <text name="StoreNoCowsInMission" text="Aktuální mapa není navržena pro zvířata." id="3251"/>
+        <text name="HireEmployee" text="Najmout dělníka" id="3252"/>
+        <text name="DismissEmployee" text="Propustit dělníka" id="3253"/>
+        <text name="YouWantToDeleteThat" text="Opravdu chcete smazat toto uložení?" id="3254"/>
+        <text name="DontForgetToSave" text="Opravdu chcete hru ukončit bez uložení?" id="3255"/>
+        <text name="MissionWantToEnd" text="Opravdu chcete ukončit tuto misi?" id="3256"/>
+        <text name="RealTime" text="Reálný čas" id="3257"/>
+        <text name="Off" text="Vyp." id="3258"/>
+        <text name="EnterPassword" text="Zadejte heslo:" id="3259"/>
+        <text name="WrongPassword" text="Špatné heslo" id="3260"/>
+        <text name="ServerDenied" text="Byli jste odmítnuti." id="3261"/>
+        <text name="GameFull" text="Hra je již plná." id="3262"/>
+        <text name="Map" text="Mapa" id="3263"/>
+        <text name="AnyMap" text="Všechny mapy" id="3264"/>
+        <text name="AllLanguages" text="Všechny jazyky" id="3265"/>
+        <text name="IP" text="IP" id="3266"/>
+        <text name="Language" text="Jazyk" id="3267"/>
+        <text name="Button_Menu" text="Menu" id="3268"/>
+        <text name="Button_CancelGame" text="Zrušit hru" id="3269"/>
+        <text name="Button_ContinueGame" text="Pokračovat" id="3270"/>
+        <text name="Button_RestartGame" text="Restartovat" id="3271"/>
+        <text name="Button_SaveGame" text="Uložit hru" id="3272"/>
+        <text name="Button_Start" text="Start" id="3273"/>
+        <text name="Button_Credits" text="Autoři" id="3274"/>
+        <text name="Button_Missions" text="Mise" id="3275"/>
+        <text name="Button_Career" text="Kariéra" id="3276"/>
+        <text name="Button_Quit" text="Ukončit" id="3277"/>
+        <text name="Button_Achievements" text="Úspěchy" id="3278"/>
+        <text name="Button_Settings" text="Nastavení" id="3279"/>
+        <text name="Button_Controls" text="Ovládání" id="3280"/>
+        <text name="Button_No" text="Ne" id="3281"/>
+        <text name="Button_Normal" text="Normální" id="3282"/>
+        <text name="Button_Hard" text="Těžká" id="3283"/>
+        <text name="Button_Easy" text="Snadná" id="3284"/>
+        <text name="Button_ResetVehicles" text="Resetovat vozidla" id="3285"/>
+        <text name="Button_Save" text="Uložit" id="3286"/>
+        <text name="Button_Buy" text="Koupit" id="3287"/>
+        <text name="Button_Sell" text="Prodat" id="3288"/>
+        <text name="Button_Yes" text="Ano" id="3289"/>
+        <text name="Button_Back" text="Zpět" id="3290"/>
+        <text name="Button_Cancel" text="Zrušit" id="3291"/>
+        <text name="Button_Continue" text="Pokračovat" id="3292"/>
+        <text name="Button_Delete" text="Smazat" id="3293"/>
+        <text name="Button_JoinGame" text="Připojit se ke hře" id="3294"/>
+        <text name="Button_CreateGame" text="Vytvořit hru" id="3295"/>
+        <text name="Button_Profile" text="Profil" id="3296"/>
+        <text name="Button_Multiplayer" text="Hra pro více hráčů" id="3297"/>
+        <text name="Button_Refresh" text="Aktualizovat" id="3298"/>
+        <text name="Button_Accept" text="Přijmout" id="3299"/>
+        <text name="Button_Deny" text="Odmítnout" id="3300"/>
+        <text name="Button_DenyAlways" text="Odmítnout vždy" id="3301"/>
+        <text name="Button_Ok" text="OK" id="3302"/>
+        <text name="Button_Add" text="Přidat" id="3303"/>
+        <text name="Button_Remove" text="Odstranit" id="3304"/>
+        <text name="Button_Add_Mods" text="Přidat mody" id="3305"/>
+        <text name="Button_Transfer" text="Převod" id="3306"/>
+        <text name="Button_Detail" text="Podrobnosti" id="3307"/>
+        <text name="Button_Defaults" text="Standardní" id="3308"/>
+        <text name="Button_Filter" text="Filtr" id="3309"/>
+        <text name="Button_Choose_Mods" text="Vybrat mody" id="3310"/>
+        <text name="Button_Mods" text="Mody" id="3311"/>
+        <text name="Button_GetMods" text="Stáhnout mody/DLC" id="3312"/>
+        <text name="Button_Choose_Another_Port" text="Vybrat jiný port" id="3313"/>
+        <text name="Button_Start_Anyway" text="I přesto začít" id="3314"/>
+        <text name="Button_Download_Patch" text="Stáhnout aktualizaci" id="3315"/>
+        <text name="Button_Purchase_Now" text="Koupit hru nyní" id="3316"/>
+        <text name="Button_Select_All_Mods" text="Vybrat všechny mody" id="3317"/>
+        <text name="Button_Deselect_All_Mods" text="Odznačit všechny mody" id="3318"/>
+        <text name="Button_GamesloadDownload" text="Načíst plnou verzi" id="3319"/>
+        <text name="Amount" text="Množství" id="3320"/>
+        <text name="Balance" text="Bilance" id="3321"/>
+        <text name="ServerName" text="Název hry" id="3322"/>
+        <text name="Password" text="Heslo" id="3323"/>
+        <text name="NoPassword" text="Bez hesla" id="3324"/>
+        <text name="Internet_Connection" text="Připojení k internetu" id="3325"/>
+        <text name="MaxNumPlayers" text="Max. hráčů" id="3326"/>
+        <text name="NumPlayers" text="Počet hráčů" id="3327"/>
+        <text name="AutoAccept" text="Přijmout automaticky" id="3328"/>
+        <text name="NotAllModsAvailable" text="Nemáte nainstalované všechny požadované mody/DLC." id="3329"/>
+        <text name="Mods" text="Mody" id="3330"/>
+        <text name="ModFileHash" text="Hash" id="3331"/>
+        <text name="ModVersion" text="Verze" id="3332"/>
+        <text name="ModNotAvailable" text="Není k dispozici" id="3333"/>
+        <text name="ModsDLCs" text="Mody/DLC" id="3334"/>
+        <text name="Port" text="Port" id="3335"/>
+        <text name="Text_Saving" text="UKLÁDÁM..." id="3336"/>
+        <text name="gamePaused" text="Hra byla pozastavena." id="3337"/>
+        <text name="Capacity" text="Hra není plná" id="3338"/>
+        <text name="noMods" text="Bez modů" id="3339"/>
+        <text name="onlyAvailableMods" text="Pouze nainstalované mody/DLC" id="3340"/>
+        <text name="Port_Test_Failed" text="Vybraný port nefunguje správně. K vaší hře se ostatní hráči možná nebudou moci připojit. Aktivujte na svém routeru UPNP nebo port přesměrujte ručně." id="3341"/>
+        <text name="Port_Test_Conflict" text="Vybraný port je již využíván jiným počítačem ve vaší místní síti. Zvolte prosím jiný port." id="3342"/>
+        <text name="Testing_port" text="Probíhá testování vybraného portu..." id="3343"/>
+        <text name="ServerName_Game" text="Hra" id="3344"/>
+        <text name="this_player_wants_to_join_your_game" text="K vaší hře by se rád připojil následující hráč:" id="3345"/>
+        <text name="TypeDesc_Mower" text="sekačka" id="3346"/>
+        <text name="TypeDesc_ManureSpreader" text="rozmetadlo" id="3347"/>
+        <text name="TypeDesc_ManureBarrel" text="fekál" id="3348"/>
+        <text name="TypeDesc_Cultivator" text="kultivátor" id="3349"/>
+        <text name="TypeDesc_Sprayer" text="posktřikovač" id="3350"/>
+        <text name="TypeDesc_Seeder" text="sečka" id="3351"/>
+        <text name="TypeDesc_Plough" text="pluh" id="3352"/>
+        <text name="TypeDesc_ForageWagon" text="sběrák" id="3353"/>
+        <text name="TypeDesc_Cutter" text="sekačka" id="3354"/>
+        <text name="TypeDesc_Tedder" text="obracečka" id="3355"/>
+        <text name="TypeDesc_Baler" text="balíkovač" id="3356"/>
+        <text name="TypeDesc_BaleLoader" text="vůz na balíky" id="3357"/>
+        <text name="TypeDesc_Weight" text="váha" id="3358"/>
+        <text name="TypeDesc_Plow" text="štít" id="3359"/>
+        <text name="TypeDesc_CornCutter" text="lišta" id="3360"/>
+        <text name="TypeDesc_Windrower" text="řádkovač" id="3361"/>
+        <text name="TypeDesc_Trailer" text="vlek" id="3362"/>
+        <text name="BALELOADER_WORK" text="Pracovní poloha" id="3363"/>
+        <text name="BALELOADER_TRANSPORT" text="Transportní poloha" id="3364"/>
+        <text name="BALELOADER_UNLOAD" text="Vyložit balíky" id="3365"/>
+        <text name="BALELOADER_SINK" text="Spustit nákladní plošinu" id="3366"/>
+        <text name="BALELOADER_ABORT" text="Zrušit vykládání" id="3367"/>
+        <text name="BALELOADER_UP" text="Probíhá naklápění. Čekejte, prosím..." id="3368"/>
+        <text name="BALELOADER_DOWN" text="Probíhá spouštění. Čekejte prosím..." id="3369"/>
+        <text name="BALELOADER_READY" text="Vyložit balíky zde" id="3370"/>
+        <text name="Map01_Title" text="Mapa 1" id="3371"/>
+        <text name="Map01_Description" text="Čeká na vás úplně nová oblast." id="3372"/>
+        <text name="section_tractors" text="Traktory" id="3373"/>
+        <text name="section_combines" text="Kombajny" id="3374"/>
+        <text name="section_trailers" text="Vleky" id="3375"/>
+        <text name="section_tools" text="Stroje" id="3376"/>
+        <text name="section_misc" text="Různé" id="3377"/>
+        <text name="section_animals" text="Zvířata" id="3378"/>
+        <text name="section_mods" text="Mody" id="3379"/>
+        <text name="SelectActionToRemap" text="Vyberte akci, kterou chcete převolit." id="3380"/>
+        <text name="ActionRemapped" text="&quot;%s&quot; bylo převoleno na %s." id="3381"/>
+        <text name="KeyAlreadyMapped" text="Poznámka: Tato klávesa je přiřazena k několika akcím." id="3382"/>
+        <text name="MouseAlreadyMapped" text="Poznámka: Toto tlačítko myši je přiřazeno k několika akcím." id="3383"/>
+        <text name="ButtonAlreadyMapped" text="Poznámka: Toto tlačítko je přiřazeno k několika akcím." id="3384"/>
+        <text name="AxisAlreadyMapped" text="Poznámka: Tato osa je přiřazena k několika akcím." id="3385"/>
+        <text name="CannotMapMouseHere" text="Tuto akci nelze přiřadit k tlačítku myši." id="3386"/>
+        <text name="CannotMapKeyHere" text="Tuto akci nelze přiřadit ke klávese." id="3387"/>
+        <text name="CannotMapGamepadHere" text="Tuto akci nelze přiřadit ke vstupu gamepadu." id="3388"/>
+        <text name="PressKeyToMap" text="Stiskněte klávesu, kterou chcete přiřadit k &quot;%s&quot;." id="3389"/>
+        <text name="PressMouseButtonToMap" text="Stiskněte tlačítko myši, které chcete přiřadit k &quot;%s&quot;." id="3390"/>
+        <text name="PressGamepadButtonToMap" text="Přiřaďte akci &quot;%s&quot; osu nebo tlačítko." id="3391"/>
+        <text name="KeyCannotBeMapped" text="Stisknutou klávesu nelze přiřadit. Vyberte prosím jinou." id="3392"/>
+        <text name="PressESCToCancel" text="Současné navolení klávesy zrušíte stisknutím ESC nebo ji můžete stisknutím Backspace odstranit." id="3393"/>
+        <text name="YouWantToResetVehicles" text="Opravdu chcete resetovat vozidla?" id="3394"/>
+        <text name="LoseChangesTitle" text="Opravdu chcete konec?" id="3395"/>
+        <text name="LoseChangesText" text="Opravdu chcete zrušit své změny?" id="3396"/>
+        <text name="LoadDefaultsText" text="Opravdu chcete načíst výchozí nastavení?" id="3397"/>
+        <text name="DialogYes" text="Ano" id="3398"/>
+        <text name="DialogNo" text="Ne" id="3399"/>
+        <text name="action" text="Akce" id="3400"/>
+        <text name="key1" text="Klávesa 1" id="3401"/>
+        <text name="key2" text="Klávesa 2" id="3402"/>
+        <text name="mouse" text="Myš" id="3403"/>
+        <text name="gamepad" text="Gamepad" id="3404"/>
+        <text name="AXIS_MOVE_FORWARD_PLAYER_1" text="Jít dozadu" id="3405"/>
+        <text name="AXIS_MOVE_FORWARD_PLAYER_2" text="Jít dopředu" id="3406"/>
+        <text name="AXIS_MOVE_SIDE_PLAYER_1" text="Jít doprava" id="3407"/>
+        <text name="AXIS_MOVE_SIDE_PLAYER_2" text="Jít doleva" id="3408"/>
+        <text name="AXIS_LOOK_UPDOWN_PLAYER_1" text="Podívat se dolů" id="3409"/>
+        <text name="AXIS_LOOK_UPDOWN_PLAYER_2" text="Podívat se nahoru" id="3410"/>
+        <text name="AXIS_LOOK_LEFTRIGHT_PLAYER_1" text="Podívat se doprava" id="3411"/>
+        <text name="AXIS_LOOK_LEFTRIGHT_PLAYER_2" text="Podívat se doleva" id="3412"/>
+        <text name="AXIS_MOVE_FORWARD_VEHICLE_1" text="Jet dozadu" id="3413"/>
+        <text name="AXIS_MOVE_FORWARD_VEHICLE_2" text="Jet dopředu" id="3414"/>
+        <text name="AXIS_MOVE_SIDE_VEHICLE_1" text="Zatočit doprava" id="3415"/>
+        <text name="AXIS_MOVE_SIDE_VEHICLE_2" text="Zatočit doleva" id="3416"/>
+        <text name="AXIS_LOOK_UPDOWN_VEHICLE_1" text="Podívat se dolů (vozidlo)" id="3417"/>
+        <text name="AXIS_LOOK_UPDOWN_VEHICLE_2" text="Podívat se nahoru (vozidlo)" id="3418"/>
+        <text name="AXIS_LOOK_LEFTRIGHT_VEHICLE_1" text="Podívat se doprava (vozidlo)" id="3419"/>
+        <text name="AXIS_LOOK_LEFTRIGHT_VEHICLE_2" text="Podívat se doleva (vozidlo)" id="3420"/>
+        <text name="TAKE_SCREENSHOT" text="Uložit obrázek" id="3421"/>
+        <text name="FREEZE_PHYSICS" text="Zastavit fyziku" id="3422"/>
+        <text name="ATTACH" text="Zapřáhnout"/>
+        <text name="ENTER" text="Nasednout"/>
+        <text name="HONK" text="Zatroubit"/>        
+		<text name="CAMERA_SWITCH" text="Vybrat kameru" id="3423"/>
+        <text name="TOGGLE_LIGHTS" text="Zapnout světlo" id="3424"/>
+        <text name="LOWER_IMPLEMENT" text="Spustit stroj" id="3425"/>
+        <text name="IMPLEMENT_EXTRA" text="Funkce stroje 1" id="3426"/>
+        <text name="IMPLEMENT_EXTRA2" text="Funkce stroje 2" id="3427"/>
+        <text name="IMPLEMENT_EXTRA3" text="Funkce stroje 3" id="3428"/>
+        <text name="ACTIVATE_THRESHING" text="Přepnout sekačku" id="3429"/>
+        <text name="EMPTY_GRAIN" text="Vyprázdnit mlátičku" id="3430"/>
+        <text name="SWITCH_IMPLEMENT" text="Vybrat stroj" id="3431"/>
+        <text name="SPEED_LEVEL1" text="Rychlost 1" id="3432"/>
+        <text name="SPEED_LEVEL2" text="Rychlost 2" id="3433"/>
+        <text name="SPEED_LEVEL3" text="Rychlost 3" id="3434"/>
+        <text name="SPEED_LEVEL4" text="Rychlost sklízení" id="3435"/>
+        <text name="TOGGLE_AI" text="Přepnout pracovníka" id="3436"/>
+        <text name="TOGGLE_PDA" text="PDA" id="3437"/>
+        <text name="TOGGLE_PDA_ZOOM" text="Přiblížit/Oddálit PDA mapu" id="3438"/>
+        <text name="TOGGLE_STORE" text="Obchod" id="3439"/>
+        <text name="TOGGLE_ADMIN" text="Obrazovka správy (hra pro více hráčů)" id="3440"/>
+        <text name="TOGGLE_HELP_TEXT" text="Zap./Vyp. nápovědu" id="3441"/>
+        <text name="SKIP_MESSAGE_BOX" text="Přeskočit okno zpráv" id="3442"/>
+        <text name="FRONTLOADER_ARM_POS" text="Přední rameno nakladače 1 nahoru" id="3443"/>
+        <text name="FRONTLOADER_ARM_NEG" text="Přední rameno nakladače 1 dolů" id="3444"/>
+        <text name="FRONTLOADER_TILT_POS" text="Přední rameno nakladače 2 nahoru" id="3445"/>
+        <text name="FRONTLOADER_TILT_NEG" text="Přední rameno nakladače 2 dolů" id="3446"/>
+        <text name="CAMERA_ZOOM_IN" text="Přiblížit kameru" id="3447"/>
+        <text name="CAMERA_ZOOM_OUT" text="Oddálit kameru" id="3448"/>
+        <text name="SWITCH_VEHICLE" text="Přepnout vozidlo" id="3449"/>
+        <text name="ACTIVATE_HANDTOOL" text="Aktivovat nástroj ruky" id="3450"/>
+        <text name="JUMP" text="Skočit" id="3451"/>
+        <text name="RUN" text="Běžet" id="3452"/>
+        <text name="CHAT" text="Chat (hra pro více hráčů)" id="3453"/>
+        <text name="BANK" text="Převést peníze (hra pro více hráčů)" id="3454"/>
+        <text name="TOGGLE_BEACON_LIGHTS" text="Zap./Vyp. majáky" id="3455"/>
+        <text name="ACTIVATE_OBJECT" text="Aktivovat objekt" id="3456"/>
+        <text name="STARTLE_ANIMAL" text="Vyplašit zvíře" id="3457"/>
+        <text name="PICKUP_OBJECT" text="Sebrat objekt" id="3458"/>
+        <text name="TOGGLE_VEHICLETOOL" text="Přepnout nástroj vozidla" id="3459"/>
+        <text name="MENU" text="Otevřít menu" id="3460"/>
+        <text name="MENU_ACCEPT" text="Přijmout položku v menu" id="3461"/>
+        <text name="MENU_CANCEL" text="Zrušit položku v menu" id="3462"/>
+        <text name="MENU_UP" text="Soustředit menu nahoru" id="3463"/>
+        <text name="MENU_DOWN" text="Soustředit menu dolů" id="3464"/>
+        <text name="MENU_LEFT" text="Soustředit menu doleva" id="3465"/>
+        <text name="MENU_RIGHT" text="Soustředit menu doprava" id="3466"/>
+        <text name="AXIS_FRONTLOADER_ARM_1" text="Zvednout přední rameno nakladače" id="3467"/>
+        <text name="AXIS_FRONTLOADER_ARM_2" text="Spustit přední rameno nakladače" id="3468"/>
+        <text name="AXIS_FRONTLOADER_TOOL_1" text="Zvednout nástroj předního ramene" id="3469"/>
+        <text name="AXIS_FRONTLOADER_TOOL_2" text="Spustit nástroj předního ramene" id="3470"/>
+        <text name="AXIS_TELEHANDLER_ARM_1" text="Zvednout teleskopické rameno nakladače" id="3471"/>
+        <text name="AXIS_TELEHANDLER_ARM_2" text="Spustit teleskopické rameno nakladače" id="3472"/>
+        <text name="AXIS_TELEHANDLER_INNER_ARM_1" text="Natáhnout teleskopické rameno nakladače" id="3473"/>
+        <text name="AXIS_TELEHANDLER_INNER_ARM_2" text="Stáhnout teleskopické rameno nakladače" id="3474"/>
+        <text name="AXIS_TELEHANDLER_TOOL_1" text="Zvednout nástroj teleskopického nakladače" id="3475"/>
+        <text name="AXIS_TELEHANDLER_TOOL_2" text="Spustit nástroj teleskopického nakladače" id="3476"/>
+        <text name="achievementUnlocked" text="Úspěch odemčen:" id="3477"/>
+        <text name="A_Name_Money1Million" text="Zbohatlík" id="3478"/>
+        <text name="A_Desc_Money1Million" text="Váš účet přesáhl 1 milión Kč." id="3479"/>
+        <text name="A_Name_Money5Million" text="Zazobanec" id="3480"/>
+        <text name="A_Desc_Money5Million" text="Na svém účtě máte přes 5 miliónů Kč." id="3481"/>
+        <text name="A_Name_Money10Million" text="Peněz jako šlupek" id="3482"/>
+        <text name="A_Desc_Money10Million" text="Váš majetek přesáhl 10 miliónů Kč." id="3483"/>
+        <text name="A_Name_TraveledDistance100" text="Mobilní zemědělec" id="3484"/>
+        <text name="A_Desc_TraveledDistance100" text="Najeli jste se svými vozidly více než 160 km." id="3485"/>
+        <text name="A_Name_TraveledDistance1000" text="Zkušený řidič" id="3486"/>
+        <text name="A_Desc_TraveledDistance1000" text="Celkově jste již ujeli více než 1600 km." id="3487"/>
+        <text name="A_Name_PlayTime10" text="Vytrvalý hráč" id="3488"/>
+        <text name="A_Desc_PlayTime10" text="Váš herní čas s jedním uložením přesáhl 10 hodin." id="3489"/>
+        <text name="A_Name_ThreshedHectares10" text="Plody vaší práce" id="3490"/>
+        <text name="A_Desc_ThreshedHectares10" text="Sklidili jste více než 10 hektarů." id="3491"/>
+        <text name="A_Name_ThreshedHectares100" text="Král sklizně" id="3492"/>
+        <text name="A_Desc_ThreshedHectares100" text="Sklidili jste více než 100 hektarů." id="3493"/>
+        <text name="A_Name_SeededHectares10" text="Sečka" id="3494"/>
+        <text name="A_Desc_SeededHectares10" text="Oseli jste více než 10 hektarů." id="3495"/>
+        <text name="A_Name_SeededHectares100" text="Masová produkce" id="3496"/>
+        <text name="A_Desc_SeededHectares100" text="Vámi osetá oblast přesahuje 100 hektarů." id="3497"/>
+        <text name="A_Name_DeliveredBottles50" text="Čistič" id="3498"/>
+        <text name="A_Desc_DeliveredBottles50" text="Našli jste a vrátili 50 láhví." id="3499"/>
+        <text name="A_Name_DeliveredBottles100" text="Vraceč lahví" id="3500"/>
+        <text name="A_Desc_DeliveredBottles100" text="Našli jste a vrátli všech 100 lahví." id="3501"/>
+        <text name="achievementStats" text="Odemčené úspěchy: %d/%d" id="3502"/>
+        <text name="unlockedOldtimerTitle" text="Byl odemčen Deutz F1 M414!" id="3503"/>
+        <text name="unlockedOldtimerMessage" text="Právě jste odemkli polovinu úspěchů! Majitel zemědělského obchodu se rozhodl, že vám zdarma poskytne vzácné vozidlo. Běžte si ho vyzvednout do obchodu." id="3504"/>
+        <text name="gotAllAchievementsTitle" text="!!! GRATULUJEME !!!" id="3505"/>
+        <text name="gotAllAchievementsMessage" text="Odemkli jste všechny úspěchy! Vaše úspěchy okouzlily jednoho výstředního miliardáře, který se rozhodl, že vám daruje skromnou sumu 25 milionů Kč." id="3506"/>
+        <text name="AutoSave" text="Automatické uložení" id="3507"/>
+        <text name="NumOfNumOpenGames" text="%d z %d otevřených her" id="3509"/>
+        <text name="Button_Advanced" text="Pokročilé" id="3510"/>
+        <text name="GamepadDeadzone" text="Mrtvá zóna gamepadu" id="3511"/>
+        <text name="MouseSensitivity" text="Citlivost myši" id="3512"/>
+        <text name="YouWantToDeleteThisMod" text="Opravdu chcete smazat tento mod?" id="3514"/>
+        <text name="Permission_OwnMoney" text="Oddělený účet" id="3515"/>
+        <text name="Permission_SellVehicles" text="Prodat vozidla" id="3516"/>
+        <text name="ClientPermissions" text="Povolení ostatních hráčů" id="3517"/>
+        <text name="Permission_CreateFields" text="Vytvořit nová pole" id="3518"/>
+        <text name="FirstFillTheTool" text="Nejprve musíte tento nástroj naplnit" id="3519"/>
+        <text name="ClientAccountsDisabled" text="Nejprve musíte v menu správy aktivovat oddělené účty pro ostatní hráče." id="3520"/>
+        <text name="Button_Players" text="Hráči" id="3893"/>
+        <text name="Button_Kick" text="Vyhodit" id="3894"/>
+        <text name="Button_Ban" text="Zákaz" id="3895"/>
+    </texts>
+</l10n>

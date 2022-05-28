@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<AnimalDefinition name="Cow"
+        speedWander="0.9" speedWalk="1.2" speedRace="5.0"
+        accelerationWander="1.0" accelerationWalk="1.3" accelerationRace="4.0" >
+    <Mesh i3d="dataS2/character/cow/cowAnimation.i3d" 
+        meshIndex="1"
+        rootBoneIndex="0"
+        translationMarkerIndex="2"
+        boundingBoxIndex="3" />
+    <!--AIData xml="TODO"/-->
+    <AnimationData xml="dataS/character/cow/animationData.xml"/>
+    <NameList useI18N="false" languagePrefix="COWNAME" minIndex="1" maxIndex="20">
+		<Name name="Susanne" />
+		<Name name="Margarete" />
+		<Name name="Resi" />
+        <Name name="Erna" />
+        <Name name="Elvis" />
+        <Name name="Betsy" />
+        <Name name="Alma" />
+        <Name name="Berta" />
+        <Name name="Susi" />
+        <Name name="Bella" />
+        <Name name="Elsa" />
+        <Name name="Paula" />
+        <Name name="Zenzi" />
+        <Name name="Frieda" />
+        <Name name="Karla" />
+        <Name name="Franzi" />
+        <Name name="Wanda" />
+        <Name name="Flora" />
+        <Name name="Laura" />
+        <Name name="Sina" />
+        <Name name="Fiona" />
+        <Name name="Diana" />
+        <Name name="Tina" />
+        <Name name="Nina" />
+        <Name name="Bianca" />
+        <Name name="Petra" />
+        <Name name="Nora" />
+        <Name name="Pia" />
+        <Name name="Tamara" />
+        <Name name="Berna" />
+        <Name name="Anita" />
+		<Name name="Brenda" />
+		<Name name="Betina" />
+		<Name name="Adelgunde" />
+		<Name name="Babette" />
+    </NameList>
+</AnimalDefinition>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpen" onClose="onClose">
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/background01.png" imageColor="1 1 1 1">
+        <GuiElement type="bitmap" position="0.16 0.5" size="0.7 0.46666" imageFilename="dataS2/menu/main_logo$l10nSuffix.png" imageColor="1 1 1 1"/>
+         <GuiElement type="bitmap" position="0.23 0.134" size="0.72 0.45" imageFilename="dataS2/menu/settings_background.png" imageColor="1 1 1 1"/>
+
+
+        <GuiElement type="textInput" profile="defaultTextInput" position="0.45 0.5" text="Lsim Server" onCreate="onCreateServerName" maxCharacters="16" focusId="3" focusChangeLeft="1" focusChangeBottom="4" />
+
+		<GuiElement type="multiTextOption" position="0.45 0.43" onClick="onClickBandwidth" onCreate="onCreateBandwidth">
+            <GuiElement type="button" profile="leftButton" position="0 0" focusId="4" focusChangeLeft="2" focusChangeRight="5" focusChangeTop="3" focusChangeBottom="6" />
+            <GuiElement type="button" profile="rightButton" position="0.34 0" focusId="5" focusChangeLeft="4" focusChangeTop="3" focusChangeBottom="7" />
+            <GuiElement type="text" profile="defaultText" position="0.062 0.008" size="0.3125 0.2" textSize="0.025" text2Size="0.025" alignment="center"/>
+        </GuiElement>
+
+		<GuiElement type="multiTextOption" position="0.45 0.36" onClick="numPlayerOnClick" onCreate="numPlayerOnCreate">
+            <GuiElement type="button" profile="leftButton" position="0 0" focusId="6" focusChangeLeft="2" focusChangeRight="7" focusChangeTop="4" focusChangeBottom="8" />
+            <GuiElement type="button" profile="rightButton" position="0.34 0" focusId="7" focusChangeLeft="6" focusChangeTop="5" focusChangeBottom="8" />
+            <GuiElement type="text" profile="defaultText" position="0.062 0.008" size="0.3125 0.2" textSize="0.025" text2Size="0.025" alignment="center"/>
+        </GuiElement>
+
+        <GuiElement type="textInput" profile="defaultTextInput" position="0.45 0.29" text="" onCreate="onCreatePassword" maxCharacters="16" focusId="8" focusChangeLeft="2" focusChangeTop="6" focusChangeBottom="10" />
+
+        <!--GuiElement type="toggleButton" profile="defaultToggleButton" position="0.45 0.22" onClick="toggleAutoAcceptOnClick" onCreate="toggleAutoAcceptOnClickOnCreate" focusId="9" focusChangeLeft="2" focusChangeTop="8" focusChangeBottom="10" >
+            <GuiElement type="button" profile="defaultCheckedButton" position="0 0" />
+            <GuiElement type="button" profile="defaultUncheckedButton" position="0 0" />
+        </GuiElement-->
+
+        <GuiElement type="textInput" profile="defaultTextInput" position="0.45 0.22" text="" onCreate="onCreatePort" onIsUnicodeAllowed="onIsUnicodeAllowed" maxCharacters="5" focusId="10" focusChangeLeft="2" focusChangeTop="8" focusChangeBottom="11" focusChangeRight="6b" />
+
+        <GuiElement type="button" profile="defaultLargeButton" position="0.408 0.15"  text="$l10n_Button_Add_Mods" onClick="onAddModsClick" focusId="11" focusChangeLeft="2" focusChangeTop="10" />
+
+		<!--GuiElement type="text" profile="defaultText" position="0.71 0.292" size="0.41 0.2" textSize="0.03" text2Size="0.03" text="" alignment="left" onCreate="onCreatePortFeedback"/-->
+        <!--GuiElement type="button" profile="defaultLargeButton" position="0.408 0.29" text="$l10n_Button_CheckPort" onClick="onCheckPortClick" focusId="6" focusChangeLeft="2" focusChangeTop="5" focusChangeBottom="7" /-->
+		<!--GuiElement type="toggleButton" profile="defaultToggleButton" position="0.625 0.28" onClick="toggleModsOnClick" onCreate="toggleModsCreate">
+            <GuiElement type="button" profile="defaultCheckedButton" position="0 0"/>
+            <GuiElement type="button" profile="defaultUncheckedButton" position="0 0"/>
+        </GuiElement-->
+
+
+        <GuiElement type="text" profile="defaultText" position="0 0.508"  size="0.42 0.2" textSize="0.025" text2Size="0.025" text="$l10n_ServerName" alignment="right"/>
+        <GuiElement type="text" profile="defaultText" position="0 0.438" size="0.42 0.2" textSize="0.025" text2Size="0.025" text="$l10n_Internet_Connection" alignment="right"/>
+        <GuiElement type="text" profile="defaultText" position="0 0.368" size="0.42 0.2" textSize="0.025" text2Size="0.025" text="$l10n_MaxNumPlayers" alignment="right"/>
+        <GuiElement type="text" profile="defaultText" position="0 0.298" size="0.42 0.2" textSize="0.025" text2Size="0.025" text="$l10n_Password" alignment="right"/>
+        <GuiElement type="text" profile="defaultText" position="0 0.228" size="0.42 0.2" textSize="0.025" text2Size="0.025" text="$l10n_Port" alignment="right"/>
+		<GuiElement type="text" profile="defaultText" position="0 0.158" size="0.42 0.2" textSize="0.025" text2Size="0.025" text="$l10n_ModsDLCs" alignment="right"/>
+
+
+        <GuiElement type="button" profile="defaultButton" position="0.05 0.5"  text="$l10n_Button_Start" onClick="onStartClick" focusId="1" focusChangeRight="3" focusChangeBottom="2" />
+        <GuiElement type="button" profile="defaultButton" position="0.05 0.43" text="$l10n_Button_Back" onClick="onBackClick" focusId="2" focusChangeRight="4" focusChangeTop="1" focusInit="onOpen" />
+    </GuiElement>
+</GUI>
+

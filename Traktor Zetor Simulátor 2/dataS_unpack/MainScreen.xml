@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onCreate="onCreate" onOpen="onOpen" onClose="onClose">
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/background01.png" imageColor="1 1 1 1">
+        <GuiElement type="bitmap" position="0.16 0.5" size="0.7 0.46666" imageFilename="dataS2/menu/main_logo$l10nSuffix.png" imageColor="1 1 1 1"/>
+
+        <GuiElement type="button" profile="defaultLargeButton" position="0.05 0.58" text="$l10n_Button_Career" onCreate="onCareerCreate" onClick="onCareerClick" focusId="1" focusChangeTop="7" focusChangeBottom="2" focusInit="onCreate" />
+        <GuiElement type="button" profile="defaultLargeButton" position="0.05 0.5" text="$l10n_Button_Missions" onCreate="onMissionsCreate" onClick="onMissionsClick" focusId="2" focusChangeTop="1" focusChangeBottom="3" />
+        <GuiElement type="button" profile="defaultLargeButton" position="0.05 0.42" text="$l10n_Button_Multiplayer" onCreate="onMultiplayerCreate" onClick="onMultiplayerClick" focusId="3" focusChangeTop="2" focusChangeBottom="4" />
+        <GuiElement type="button" profile="defaultLargeButton" position="0.05 0.34" text="$l10n_Button_Achievements" onCreate="onAchievementsCreate" onClick="onAchievementsClick" focusId="4" focusChangeTop="3" focusChangeBottom="5" />
+        <GuiElement type="button" profile="defaultLargeButton" position="0.05 0.26" text="$l10n_Button_Settings" onCreate="onSettingsCreate" onClick="onSettingsClick" focusId="5" focusChangeTop="4" focusChangeBottom="6" />
+        <GuiElement type="button" profile="defaultLargeButton" position="0.05 0.18" text="$l10n_Button_Credits" onCreate="onCreditsCreate" onClick="onCreditsClick" focusId="6" focusChangeTop="5" focusChangeBottom="7" />
+        <GuiElement type="button" profile="defaultLargeButton" position="0.05 0.1" text="$l10n_Button_Quit" onCreate="onQuitCreate" onClick="onQuitClick" focusId="7" focusChangeTop="6" focusChangeBottom="1" />
+
+        <GuiElement type="text" profile="defaultText" position="0.01 0.005" textSize="0.025" text2Size="0.025" textBold="false" text2Bold="false" onCreate="onCreateVersion" text="" textWrapWidth="0" size="0.05 0.2" alignment="left"/>
+    </GuiElement>
+</GUI>
+

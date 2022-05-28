@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI>
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/background01.png" imageColor="1 1 1 1" onOpen="onOpen">
+        <!--GuiElement type="bitmap" position="0.0875 -0.07" size="0.825 1.1" imageFilename="dataS/missions/mission00_briefing$l10nSuffix.png" imageColor="1 1 1 1" onCreate="onCreateCareerBriefing"/>
+        <GuiElement type="bitmap" position="0 0.275" size="1 0.725" imageFilename="dataS/missions/mission00_briefing$l10nSuffix.png" imageColor="1 1 1 1" onCreate="onCreateMissionBriefing"/-->
+        
+        <GuiElement type="bitmap" position="0.02286 0.12857" size="0.9543 0.8457" imageFilename="dataS2/menu/briefingScreen/background.png" imageColor="1 1 1 1" onCreate="onBriefingBackgroundCreate" />
+        <GuiElement type="bitmap" position="0.04286 0.68857" size="0.30857 0.25905" imageFilename="dataS2/menu/briefingScreen/blank.png" imageColor="1 1 1 1" onCreate="onImage1Create" />
+        <GuiElement type="bitmap" position="0.04286 0.4219" size="0.30857 0.25905" imageFilename="dataS2/menu/briefingScreen/blank.png" imageColor="1 1 1 1" onCreate="onImage2Create" />
+        <GuiElement type="bitmap" position="0.04286 0.15524" size="0.30857 0.25905" imageFilename="dataS2/menu/briefingScreen/blank.png" imageColor="1 1 1 1" onCreate="onImage3Create" />
+        
+        <GuiElement type="bitmap" position="0.11 0.024" size="0.78 0.06" imageFilename="dataS2/missions/please_wait_background.png" imageColor="1 1 1 1" onCreate="onCreateLoadingBg"/>
+        <GuiElement type="text" profile="defaultTextCentered" text="" position="0.4 0.033" size="0.2 0.1" textSize="0.025" text2Size="0.025" onCreate="onCreateStatus"/>
+        <GuiElement type="text" profile="defaultTextCentered" position="-0.01 0.08" text="" onCreate="onCreateInfoText"/>
+        <GuiElement type="button" profile="defaultButton" position="0.81 0.024" text="$l10n_Button_Cancel" onCreate="onCreateCancelButton" onClick="onCancelClick" focusId="1" focusChangeRight="2" />
+        <GuiElement type="button" profile="defaultButton" text="$l10n_Button_Start" position="0.4 0.0275" visible="false" onClick="onStartClick" onCreate="onCreateLoadingButton" focusId="2" focusChangeLeft="1" focusInit="onOpen" />
+    </GuiElement>
+</GUI>

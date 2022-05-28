@@ -1,0 +1,1623 @@
+﻿
+
+
+<xml>
+    <animationStates>
+        <animationState name="idle"     type="Default" />
+        <animationState name="eatGrass" type="Default" />
+        <animationState name="drink"    type="Default" />
+        <animationState name="eatFood"  type="Default" />
+        <animationState name="walk"     type="Walk" />
+        <animationState name="rest"     type="Default" />
+        <animationState name="sleep"    type="Default" />
+    </animationStates>
+    
+    <animations>
+        <animation type="animation" name="idling1" loop="true" state="idle" clipName="cow_idle_1Source"/>
+
+        <animation type="animation" name="startingToEatGrass1" loop="false" state="eatGrass" clipName="cow_chew_idle_tr_eatSource"/>
+        <animation type="animation" name="eatingGrass1" loop="true" state="eatGrass" clipName="cow_eatSource"/>
+        <animation type="animation" name="chewingGrass1" loop="true" state="eatGrass" clipName="cow_chewSource"/>
+        <animation type="animation" name="stoppingToEatGrass1" loop="false" state="eatGrass" clipName="cow_chew_eat_tr_idleSource"/>
+        
+        <animation type="animation" name="startingToDrink" loop="false" state="drink" clipName="cow_chew_idle_tr_eatSource"/>
+        <!--animation type="animation" name="_startingToDrink" loop="false" state="drink" clipName="cow_chew_idle_tr_eatSource"/-->
+        <!--animation type="mixAnimation" name="startingToDrink"  state="drink" animation1Name="startingToEatGrass1" animation2Name="_startingToDrink"  mixingVariable="clipFactor" minValue="0" maxValue="1"/-->
+        <animation type="animation" name="drinking" loop="true" state="drink" clipName="cow_drink_troughSource"/>
+        <animation type="animation" name="stoppingToDrink" loop="false" state="drink" clipName="cow_chew_eat_tr_idleSource"/>
+        
+        <animation type="animation" name="startingToEatFood" loop="false" state="eatFood" clipName="cow_chew_idle_tr_eatSource"/>
+        <animation type="animation" name="eatingFood" loop="true" state="eatFood" clipName="cow_eat_troughSource"/>
+        <animation type="animation" name="stoppingToEatFood" loop="false" state="eatFood" clipName="cow_chew_eat_tr_idleSource"/>
+        
+        <animation type="animation" name="lieDown"   loop="false" state="rest"   clipName="cow_liedownSource"/>
+        <animation type="animation" name="getUp"     loop="false" state="idle"   clipName="cow_getupSource"/>
+        <animation type="animation" name="sleep"     loop="false" state="sleep"  clipName="cow_sleepSource"/>
+        
+        
+        <!--walkAnimation2 name="idle_short"                    loop="true"  state="walk" clipName="cow_idle_staticSource"          speed="1.0" distance="0.0"   angle="0" /-->        
+        <!--walkAnimation2 name="rotateLeft"                    loop="false" state="walk" clipName="cow_idle_tr_45_left_idleSource"  speed="0.5"  distance="0"    angle="0" finalRotation="0 45 0" /-->
+        <!--walkAnimation2 name="rotateRight"                   loop="false" state="walk" clipName="cow_idle_tr_45_right_idleSource" speed="0.5"  distance="0"    angle="0" finalRotation="0 -45 0" /-->
+
+        <!--blendWalkAnimation2 name="walkAndRotate"            loop="true"  state="walk" clipStandingName="cow_idle_staticSource" clipWalkingLeftName="cow_walk_left_curveSource" clipWalkingRightName="cow_walk_right_curveSource"/-->
+
+        
+<!-- root does not move                          -- no action required -->
+<!-- root does not move, animation should move   -- continuous update to adequate position and direction, source is animation data -->
+<!-- root does not move, animation should move   -- continuous update to adequate position and direction, source is function -->
+<!-- root does move                              -- only one update of position and direction at the end of the animation -->
+
+
+<!-- continuous animations -->
+
+        <animation type="walkAnimation" name="rotateNot"        positionUpdate="final"       state="walk" clipName="cow_idle_staticSource"          speed="1.0"  distance="0.0"  angle="0" />        
+        <animation type="walkAnimation" name="rotateLeft"        positionUpdate="final"      state="walk" clipName="cow_idle_tr_45_left_idleSource"  speed="1.0"  distance="0"    angle="0" finalRotation="0 45 0" />
+        <animation type="walkAnimation" name="rotateRight"       positionUpdate="final"      state="walk" clipName="cow_idle_tr_45_right_idleSource" speed="1.0"  distance="0"    angle="0" finalRotation="0 -45 0" />
+        <animation type="walkMixAnimation" name="rotateArbitraryLeft"  state="walk" initialTime="zero" animation1Name="rotateLeft" animation2Name="rotateNot"  mixingVariable="angle" minValue="-45" maxValue="0"/>
+        <animation type="walkMixAnimation" name="rotateArbitraryRight" state="walk" initialTime="zero" animation1Name="rotateNot" animation2Name="rotateRight" mixingVariable="angle" minValue="0" maxValue="45" isSecondAnimationDriving="true" />
+        
+        
+        <animation type="walkAnimation" name="_idle2walkLeft"   speedScaleUpdate="byAgent"  averageClipSpeed="1.598" positionUpdate="final" state="walk" clipName="cow_idle_tr_walk_left_curve_2Source" />
+        <!--animation type="walkAnimation" name="_idle2walkCenter" speedScaleUpdate="byAgent" positionUpdate="final"      state="walk" clipName="cow_idle_tr_walkSource" /-->
+        <animation type="walkAnimation" name="_idle2walkRight"  speedScaleUpdate="byAgent"  averageClipSpeed="1.598" positionUpdate="final" state="walk" clipName="cow_idle_tr_walk_right_curveSource" />
+        <animation type="walkMixAnimation"   name="idle2walk"   state="walk"  initialTime="zero"  animation1Name="_idle2walkLeft" animation2Name="_idle2walkRight" mixingVariable="angle" minValue="-20" maxValue="20"/>
+        <!--animation type="walkMixAnimation"   name="idle2walkLeft"   state="walk"  initialTime="zero"  animation1Name="_idle2walkLeft" animation2Name="_idle2walkCenter" mixingVariable="angle" minValue="-20" maxValue="0"/>
+        <animation type="walkMixAnimation"   name="idle2walkRight"  state="walk"  initialTime="zero"  animation1Name="_idle2walkCenter" animation2Name="_idle2walkRight" mixingVariable="angle" minValue="0" maxValue="20"/-->
+        <animation type="walkAnimation" name="_idle2runLeft"   speedScaleUpdate="byAgent"  averageClipSpeed="1.598" positionUpdate="final"      state="walk" clipName="cow_idle_tr_curvedcanter_leftSource" />
+        <animation type="walkAnimation" name="_idle2runRight"  speedScaleUpdate="byAgent"  averageClipSpeed="1.598" positionUpdate="final"      state="walk" clipName="cow_idle_tr_curvedcanter_rightSource" />
+        <animation type="walkMixAnimation"   name="idle2run"   state="walk"  initialTime="zero"  animation1Name="_idle2runLeft" animation2Name="_idle2runRight" mixingVariable="angle" minValue="-20" maxValue="20"/>
+        <animation type="walkAnimation" name="_walk2idleLeft"   speedScaleUpdate="byAgent" positionUpdate="final" state="walk" clipName="cow_curvedwalk_left_tr_idleSource" />
+        <animation type="walkAnimation" name="_walk2idleRight"  speedScaleUpdate="byAgent" positionUpdate="final" state="walk" clipName="cow_curvedwalk_right_tr_idleSource" />
+        <animation type="walkMixAnimation"   name="walk2idle"   state="walk"  initialTime="zero"  animation1Name="_walk2idleLeft" animation2Name="_walk2idleRight" mixingVariable="angle" minValue="-20" maxValue="20"/>
+        
+        
+        
+        <animation type="walkAnimation"  name="idleShort"     positionUpdate="none"      loop="true" state="walk" clipName="cow_idle_staticSource"/>
+        <animation type="walkAnimation"  name="walkLeft"      positionUpdate="byAgent" speedScaleUpdate="byAgent" averageClipSpeed="1.598" loop="true" state="walk" clipName="cow_walk_left_curve_tightSource"/>
+        <animation type="walkAnimation"  name="walkRight"     positionUpdate="byAgent" speedScaleUpdate="byAgent" averageClipSpeed="1.598" loop="true" state="walk" clipName="cow_walk_right_curve_tightSource"/>
+        <animation type="walkAnimation"  name="runLeft"       positionUpdate="byAgent" speedScaleUpdate="byAgent" averageClipSpeed="2.28237" loop="true" state="walk" clipName="cow_canter_left_curve_slowSource"/>
+        <animation type="walkAnimation"  name="runRight"      positionUpdate="byAgent" speedScaleUpdate="byAgent" averageClipSpeed="2.28237" loop="true" state="walk" clipName="cow_canter_right_curve_slowSource"/>
+        
+        <animation type="walkMixAnimation"   name="walkAndRotate"        state="walk" animation1Name="walkLeft" animation2Name="walkRight" mixingVariable="angle" minValue="-20" maxValue="20"/>
+        <animation type="walkMixAnimation"   name="runAndRotate"         state="walk" animation1Name="runLeft" animation2Name="runRight" mixingVariable="angle" minValue="-20" maxValue="20"/>
+
+        <animation type="walkMixAnimation"   name="walk2runAndRotate"    state="walk" animation1Name="walkAndRotate" animation2Name="runAndRotate" mixingVariable="forwardSpeed" minValue="2.0" maxValue="2.5"/>
+
+
+
+<!-- step system -->
+        <animation type="walkAnimation" name="stepIdle2WalkLeftTurn"     speedScaleUpdate="byAnimationTransition" positionUpdate="final"      state="walk" clipName="cow_idle_tr_walkSource" />
+        <animation type="walkAnimation" name="stepIdle2WalkRightTurn"    speedScaleUpdate="byAnimationTransition" positionUpdate="final"      state="walk" clipName="cow_idle_tr_walkSource" />
+        <animation type="walkAnimation" name="stepIdle2RunLeftTurn"      speedScaleUpdate="byAnimationTransition" positionUpdate="final"      state="walk" clipName="cow_idle_tr_canterSource" />
+        <animation type="walkAnimation" name="stepIdle2RunRightTurn"     speedScaleUpdate="byAnimationTransition" positionUpdate="final"      state="walk" clipName="cow_idle_tr_canterSource" />
+        <animation type="walkAnimation" name="stepWalk2IdleLeftTurn"     speedScaleUpdate="byAnimationTransition" positionUpdate="final"      state="walk" clipName="cow_walk_tr_idleSource" />
+        <animation type="walkAnimation" name="stepWalk2IdleRightTurn"    speedScaleUpdate="byAnimationTransition" positionUpdate="final"      state="walk" clipName="cow_walk_tr_idleSource" />
+ 
+        <animation type="walkAnimation"  name="stepIdleShort"     positionUpdate="final"      loop="true" state="walk" clipName="cow_idle_staticSource"/>
+        <animation type="walkAnimation"  name="stepWalkLeft"      positionUpdate="continuous" speedScaleUpdate="byAgent" loop="true" state="walk" clipName="cow_walk_left_curve_tightSource"/>
+        <animation type="walkAnimation"  name="stepWalkRight"     positionUpdate="continuous" speedScaleUpdate="byAgent" loop="true" state="walk" clipName="cow_walk_right_curve_tightSource"/>
+        <animation type="walkAnimation"  name="stepRunLeft"       positionUpdate="continuous" speedScaleUpdate="byAgent" loop="true" state="walk" clipName="cow_canter_slowSource"/>
+        <animation type="walkAnimation"  name="stepRunRight"      positionUpdate="continuous" speedScaleUpdate="byAgent" loop="true" state="walk" clipName="cow_canter_slowSource"/>
+        
+        <animation type="walkMixAnimation"   name="stepIdle2Walk"       state="walk" animation1Name="stepIdle2WalkLeftTurn" animation2Name="stepIdle2WalkRightTurn" mixingVariable="angle" minValue="-45" maxValue="45"/>
+        <animation type="walkMixAnimation"   name="stepIdle2Run"        state="walk" animation1Name="stepIdle2RunLeftTurn"  animation2Name="stepIdle2RunRightTurn"  mixingVariable="angle" minValue="-45" maxValue="45"/>
+        <animation type="walkMixAnimation"   name="stepWalk2Idle"       state="walk" animation1Name="stepWalk2IdleLeftTurn" animation2Name="stepWalk2IdleRightTurn" mixingVariable="angle" minValue="-45" maxValue="45"/>
+        <animation type="walkMixAnimation"   name="stepWalkAndRotate"        state="walk" animation1Name="stepWalkLeft" animation2Name="stepWalkRight" mixingVariable="angle" minValue="-45" maxValue="45"/>
+        <animation type="walkMixAnimation"   name="stepRunAndRotate"         state="walk" animation1Name="stepRunLeft" animation2Name="stepRunRight" mixingVariable="angle" minValue="-45" maxValue="45"/>
+
+
+    </animations>
+    
+    
+    
+    <animationPoses>
+        <animationPose name="idlePose" state="idle" />
+        <animationPose name="eatGrassUpPose" state="eatGrass" />
+        <animationPose name="eatGrassUpArrivedPose" state="eatGrass" />
+        <animationPose name="eatGrassDownPose" state="eatGrass" />
+        <animationPose name="eatGrassDownArrivedPose" state="eatGrass" />
+        <animationPose name="drinkUpPose" state="drink" />
+        <animationPose name="drinkDownPose" state="drink" />
+        <animationPose name="drinkDownArrivedPose" state="drink" />
+        <animationPose name="eatFoodUpPose" state="eatFood" />
+        <animationPose name="eatFoodDownPose" state="eatFood" />
+        <animationPose name="eatFoodDownArrivedPose" state="eatFood" />
+        <animationPose name="restPose" state="rest" />
+        <animationPose name="sleepPose" state="sleep" />
+        <walkAnimationPose name="walkIdlePose" state="walk" />
+        <walkAnimationPose name="walkPose" state="walk" />
+        <!---->
+        <walkAnimationPose name="walkRunPose" state="walk" />
+        <!---->
+    </animationPoses>
+    
+    
+    
+    <animationTransitions>
+        <animationTransition sourcePose="idlePose" animation="idling1" targetPose="idlePose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+        
+        <animationTransition sourcePose="idlePose" animation="idling1" targetPose="eatGrassUpPose" beginTimeFactor="0.0" endTimeFactor="0.0"/>
+        <animationTransition sourcePose="eatGrassUpPose" animation="idling1" targetPose="idlePose" beginTimeFactor="0.0" endTimeFactor="0.0"/>
+        <animationTransition sourcePose="idlePose" animation="idling1" targetPose="drinkUpPose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+        <animationTransition sourcePose="drinkUpPose" animation="idling1" targetPose="idlePose" beginTimeFactor="0.0" endTimeFactor="0.0"/>
+        <animationTransition sourcePose="idlePose" animation="idling1" targetPose="eatFoodUpPose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+        <animationTransition sourcePose="eatFoodUpPose" animation="idling1" targetPose="idlePose" beginTimeFactor="0.0" endTimeFactor="0.0"/>
+
+        <animationTransition sourcePose="eatGrassUpPose" animation="startingToEatGrass1" targetPose="eatGrassDownArrivedPose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+        <animationTransition sourcePose="eatGrassDownArrivedPose" animation="eatingGrass1" targetPose="eatGrassDownPose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+        <animationTransition sourcePose="eatGrassDownPose" animation="eatingGrass1" targetPose="eatGrassDownPose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+        <animationTransition sourcePose="eatGrassDownPose" animation="stoppingToEatGrass1" targetPose="eatGrassUpArrivedPose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+        <animationTransition sourcePose="eatGrassUpArrivedPose" animation="chewingGrass1" targetPose="eatGrassUpArrivedPose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+        <animationTransition sourcePose="eatGrassUpArrivedPose" animation="chewingGrass1" targetPose="eatGrassUpPose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+
+        <animationTransition sourcePose="eatGrassUpArrivedPose" animation="idling1" targetPose="idlePose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+
+        <animationTransition sourcePose="drinkUpPose" animation="drinking" targetPose="drinkDownArrivedPose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+        <!--animationTransition sourcePose="drinkUpPose" animation="startingToDrink" targetPose="drinkDownArrivedPose" beginTimeFactor="0.0" endTimeFactor="1.0">
+            <!--controller name="calculateClipFactor" useSubClip="true" subClipId="1" remark="is used as mix animation blend weight"/>
+        </animationTransition-->
+        <animationTransition sourcePose="drinkDownArrivedPose" animation="drinking" targetPose="drinkDownPose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+        <animationTransition sourcePose="drinkDownPose" animation="drinking" targetPose="drinkDownPose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+        <animationTransition sourcePose="drinkDownPose" animation="drinking" targetPose="drinkUpPose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+        <!--animationTransition sourcePose="drinkDownPose" animation="stoppingToDrink" targetPose="drinkUpPose" beginTimeFactor="0.0" endTimeFactor="1.0"/-->
+
+        <animationTransition sourcePose="eatFoodUpPose" animation="eatingFood" targetPose="eatFoodDownArrivedPose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+        <!--animationTransition sourcePose="eatFoodUpPose" animation="startingToEatFood" targetPose="eatFoodDownArrivedPose" beginTimeFactor="0.0" endTimeFactor="1.0"/-->
+        <animationTransition sourcePose="eatFoodDownArrivedPose" animation="eatingFood" targetPose="eatFoodDownPose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+        <animationTransition sourcePose="eatFoodDownPose" animation="eatingFood" targetPose="eatFoodDownPose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+        <animationTransition sourcePose="eatFoodDownPose" animation="eatingFood" targetPose="eatFoodUpPose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+        <!--animationTransition sourcePose="eatFoodDownPose" animation="stoppingToEatFood" targetPose="eatFoodUpPose" beginTimeFactor="0.0" endTimeFactor="1.0"/-->
+
+
+        
+        <animationTransition sourcePose="idlePose" animation="lieDown" targetPose="restPose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+        <animationTransition sourcePose="restPose" animation="sleep" targetPose="restPose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+        <animationTransition sourcePose="restPose" animation="getUp" targetPose="idlePose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+
+        <animationTransition sourcePose="restPose" animation="sleep" targetPose="sleepPose" beginTimeFactor="0.0" endTimeFactor="0.0"/>
+        <animationTransition sourcePose="sleepPose" animation="sleep" targetPose="sleepPose" beginTimeFactor="0.0" endTimeFactor="1.0"/>
+        <animationTransition sourcePose="sleepPose" animation="sleep" targetPose="restPose" beginTimeFactor="0.0" endTimeFactor="0.0"/>
+        
+        
+        <animationTransition sourcePose="idlePose" animation="idling1" targetPose="walkIdlePose" beginTimeFactor="0.0" endTimeFactor="0.0"/>
+        
+
+        <!--animationTransition sourcePose="walkIdlePose" animation="idle2runAndRotate" targetPose="walkRunPose" beginTimeFactor="0.0" endTimeFactor="1.0">
+            <condition variable="distance" operator=">" value="0.5" />
+            <controller name="animationLimitBySpeed" minSpeed="0.01" maxSpeed="2.0" />
+            <controller name="locomotion" />
+        </animationTransition-->
+        <!--animationTransition sourcePose="walkIdlePose" animation="idle2walkAndRotate" targetPose="walkPose" beginTimeFactor="0.0" endTimeFactor="1.0">
+            <condition variable="forwardSpeed" operator=">" value="0.01" />
+            <controller name="animationLimitBySpeed" minSpeed="0.01" maxSpeed="0.25" />
+            <controller name="locomotion" />
+        </animationTransition-->
+        
+        
+<!-- continuous animations -->
+<!---->
+        <!--animationTransition sourcePose="walkIdlePose" animation="idling1" targetPose="idlePose" beginTimeFactor="0.0" endTimeFactor="0.0">
+            <condition variable="distance" operator="<=" value="0.4" />
+            <condition variable="angle" operator="<=" value="30" />
+            <condition variable="angle" operator=">=" value="-30" />
+        </animationTransition-->
+        <animationTransition sourcePose="walkIdlePose" animation="idle2run" targetPose="walkRunPose" beginTimeFactor="0.0" endTimeFactor="1.0">
+            <condition variable="forwardSpeed" operator=">" value="2.5" />
+            <controller name="positionDataUpdate" />
+            <controller name="speedLimit" minSpeed="1.0" />
+            <controller name="preventStateChange" />
+            <!--controller name="shiftPosition" /-->
+            <controller name="navMeshLimiter" />
+            <!--controller name="cctMover" /-->
+            <!--controller name="locomotion2Hack" /-->
+        </animationTransition>
+        <animationTransition sourcePose="walkIdlePose" animation="idle2walk" targetPose="walkPose" beginTimeFactor="0.0" endTimeFactor="1.0">
+            <condition variable="forwardSpeed" operator=">" value="0.6" />
+            <condition variable="distance" operator=">" value="0.6" />
+            <controller name="positionDataUpdate" />
+            <controller name="speedLimit" minSpeed="0.6" />
+            <controller name="preventStateChange" />
+            <!--controller name="shiftPosition" /-->
+            <controller name="navMeshLimiter" />
+            <!--controller name="cctMover" /-->
+            <!--controller name="locomotion2Hack" /-->
+        </animationTransition>
+        <!--animationTransition sourcePose="walkIdlePose" animation="idle2walkLeft" targetPose="walkPose" beginTimeFactor="0.0" endTimeFactor="1.0">
+            <condition variable="forwardSpeed" operator=">" value="0.4" />
+            <condition variable="distance" operator=">" value="0.4" />
+            <condition variable="angle" operator="<" value="0.0" />
+            <controller name="positionDataUpdate" />
+            <controller name="speedLimit" minSpeed="0.4" />
+            <controller name="preventStateChange" />
+        </animationTransition>
+        <animationTransition sourcePose="walkIdlePose" animation="idle2walkRight" targetPose="walkPose" beginTimeFactor="0.0" endTimeFactor="1.0">
+            <condition variable="forwardSpeed" operator=">" value="0.4" />
+            <condition variable="distance" operator=">" value="0.4" />
+            <controller name="positionDataUpdate" />
+            <controller name="speedLimit" minSpeed="0.4" />
+            <controller name="preventStateChange" />
+        </animationTransition-->
+        <animationTransition sourcePose="walkIdlePose" animation="rotateArbitraryLeft" targetPose="walkIdlePose" beginTimeFactor="0.0" endTimeFactor="1.0">
+            <condition variable="angle" operator="<" value="-30" />
+            <controller name="finalPositionDataUpdate" />
+            <controller name="preventStateChange" />
+            <controller name="shiftPosition" />
+        </animationTransition>
+        <animationTransition sourcePose="walkIdlePose" animation="rotateArbitraryRight" targetPose="walkIdlePose" beginTimeFactor="0.0" endTimeFactor="1.0">
+            <condition variable="angle" operator=">" value="30" />
+            <controller name="finalPositionDataUpdate" />
+            <controller name="preventStateChange" />
+            <controller name="shiftPosition" />
+        </animationTransition>
+        <animationTransition sourcePose="walkIdlePose" animation="idleShort" targetPose="walkIdlePose" beginTimeFactor="0.0" endTimeFactor="1.0" >
+            <controller name="positionDataUpdate" />
+            <controller name="animationLimitBySpeed" maxSpeed="0.6" />
+            <controller name="animationLimitByAngle" minAngle="-30" maxAngle="30" />
+            <controller name="preventStateChange" />
+        </animationTransition>
+        <animationTransition sourcePose="walkIdlePose" animation="idling1" targetPose="idlePose" beginTimeFactor="0.0" endTimeFactor="0.0"/>
+
+        
+        <animationTransition sourcePose="walkPose" animation="walk2runAndRotate" targetPose="walkRunPose" beginTimeFactor="0.0" endTimeFactor="1.0">
+            <condition variable="forwardSpeed" operator=">=" value="1.95" />
+            <controller name="positionDataUpdate" />
+            <controller name="speedLimit" minSpeed="0.6" />
+            <controller name="animationLimitBySpeed" minSpeed="0.6" maxSpeed="2.6" />
+            <controller name="locomotion" />
+            <controller name="preventStateChange" />
+            <controller name="shiftPosition" />
+            <controller name="navMeshLimiter" />
+            <!--controller name="cctMover" /-->
+        </animationTransition>
+        <animationTransition sourcePose="walkPose" animation="walk2idle" targetPose="walkIdlePose" beginTimeFactor="0.0" endTimeFactor="1.0">
+            <condition variable="forwardSpeed" operator="<=" value="0.62" />
+            <!--condition flag="isArriving" notSet="true" /-->
+            <controller name="finalPositionDataUpdate" />
+            <controller name="speedLimit" minSpeed="0.6" />
+            <controller name="preventStateChange" />
+            <!--controller name="shiftPosition" positionChangePerS="0.1" /-->
+            <controller name="collection" ifFlag="positionIsConstrained" xxxifNotFlag="isArriving" >
+                <controller name="shiftPositionLinear" positionChangePerS="0.5" />
+                <!--controller name="locomotion2Hack" /-->
+            </controller>
+            <controller name="navMeshLimiter" />
+            <!--controller name="cctMover" /-->
+            <controller name="locomotion2Hack" />
+        </animationTransition>
+        <animationTransition sourcePose="walkPose" animation="walkAndRotate" targetPose="walkPose" beginTimeFactor="0.0" endTimeFactor="1.0" >
+            <controller name="positionDataUpdate" />
+            <controller name="speedLimit" minSpeed="0.6" />
+            <controller name="animationLimitBySpeed" minSpeed="0.6" maxSpeed="2.0" />
+            <controller name="locomotion" />
+            <controller name="preventStateChange" />
+            <controller name="collection" ifFlag="positionIsConstrained" >
+                <controller name="shiftPosition" positionChangePerS="0.5" />
+            </controller>
+            <controller name="navMeshLimiter" />
+            <!--controller name="cctMover" /-->
+        </animationTransition>
+
+        <animationTransition sourcePose="walkRunPose" animation="walk2runAndRotate" targetPose="walkPose" beginTimeFactor="0.0" endTimeFactor="1.0">
+            <condition variable="forwardSpeed" operator="<=" value="2.55" />
+            <controller name="positionDataUpdate" />
+            <controller name="speedLimit" minSpeed="0.6" />
+            <controller name="animationLimitBySpeed" minSpeed="1.9" />
+            <controller name="locomotion" />
+            <controller name="preventStateChange" />
+            <controller name="shiftPosition" />
+            <controller name="navMeshLimiter" />
+            <!--controller name="cctMover" /-->
+        </animationTransition>
+        <animationTransition sourcePose="walkRunPose" animation="runAndRotate" targetPose="walkRunPose" beginTimeFactor="0.0" endTimeFactor="1.0" >
+            <controller name="positionDataUpdate" />
+            <controller name="speedLimit" minSpeed="0.6" />
+            <controller name="animationLimitBySpeed" minSpeed="2.5" />
+            <controller name="locomotion" />
+            <controller name="preventStateChange" />
+            <controller name="shiftPosition" />
+            <controller name="navMeshLimiter" />
+            <!--controller name="cctMover" /-->
+        </animationTransition>
+ <!---->
+        
+        
+        
+<!-- step system -->
+<!-- 
+        <animationTransition sourcePose="walkIdlePose" animation="stepIdle2Walk" targetPose="walkPose" beginTimeFactor="0.0" endTimeFactor="1.0">
+            <condition variable="forwardSpeed" operator=">" value="0.5" />
+            <condition variable="distance" operator=">" value="0.5" />
+            <controller name="stepPositionDataUpdate" />
+            <controller name="limitValue" valueName="forwardSpeed" minValue="0.5" maxValue="1.0" />
+            <controller name="limitValue" valueName="angle" minValue="-45" maxValue="45" />
+        </animationTransition>
+        <animationTransition sourcePose="walkIdlePose" animation="rotateArbitraryLeft" targetPose="walkIdlePose" beginTimeFactor="0.0" endTimeFactor="1.0">
+            <condition variable="angle" operator="<" value="-10" />
+            <controller name="finalPositionDataUpdate" />
+        </animationTransition>
+        <animationTransition sourcePose="walkIdlePose" animation="rotateArbitraryRight" targetPose="walkIdlePose" beginTimeFactor="0.0" endTimeFactor="1.0">
+            <condition variable="angle" operator=">" value="10" />
+            <controller name="finalPositionDataUpdate" />
+        </animationTransition>
+        <animationTransition sourcePose="walkIdlePose" animation="idleShort" targetPose="walkIdlePose" beginTimeFactor="0.0" endTimeFactor="1.0" >
+            <controller name="stepPositionDataUpdate" />
+            <controller name="animationLimitBySpeed" maxSpeed="0.01" />
+            <controller name="animationLimitByAngle" minAngle="-10" maxAngle="10" />
+        </animationTransition>
+        <animationTransition sourcePose="walkIdlePose" animation="idling1" targetPose="idlePose" beginTimeFactor="0.0" endTimeFactor="0.0"/>
+
+        
+        <animationTransition sourcePose="walkPose" animation="stepWalk2Idle" targetPose="walkIdlePose" beginTimeFactor="0.0" endTimeFactor="1.0">
+            <condition variable="forwardSpeed" operator="<=" value="0.5" />
+            <controller name="stepPositionDataUpdate" />
+            <controller name="limitValue" valueName="forwardSpeed" minValue="0.5" maxValue="1.0" />
+            <controller name="limitValue" valueName="angle" minValue="-45" maxValue="45" />
+        </animationTransition>
+        <animationTransition sourcePose="walkPose" animation="stepWalkAndRotate" targetPose="walkPose" beginTimeFactor="0.0" endTimeFactor="1.0" >
+            <controller name="speedLimit" minSpeed="0.5" />
+            <controller name="stepPositionDataUpdate" />
+            <controller name="limitValue" valueName="forwardSpeed" minValue="0.5" maxValue="1.0" />
+            <controller name="limitValue" valueName="angle" minValue="-45" maxValue="45" />
+        </animationTransition>
+<!-- -->
+
+    </animationTransitions>
+    
+    
+    <aiStateAnimationStateMappings>
+        <mapping aiState="EatGrass" animationState="eatGrass" urgency="2"/>
+        <mapping aiState="EatFromFeedingPlace" animationState="eatFood" urgency="2" flagsToSet="positionIsConstrained" />
+        <mapping aiState="DrinkFromWateringPlace" animationState="drink" urgency="2" flagsToSet="positionIsConstrained" />
+        <mapping aiState="Idle" animationState="idle" urgency="3" />
+        <mapping aiState="Walk" animationState="walk" urgency="1" />
+        <mapping aiState="Wander" animationState="walk" urgency="1" />
+        <mapping aiState="Pursuit" animationState="walk" urgency="1" />
+        <mapping aiState="GoToFeedingPlace" animationState="walk" urgency="1" />
+        <mapping aiState="ArriveAtFeedingPlace" animationState="walk" urgency="1" xxxflagsToSet="isArriving" />
+        <mapping aiState="StopAtFeedingPlace" animationState="walk" urgency="1" flagsToSet="positionIsConstrained" />
+        <mapping aiState="GoToWateringPlace" animationState="walk" urgency="1" />
+        <mapping aiState="ArriveAtWateringPlace" animationState="walk" urgency="1" xxxflagsToSet="isArriving" />
+        <mapping aiState="StopAtWateringPlace" animationState="walk" urgency="1" flagsToSet="positionIsConstrained" />
+        <mapping aiState="GoToMilkingPlace" animationState="walk" urgency="1" />
+        <mapping aiState="MoveAway" animationState="walk" urgency="1" />
+        <mapping aiState="Escape" animationState="walk" urgency="1" />
+        <mapping aiState="Startled" animationState="walk" urgency="1" />
+        <mapping aiState="Stop" animationState="idle" urgency="3" />
+        <mapping aiState="Stand" animationState="idle" urgency="3" />
+        <mapping aiState="LayDown" animationState="rest" urgency="3" />
+        <mapping aiState="Rest" animationState="rest" urgency="3" />
+        <mapping aiState="PrepareToSleep" animationState="sleep" urgency="3" />
+        <mapping aiState="PrepareToTakeANap" animationState="sleep" urgency="3" />
+        <mapping aiState="Sleep" animationState="sleep" urgency="3" />
+        <mapping aiState="TakeANap" animationState="sleep" urgency="3" />
+        <mapping aiState="WakeFromSleep" animationState="rest" urgency="3" />
+        <mapping aiState="WakeFromNap" animationState="rest" urgency="3" />
+        <mapping aiState="StandUp" animationState="idle" urgency="3" />
+        
+        <mapping aiState="MilkingEnter" animationState="walk" urgency="1" />
+        <mapping aiState="MilkingInteract" animationState="idle" urgency="2" flagsToSet="positionIsConstrained" />
+        <mapping aiState="MilkingLeave" animationState="walk" urgency="1" />
+    </aiStateAnimationStateMappings>
+   
+    <clipEventData neededTagsFilter="PAW_DOWN" >
+        <tagReplacementData>
+            <!--tagReplacement tagToReplace="LEFT_FOREPAW_DOWN" replaceWithTag="PAW_DOWN" displacementTime="-50" removeOldTag="false" />
+            <tagReplacement tagToReplace="RIGHT_FOREPAW_DOWN" replaceWithTag="PAW_DOWN" displacementTime="-50" removeOldTag="false" />
+            <tagReplacement tagToReplace="LEFT_HINDPAW_DOWN" replaceWithTag="PAW_DOWN" displacementTime="-50" removeOldTag="false" />
+            <tagReplacement tagToReplace="RIGHT_HINDPAW_DOWN" replaceWithTag="PAW_DOWN" displacementTime="-50" removeOldTag="false" /-->
+            <tagReplacement tagToReplace="LEFT_FOREPAW_DOWN" replaceWithTag="LEFT_FOREPAW_DOWN_START_SOUND" displacementTime="-100" removeOldTag="false" />
+            <tagReplacement tagToReplace="RIGHT_FOREPAW_DOWN" replaceWithTag="RIGHT_FOREPAW_DOWN_START_SOUND" displacementTime="-100" removeOldTag="false" />
+            <tagReplacement tagToReplace="LEFT_HINDPAW_DOWN" replaceWithTag="LEFT_HINDPAW_DOWN_START_SOUND" displacementTime="-100" removeOldTag="false" />
+            <tagReplacement tagToReplace="RIGHT_HINDPAW_DOWN" replaceWithTag="RIGHT_HINDPAW_DOWN_START_SOUND" displacementTime="-100" removeOldTag="false" />
+        </tagReplacementData>
+ <!--eventData clipName="cow_idle_1Source" /-->
+        <!--eventData clipName="cow_idle_2Source" /-->
+        <eventData clipName="cow_idle_tr_45_left_idleSource">
+            <singleEvent time="380" tags="LEFT_FOREPAW_DOWN" />
+            <singleEvent time="900" tags="RIGHT_FOREPAW_DOWN" />
+            <singleEvent time="830" tags="LEFT_HINDPAW_DOWN" />
+            <singleEvent time="470" tags="RIGHT_HINDPAW_DOWN" />
+        </eventData>
+        <eventData clipName="cow_idle_tr_45_right_idleSource">
+            <singleEvent time="770" tags="LEFT_FOREPAW_DOWN" />
+            <singleEvent time="300" tags="RIGHT_FOREPAW_DOWN" />
+            <singleEvent time="430" tags="LEFT_HINDPAW_DOWN" />
+            <singleEvent time="900" tags="RIGHT_HINDPAW_DOWN" />
+        </eventData>
+        <!--eventData clipName="cow_idle_tr_canterSource" /-->
+        <!--eventData clipName="cow_idle_tr_walkSource" /-->
+        <eventData clipName="cow_idle_tr_walk_left_curve_2Source">
+            <singleEvent time="650" tags="LEFT_FOREPAW_DOWN" />
+            <singleEvent time="370" tags="LEFT_HINDPAW_DOWN" />
+        </eventData>
+        <eventData clipName="cow_idle_tr_walk_right_curveSource">
+            <singleEvent time="650" tags="LEFT_FOREPAW_DOWN" />
+            <singleEvent time="370" tags="LEFT_HINDPAW_DOWN" />
+        </eventData>
+        <eventData clipName="cow_idle_tr_curvedcanter_leftSource">
+            <!--singleEvent time="535" tags="PAW_DOWN LEFT_FOREPAW_DOWN" /-->
+            <singleEvent time="225" tags="RIGHT_HINDPAW_DOWN" />
+        </eventData>
+        <eventData clipName="cow_idle_tr_curvedcanter_rightSource">
+            <!--singleEvent time="535" tags="PAW_DOWN LEFT_FOREPAW_DOWN" /-->
+            <singleEvent time="225" tags="RIGHT_HINDPAW_DOWN" />
+        </eventData>
+        <!--eventData clipName="cow_walk_tr_idleSource" /-->
+        <eventData clipName="cow_eatSource">
+            <singleEvent time="700" tags="START_CHEW" />
+            <stopEvent tags="STOP_CHEW" />
+        </eventData>
+        <eventData clipName="cow_drink_troughSource">
+            <startEvent tags="START_DRINK" />
+            <stopEvent tags="STOP_DRINK" />
+        </eventData>
+        <eventData clipName="cow_eat_troughSource">
+            <startEvent tags="START_CHEW" />
+            <stopEvent tags="START_CHEW" />
+        </eventData>
+        <eventData clipName="cow_chew_idle_tr_eatSource">
+            <!--singleEvent time="" tags="" /-->
+        </eventData>
+        <eventData clipName="cow_chew_eat_tr_idleSource">
+            <!--singleEvent time="" tags="" /-->
+        </eventData>
+        <eventData clipName="cow_chewSource">
+            <singleEvent time="0" tags="START_CHEW" />
+            <stopEvent tags="STOP_CHEW" />
+        </eventData>
+        <!--eventData clipName="cow_canterSource" /-->
+        <!--eventData clipName="cow_canter_slowSource" /-->
+        <!--eventData clipName="cow_canter_left_curveSource" /-->
+        <!--eventData clipName="cow_canter_right_curveSource" /-->
+        <eventData clipName="cow_canter_left_curve_slowSource">
+            <singleEvent time="100" tags="LEFT_FOREPAW_DOWN" />
+            <singleEvent time="460" tags="RIGHT_FOREPAW_DOWN" />
+            <singleEvent time="1000" tags="LEFT_HINDPAW_DOWN" />
+            <singleEvent time="930" tags="RIGHT_HINDPAW_DOWN" />
+        </eventData>
+        <eventData clipName="cow_canter_right_curve_slowSource">
+            <singleEvent time="100" tags="LEFT_FOREPAW_DOWN" />
+            <singleEvent time="460" tags="RIGHT_FOREPAW_DOWN" />
+            <singleEvent time="1000" tags="LEFT_HINDPAW_DOWN" />
+            <singleEvent time="930" tags="RIGHT_HINDPAW_DOWN" />
+        </eventData>
+        <!--eventData clipName="cow_walkSource" /-->
+        <!--eventData clipName="cow_idle_staticSource" /-->
+        <!--eventData clipName="cow_walk_left_curveSource" /-->
+        <!--eventData clipName="cow_walk_right_curveSource" /-->
+        <eventData clipName="cow_walk_left_curve_tightSource">
+            <singleEvent time="0" tags="LEFT_FOREPAW_DOWN" />
+            <singleEvent time="627" tags="RIGHT_FOREPAW_DOWN" />
+            <singleEvent time="836" tags="LEFT_HINDPAW_DOWN" />
+            <singleEvent time="288" tags="RIGHT_HINDPAW_DOWN" />
+            <singleEvent time="1145" tags="LEFT_FOREPAW_DOWN" />
+        </eventData>
+        <eventData clipName="cow_walk_right_curve_tightSource">
+            <singleEvent time="0" tags="LEFT_FOREPAW_DOWN" />
+            <singleEvent time="627" tags="RIGHT_FOREPAW_DOWN" />
+            <singleEvent time="836" tags="LEFT_HINDPAW_DOWN" />
+            <singleEvent time="288" tags="RIGHT_HINDPAW_DOWN" />
+            <singleEvent time="1145" tags="LEFT_FOREPAW_DOWN" />
+        </eventData>
+        <eventData clipName="cow_curvedwalk_left_tr_idleSource">
+            <singleEvent time="0" tags="LEFT_FOREPAW_DOWN" />
+            <singleEvent time="560" tags="RIGHT_FOREPAW_DOWN" />
+            <singleEvent time="520" tags="LEFT_HINDPAW_DOWN" />
+            <singleEvent time="190" tags="RIGHT_HINDPAW_DOWN" />
+        </eventData>
+        <eventData clipName="cow_curvedwalk_right_tr_idleSource">
+            <singleEvent time="0" tags="LEFT_FOREPAW_DOWN" />
+            <singleEvent time="790" tags="LEFT_FOREPAW_DOWN" />
+            <singleEvent time="290" tags="RIGHT_FOREPAW_DOWN" />
+            <singleEvent time="1500" tags="RIGHT_FOREPAW_DOWN" />
+            <singleEvent time="290" tags="RIGHT_HINDPAW_DOWN" />
+        </eventData>
+        <eventData clipName="cow_liedownSource">
+            <!--singleEvent time="" tags="" /-->
+        </eventData>
+        <eventData clipName="cow_sleepSource">
+            <!--singleEvent time="" tags="" /-->
+        </eventData>
+        <eventData clipName="cow_getupSource">
+            <!--singleEvent time="" tags="" /-->
+        </eventData>
+
+        
+        
+        
+        <!--eventData animation="eatingGrass1" >
+            <singleEvent time="250" tags="START_CHEW" >
+            <singleEvent time="500" tags="END_CHEW" >
+            <durationEvent start="250" end="500" tags="CHEW" >
+            <playEvent tags="" >
+            <stopEvent tags="END_CHEW" >
+        </eventData-->
+    </clipEventData>
+    
+    <soundData>
+        <ambientSamples basicVolume="0.6" rangeInnerRadius="50" rangeOuterRadius="100" >
+            <continuingSamples numOfSimultaneousSamples="4" minimumSamplePlayTime="20000" maximumSamplePlayTime="30000" >
+                <!--sample file="dataS2/character/cow/cityAmbient01.wav" pitchOffset="1" volume="0.25" minimumSamplePlayTime="" maximumSamplePlayTime="" /-->
+            </continuingSamples>
+            <intermittentSamples numOfSimultaneousSamples="1" minimumSamplePlayTime="2000" maximumSamplePlayTime="15000" >
+                <!--sample file="dataS2/character/cow/cowsGrazing.wav" pitchOffset="1" volume="0.25" minPause="30000" maxPause="200000" /-->
+                <sample file="dataS2/character/cow/cowsMooing1.wav" pitchOffset="1" volume="0.9" minPause="60000" maxPause="500000" />
+                <sample file="dataS2/character/cow/cowsMooing2.wav" pitchOffset="1" volume="0.9" minPause="60000" maxPause="500000" />
+                <sample file="dataS2/character/cow/cowsMooing3.wav" pitchOffset="1" volume="0.9" minPause="60000" maxPause="500000" />
+                <sample file="dataS2/character/cow/cowsMooing4.wav" pitchOffset="1" volume="0.9" minPause="60000" maxPause="500000" />
+                <sample file="dataS2/character/cow/cowsMooing5.wav" pitchOffset="1" volume="0.9" minPause="60000" maxPause="500000" />
+            </intermittentSamples>	
+        </ambientSamples>
+        <!--triggeredSample name="" file="" triggeringTag="" stoppingTag="" isLooping="" fadeInTime="" fadeOutTime="" startTime="" minStartTime="" maxStartTime="" duration="" minDuration="" maxDuration="" /-->
+        <triggeredSamples>
+            <!--triggeredSample name="CowFootstep" file="dataS2/character/cow/cowStep01.wav" activatingTag="PAW_DOWN" /-->
+            <triggeredSample name="CowFootstep_LeftForePaw" file="dataS2/character/cow/cowStep01.wav" activatingTag="LEFT_FOREPAW_DOWN_START_SOUND" pitchVariation="0.25" />
+            <triggeredSample name="CowFootstep_RightForePaw" file="dataS2/character/cow/cowStep02.wav" activatingTag="RIGHT_FOREPAW_DOWN_START_SOUND" pitchVariation="0.25" />
+            <triggeredSample name="CowFootstep_LeftHindPaw" file="dataS2/character/cow/cowStep03.wav" activatingTag="LEFT_HINDPAW_DOWN_START_SOUND" pitchVariation="0.25" />
+            <triggeredSample name="CowFootstep_RightHindPaw" file="dataS2/character/cow/cowStep04.wav" activatingTag="RIGHT_HINDPAW_DOWN_START_SOUND" pitchVariation="0.25" />
+            <triggeredSample name="CowChewing" file="dataS2/character/cow/cowsGrazing.wav" activatingTag="START_CHEW" deactivatingTag="STOP_CHEW" isLooping="true" fadeInTime="1000" fadeOutTime="1000" />
+            <triggeredSample name="CowDrinking" file="dataS2/character/cow/cowDrinking.wav" activatingTag="START_DRINK" deactivatingTag="STOP_DRINK" isLooping="true" fadeInTime="1000" fadeOutTime="1000" volume="0.4" />
+        </triggeredSamples>
+    </soundData>
+    
+    <animationBlendData>
+        <blendData sourceAnimation="eatingGrass1" targetAnimation="eatingGrass1" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="0" quality="1.000000" />
+            <step sourceTime="250" targetTime="250" blendTime="0" quality="1.000000" />
+            <step sourceTime="500" targetTime="500" blendTime="0" quality="1.000000" />
+            <step sourceTime="750" targetTime="750" blendTime="0" quality="1.000000" />
+            <step sourceTime="1000" targetTime="1000" blendTime="0" quality="1.000000" />
+            <step sourceTime="1250" targetTime="1250" blendTime="0" quality="1.000000" />
+            <step sourceTime="1500" targetTime="1500" blendTime="0" quality="1.000000" />
+            <step sourceTime="1750" targetTime="1750" blendTime="0" quality="1.000000" />
+            <step sourceTime="2000" targetTime="2000" blendTime="0" quality="1.000000" />
+            <step sourceTime="2250" targetTime="2250" blendTime="0" quality="1.000000" />
+            <step sourceTime="2500" targetTime="2500" blendTime="0" quality="1.000000" />
+            <step sourceTime="2750" targetTime="2750" blendTime="0" quality="1.000000" />
+            <step sourceTime="3000" targetTime="3000" blendTime="0" quality="1.000000" />
+            <step sourceTime="3250" targetTime="3250" blendTime="0" quality="1.000000" />
+            <step sourceTime="3500" targetTime="3500" blendTime="0" quality="1.000000" />
+            <step sourceTime="3750" targetTime="3750" blendTime="0" quality="1.000000" />
+            <step sourceTime="4000" targetTime="4000" blendTime="0" quality="1.000000" />
+            <step sourceTime="4250" targetTime="4250" blendTime="0" quality="1.000000" />
+            <step sourceTime="4500" targetTime="4500" blendTime="0" quality="1.000000" />
+            <step sourceTime="4750" targetTime="4750" blendTime="0" quality="1.000000" />
+            <step sourceTime="5000" targetTime="5000" blendTime="0" quality="1.000000" />
+            <step sourceTime="5250" targetTime="5250" blendTime="0" quality="1.000000" />
+            <step sourceTime="5500" targetTime="5500" blendTime="0" quality="1.000000" />
+            <step sourceTime="5750" targetTime="5750" blendTime="0" quality="1.000000" />
+            <step sourceTime="6000" targetTime="6000" blendTime="0" quality="1.000000" />
+            <step sourceTime="6250" targetTime="6250" blendTime="0" quality="1.000000" />
+            <step sourceTime="6500" targetTime="6500" blendTime="0" quality="1.000000" />
+            <step sourceTime="6750" targetTime="6750" blendTime="0" quality="1.000000" />
+            <step sourceTime="7000" targetTime="7000" blendTime="0" quality="1.000000" />
+            <step sourceTime="7250" targetTime="7250" blendTime="0" quality="1.000000" />
+            <step sourceTime="7500" targetTime="7500" blendTime="0" quality="1.000000" />
+            <step sourceTime="7750" targetTime="7750" blendTime="0" quality="1.000000" />
+            <step sourceTime="8000" targetTime="8000" blendTime="0" quality="1.000000" />
+            <step sourceTime="8250" targetTime="8250" blendTime="0" quality="1.000000" />
+            <step sourceTime="8500" targetTime="8500" blendTime="0" quality="1.000000" />
+            <step sourceTime="8750" targetTime="8750" blendTime="0" quality="1.000000" />
+            <step sourceTime="9000" targetTime="9000" blendTime="0" quality="1.000000" />
+            <step sourceTime="9250" targetTime="9250" blendTime="0" quality="1.000000" />
+            <step sourceTime="9500" targetTime="9500" blendTime="0" quality="1.000000" />
+            <step sourceTime="9750" targetTime="9750" blendTime="0" quality="1.000000" />
+            <step sourceTime="10000" targetTime="10000" blendTime="0" quality="1.000000" />
+            <step sourceTime="10250" targetTime="10250" blendTime="0" quality="1.000000" />
+            <step sourceTime="10500" targetTime="10250" blendTime="874" quality="0.125091" />
+            <step sourceTime="10750" targetTime="10250" blendTime="750" quality="0.115425" />
+            <step sourceTime="11000" targetTime="10250" blendTime="500" quality="0.118858" />
+            <step sourceTime="11250" targetTime="1250" blendTime="250" quality="0.083690" />
+            <step sourceTime="11500" targetTime="1000" blendTime="0" quality="0.064613" />
+        </blendData>
+        <blendData sourceAnimation="eatingGrass1" targetAnimation="stoppingToEatGrass1" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="901" quality="0.098723" />
+            <step sourceTime="250" targetTime="0" blendTime="900" quality="0.099343" />
+            <step sourceTime="500" targetTime="3250" blendTime="907" quality="0.092931" />
+            <step sourceTime="750" targetTime="3250" blendTime="888" quality="0.111162" />
+            <step sourceTime="1000" targetTime="1000" blendTime="916" quality="0.083560" />
+            <step sourceTime="1250" targetTime="3250" blendTime="906" quality="0.093982" />
+            <step sourceTime="1500" targetTime="1500" blendTime="927" quality="0.072055" />
+            <step sourceTime="1750" targetTime="3250" blendTime="925" quality="0.074734" />
+            <step sourceTime="2000" targetTime="1500" blendTime="958" quality="0.041084" />
+            <step sourceTime="2250" targetTime="1250" blendTime="936" quality="0.063557" />
+            <step sourceTime="2500" targetTime="1250" blendTime="934" quality="0.065515" />
+            <step sourceTime="2750" targetTime="750" blendTime="943" quality="0.056077" />
+            <step sourceTime="3000" targetTime="3750" blendTime="843" quality="0.156201" />
+            <step sourceTime="3250" targetTime="750" blendTime="872" quality="0.127581" />
+            <step sourceTime="3500" targetTime="3250" blendTime="867" quality="0.132438" />
+            <step sourceTime="3750" targetTime="3000" blendTime="879" quality="0.120765" />
+            <step sourceTime="4000" targetTime="3000" blendTime="892" quality="0.107092" />
+            <step sourceTime="4250" targetTime="3750" blendTime="816" quality="0.183646" />
+            <step sourceTime="4500" targetTime="3500" blendTime="909" quality="0.090713" />
+            <step sourceTime="4750" targetTime="3500" blendTime="887" quality="0.112278" />
+            <step sourceTime="5000" targetTime="3250" blendTime="879" quality="0.120946" />
+            <step sourceTime="5250" targetTime="4250" blendTime="933" quality="0.066113" />
+            <step sourceTime="5500" targetTime="3250" blendTime="908" quality="0.091449" />
+            <step sourceTime="5750" targetTime="0" blendTime="896" quality="0.103380" />
+            <step sourceTime="6000" targetTime="0" blendTime="913" quality="0.086071" />
+            <step sourceTime="6250" targetTime="250" blendTime="888" quality="0.111321" />
+            <step sourceTime="6500" targetTime="0" blendTime="892" quality="0.107371" />
+            <step sourceTime="6750" targetTime="3000" blendTime="896" quality="0.103189" />
+            <step sourceTime="7000" targetTime="3250" blendTime="867" quality="0.132274" />
+            <step sourceTime="7250" targetTime="3250" blendTime="918" quality="0.081217" />
+            <step sourceTime="7500" targetTime="0" blendTime="923" quality="0.076588" />
+            <step sourceTime="7750" targetTime="3250" blendTime="898" quality="0.101773" />
+            <step sourceTime="8000" targetTime="4250" blendTime="919" quality="0.080802" />
+            <step sourceTime="8250" targetTime="5250" blendTime="936" quality="0.063617" />
+            <step sourceTime="8500" targetTime="3250" blendTime="911" quality="0.088623" />
+            <step sourceTime="8750" targetTime="4750" blendTime="912" quality="0.087585" />
+            <step sourceTime="9000" targetTime="3750" blendTime="945" quality="0.054130" />
+            <step sourceTime="9250" targetTime="6750" blendTime="919" quality="0.080776" />
+            <step sourceTime="9500" targetTime="3250" blendTime="915" quality="0.084998" />
+            <step sourceTime="9750" targetTime="3250" blendTime="931" quality="0.068584" />
+            <step sourceTime="10000" targetTime="5250" blendTime="946" quality="0.053972" />
+            <step sourceTime="10250" targetTime="2250" blendTime="924" quality="0.075757" />
+            <step sourceTime="10500" targetTime="2500" blendTime="916" quality="0.083043" />
+            <step sourceTime="10750" targetTime="2500" blendTime="750" quality="0.085593" />
+            <step sourceTime="11000" targetTime="2250" blendTime="500" quality="0.079476" />
+            <step sourceTime="11250" targetTime="1500" blendTime="250" quality="0.083678" />
+            <step sourceTime="11500" targetTime="0" blendTime="0" quality="0.055220" />
+        </blendData>
+        <blendData sourceAnimation="startingToEatGrass1" targetAnimation="eatingGrass1" stepSize="250">
+            <step sourceTime="0" targetTime="8250" blendTime="945" quality="0.054540" />
+            <step sourceTime="250" targetTime="750" blendTime="894" quality="0.105593" />
+            <step sourceTime="500" targetTime="250" blendTime="833" quality="0.095044" />
+            <step sourceTime="750" targetTime="6500" blendTime="583" quality="0.114329" />
+            <step sourceTime="1000" targetTime="3500" blendTime="333" quality="0.085817" />
+            <step sourceTime="1250" targetTime="7750" blendTime="83" quality="0.050182" />
+        </blendData>
+        <blendData sourceAnimation="startingToEatGrass1" targetAnimation="stoppingToEatGrass1" stepSize="250">
+            <step sourceTime="0" targetTime="4250" blendTime="873" quality="0.126170" />
+            <step sourceTime="250" targetTime="0" blendTime="874" quality="0.125382" />
+            <step sourceTime="500" targetTime="500" blendTime="816" quality="0.183128" />
+            <step sourceTime="750" targetTime="250" blendTime="583" quality="0.225675" />
+            <step sourceTime="1000" targetTime="250" blendTime="333" quality="0.113475" />
+            <step sourceTime="1250" targetTime="0" blendTime="83" quality="0.117446" />
+        </blendData>
+        <blendData sourceAnimation="stoppingToEatGrass1" targetAnimation="startingToEatGrass1" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="915" quality="0.084156" />
+            <step sourceTime="250" targetTime="0" blendTime="959" quality="0.040120" />
+            <step sourceTime="500" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="750" targetTime="0" blendTime="992" quality="0.007825" />
+            <step sourceTime="1000" targetTime="0" blendTime="936" quality="0.063566" />
+            <step sourceTime="1250" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="1500" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="1750" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="2000" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="2250" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="2500" targetTime="0" blendTime="995" quality="0.004638" />
+            <step sourceTime="2750" targetTime="0" blendTime="985" quality="0.014539" />
+            <step sourceTime="3000" targetTime="0" blendTime="913" quality="0.086414" />
+            <step sourceTime="3250" targetTime="0" blendTime="942" quality="0.057278" />
+            <step sourceTime="3500" targetTime="0" blendTime="998" quality="0.001001" />
+            <step sourceTime="3750" targetTime="0" blendTime="960" quality="0.039812" />
+            <step sourceTime="4000" targetTime="0" blendTime="906" quality="0.093466" />
+            <step sourceTime="4250" targetTime="0" blendTime="873" quality="0.126170" />
+            <step sourceTime="4500" targetTime="0" blendTime="909" quality="0.090713" />
+            <step sourceTime="4750" targetTime="0" blendTime="925" quality="0.074120" />
+            <step sourceTime="5000" targetTime="0" blendTime="915" quality="0.084241" />
+            <step sourceTime="5250" targetTime="0" blendTime="910" quality="0.089707" />
+            <step sourceTime="5500" targetTime="0" blendTime="998" quality="0.001185" />
+            <step sourceTime="5750" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="6000" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="6250" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="6500" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="6750" targetTime="0" blendTime="996" quality="0.003799" />
+            <step sourceTime="7000" targetTime="0" blendTime="992" quality="0.007991" />
+            <step sourceTime="7250" targetTime="0" blendTime="750" quality="0.016647" />
+            <step sourceTime="7500" targetTime="0" blendTime="500" quality="0.014976" />
+            <step sourceTime="7750" targetTime="0" blendTime="250" quality="0.136206" />
+            <step sourceTime="8000" targetTime="0" blendTime="0" quality="0.037018" />
+        </blendData>
+        <blendData sourceAnimation="stoppingToEatGrass1" targetAnimation="idling1" stepSize="250">
+            <step sourceTime="0" targetTime="16500" blendTime="842" quality="0.157875" />
+            <step sourceTime="250" targetTime="16500" blendTime="881" quality="0.118152" />
+            <step sourceTime="500" targetTime="7500" blendTime="880" quality="0.119986" />
+            <step sourceTime="750" targetTime="7750" blendTime="898" quality="0.101756" />
+            <step sourceTime="1000" targetTime="10000" blendTime="872" quality="0.127014" />
+            <step sourceTime="1250" targetTime="5000" blendTime="916" quality="0.083303" />
+            <step sourceTime="1500" targetTime="8750" blendTime="915" quality="0.084642" />
+            <step sourceTime="1750" targetTime="9000" blendTime="922" quality="0.077070" />
+            <step sourceTime="2000" targetTime="17000" blendTime="925" quality="0.074446" />
+            <step sourceTime="2250" targetTime="17000" blendTime="933" quality="0.066956" />
+            <step sourceTime="2500" targetTime="17000" blendTime="910" quality="0.089761" />
+            <step sourceTime="2750" targetTime="1500" blendTime="921" quality="0.078039" />
+            <step sourceTime="3000" targetTime="2000" blendTime="912" quality="0.087673" />
+            <step sourceTime="3250" targetTime="14500" blendTime="890" quality="0.109083" />
+            <step sourceTime="3500" targetTime="7750" blendTime="890" quality="0.109736" />
+            <step sourceTime="3750" targetTime="13000" blendTime="878" quality="0.121643" />
+            <step sourceTime="4000" targetTime="3250" blendTime="878" quality="0.121357" />
+            <step sourceTime="4250" targetTime="2000" blendTime="868" quality="0.131037" />
+            <step sourceTime="4500" targetTime="3250" blendTime="854" quality="0.145168" />
+            <step sourceTime="4750" targetTime="3250" blendTime="869" quality="0.130624" />
+            <step sourceTime="5000" targetTime="2000" blendTime="826" quality="0.173843" />
+            <step sourceTime="5250" targetTime="13250" blendTime="893" quality="0.106702" />
+            <step sourceTime="5500" targetTime="1000" blendTime="917" quality="0.082561" />
+            <step sourceTime="5750" targetTime="500" blendTime="902" quality="0.097358" />
+            <step sourceTime="6000" targetTime="6250" blendTime="894" quality="0.105266" />
+            <step sourceTime="6250" targetTime="6000" blendTime="874" quality="0.125267" />
+            <step sourceTime="6500" targetTime="6000" blendTime="904" quality="0.095978" />
+            <step sourceTime="6750" targetTime="6000" blendTime="898" quality="0.101617" />
+            <step sourceTime="7000" targetTime="13500" blendTime="900" quality="0.099485" />
+            <step sourceTime="7250" targetTime="13500" blendTime="750" quality="0.123652" />
+            <step sourceTime="7500" targetTime="13000" blendTime="500" quality="0.099395" />
+            <step sourceTime="7750" targetTime="13000" blendTime="250" quality="0.139619" />
+            <step sourceTime="8000" targetTime="13000" blendTime="0" quality="0.087930" />
+        </blendData>
+        <!--blendData sourceAnimation="walkAndRotateSlightlyLeft" targetAnimation="idling1" stepSize="250">
+            <step sourceTime="0" targetTime="6500" blendTime="966" quality="0.033976" />
+            <step sourceTime="250" targetTime="6500" blendTime="916" quality="0.063826" />
+            <step sourceTime="500" targetTime="12500" blendTime="666" quality="0.062356" />
+            <step sourceTime="750" targetTime="14500" blendTime="416" quality="0.042138" />
+            <step sourceTime="1000" targetTime="16250" blendTime="166" quality="0.024559" />
+        </blendData>
+        <blendData sourceAnimation="walkAndRotateSlightlyLeft" targetAnimation="rotateLeft" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="966" quality="0.009834" />
+            <step sourceTime="250" targetTime="0" blendTime="916" quality="0.019268" />
+            <step sourceTime="500" targetTime="0" blendTime="666" quality="0.072947" />
+            <step sourceTime="750" targetTime="0" blendTime="416" quality="0.059092" />
+            <step sourceTime="1000" targetTime="0" blendTime="166" quality="0.024109" />
+        </blendData>
+        <blendData sourceAnimation="walkAndRotateSlightlyLeft" targetAnimation="walk2idle" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="0" quality="1.000000" />
+            <step sourceTime="250" targetTime="0" blendTime="592" quality="0.407604" />
+            <step sourceTime="500" targetTime="0" blendTime="666" quality="0.056465" />
+            <step sourceTime="750" targetTime="0" blendTime="416" quality="0.015196" />
+            <step sourceTime="1000" targetTime="0" blendTime="166" quality="0.048073" />
+        </blendData>
+        <blendData sourceAnimation="walkAndRotateSlightlyLeft" targetAnimation="idle2walk" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="250" targetTime="0" blendTime="666" quality="0.056985" />
+            <step sourceTime="500" targetTime="0" blendTime="666" quality="0.198429" />
+            <step sourceTime="750" targetTime="0" blendTime="416" quality="0.191231" />
+            <step sourceTime="1000" targetTime="0" blendTime="166" quality="0.052030" />
+        </blendData>
+        <blendData sourceAnimation="walkAndRotateSlightlyLeft" targetAnimation="rotateRight" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="250" targetTime="0" blendTime="916" quality="0.001055" />
+            <step sourceTime="500" targetTime="0" blendTime="666" quality="0.013037" />
+            <step sourceTime="750" targetTime="0" blendTime="416" quality="0.031664" />
+            <step sourceTime="1000" targetTime="0" blendTime="166" quality="0.001004" />
+        </blendData-->
+        <blendData sourceAnimation="rotateRight" targetAnimation="idling1" stepSize="250">
+            <step sourceTime="0" targetTime="6250" blendTime="964" quality="0.035117" />
+            <step sourceTime="250" targetTime="6250" blendTime="716" quality="0.033594" />
+            <step sourceTime="500" targetTime="12750" blendTime="466" quality="0.031512" />
+            <step sourceTime="750" targetTime="2500" blendTime="216" quality="0.003491" />
+        </blendData>
+        <blendData sourceAnimation="rotateRight" targetAnimation="rotateLeft" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="966" quality="0.010463" />
+            <step sourceTime="250" targetTime="0" blendTime="716" quality="0.001425" />
+            <step sourceTime="500" targetTime="0" blendTime="466" quality="0.022919" />
+            <step sourceTime="750" targetTime="0" blendTime="216" quality="0.000000" />
+        </blendData>
+        <blendData sourceAnimation="rotateRight" targetAnimation="rotateRight" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="0" quality="1.000000" />
+            <step sourceTime="250" targetTime="0" blendTime="716" quality="0.138988" />
+            <step sourceTime="500" targetTime="0" blendTime="466" quality="0.005598" />
+            <step sourceTime="750" targetTime="0" blendTime="216" quality="0.000000" />
+        </blendData>
+        <blendData sourceAnimation="rotateRight" targetAnimation="idle2walk" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="666" quality="0.061676" />
+            <step sourceTime="250" targetTime="0" blendTime="666" quality="0.009397" />
+            <step sourceTime="500" targetTime="0" blendTime="466" quality="0.017980" />
+            <step sourceTime="750" targetTime="0" blendTime="216" quality="0.000000" />
+        </blendData>
+        <blendData sourceAnimation="rotateLeft" targetAnimation="idling1" stepSize="250">
+            <step sourceTime="0" targetTime="14500" blendTime="941" quality="0.058848" />
+            <step sourceTime="250" targetTime="14250" blendTime="716" quality="0.039742" />
+            <step sourceTime="500" targetTime="2500" blendTime="466" quality="0.021157" />
+            <step sourceTime="750" targetTime="0" blendTime="216" quality="0.000000" />
+        </blendData>
+        <blendData sourceAnimation="rotateLeft" targetAnimation="rotateLeft" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="0" quality="1.000000" />
+            <step sourceTime="250" targetTime="0" blendTime="716" quality="0.099673" />
+            <step sourceTime="500" targetTime="0" blendTime="466" quality="0.017997" />
+            <step sourceTime="750" targetTime="0" blendTime="216" quality="0.025818" />
+        </blendData>
+        <blendData sourceAnimation="rotateLeft" targetAnimation="rotateRight" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="966" quality="0.010463" />
+            <step sourceTime="250" targetTime="0" blendTime="716" quality="0.006622" />
+            <step sourceTime="500" targetTime="0" blendTime="466" quality="0.001610" />
+            <step sourceTime="750" targetTime="0" blendTime="216" quality="0.004371" />
+        </blendData>
+        <blendData sourceAnimation="rotateLeft" targetAnimation="idle2walk" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="666" quality="0.068857" />
+            <step sourceTime="250" targetTime="0" blendTime="666" quality="0.017798" />
+            <step sourceTime="500" targetTime="0" blendTime="466" quality="0.013847" />
+            <step sourceTime="750" targetTime="0" blendTime="216" quality="0.000000" />
+        </blendData>
+        <blendData sourceAnimation="idle2walk" targetAnimation="walk2idle" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="250" targetTime="0" blendTime="416" quality="0.018492" />
+            <step sourceTime="500" targetTime="0" blendTime="166" quality="0.039048" />
+        </blendData>
+        <blendData sourceAnimation="idling1" targetAnimation="idling1" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="0" quality="1.000000" />
+            <step sourceTime="250" targetTime="250" blendTime="0" quality="1.000000" />
+            <step sourceTime="500" targetTime="500" blendTime="0" quality="1.000000" />
+            <step sourceTime="750" targetTime="750" blendTime="0" quality="1.000000" />
+            <step sourceTime="1000" targetTime="1000" blendTime="0" quality="1.000000" />
+            <step sourceTime="1250" targetTime="1250" blendTime="0" quality="1.000000" />
+            <step sourceTime="1500" targetTime="1500" blendTime="0" quality="1.000000" />
+            <step sourceTime="1750" targetTime="1750" blendTime="0" quality="1.000000" />
+            <step sourceTime="2000" targetTime="2000" blendTime="0" quality="1.000000" />
+            <step sourceTime="2250" targetTime="2250" blendTime="0" quality="1.000000" />
+            <step sourceTime="2500" targetTime="2500" blendTime="0" quality="1.000000" />
+            <step sourceTime="2750" targetTime="2750" blendTime="0" quality="1.000000" />
+            <step sourceTime="3000" targetTime="3000" blendTime="0" quality="1.000000" />
+            <step sourceTime="3250" targetTime="3250" blendTime="0" quality="1.000000" />
+            <step sourceTime="3500" targetTime="3500" blendTime="0" quality="1.000000" />
+            <step sourceTime="3750" targetTime="3750" blendTime="0" quality="1.000000" />
+            <step sourceTime="4000" targetTime="4000" blendTime="0" quality="1.000000" />
+            <step sourceTime="4250" targetTime="4250" blendTime="0" quality="1.000000" />
+            <step sourceTime="4500" targetTime="4500" blendTime="0" quality="1.000000" />
+            <step sourceTime="4750" targetTime="4750" blendTime="0" quality="1.000000" />
+            <step sourceTime="5000" targetTime="5000" blendTime="0" quality="1.000000" />
+            <step sourceTime="5250" targetTime="5250" blendTime="0" quality="1.000000" />
+            <step sourceTime="5500" targetTime="5500" blendTime="0" quality="1.000000" />
+            <step sourceTime="5750" targetTime="5750" blendTime="0" quality="1.000000" />
+            <step sourceTime="6000" targetTime="6000" blendTime="0" quality="1.000000" />
+            <step sourceTime="6250" targetTime="6250" blendTime="0" quality="1.000000" />
+            <step sourceTime="6500" targetTime="6500" blendTime="0" quality="1.000000" />
+            <step sourceTime="6750" targetTime="6750" blendTime="0" quality="1.000000" />
+            <step sourceTime="7000" targetTime="7000" blendTime="0" quality="1.000000" />
+            <step sourceTime="7250" targetTime="7250" blendTime="0" quality="1.000000" />
+            <step sourceTime="7500" targetTime="7500" blendTime="0" quality="1.000000" />
+            <step sourceTime="7750" targetTime="7750" blendTime="0" quality="1.000000" />
+            <step sourceTime="8000" targetTime="8000" blendTime="0" quality="1.000000" />
+            <step sourceTime="8250" targetTime="8250" blendTime="0" quality="1.000000" />
+            <step sourceTime="8500" targetTime="8500" blendTime="0" quality="1.000000" />
+            <step sourceTime="8750" targetTime="8750" blendTime="0" quality="1.000000" />
+            <step sourceTime="9000" targetTime="9000" blendTime="0" quality="1.000000" />
+            <step sourceTime="9250" targetTime="9250" blendTime="0" quality="1.000000" />
+            <step sourceTime="9500" targetTime="9500" blendTime="0" quality="1.000000" />
+            <step sourceTime="9750" targetTime="9750" blendTime="0" quality="1.000000" />
+            <step sourceTime="10000" targetTime="10000" blendTime="0" quality="1.000000" />
+            <step sourceTime="10250" targetTime="10250" blendTime="0" quality="1.000000" />
+            <step sourceTime="10500" targetTime="10500" blendTime="0" quality="1.000000" />
+            <step sourceTime="10750" targetTime="10750" blendTime="0" quality="1.000000" />
+            <step sourceTime="11000" targetTime="11000" blendTime="0" quality="1.000000" />
+            <step sourceTime="11250" targetTime="11250" blendTime="0" quality="1.000000" />
+            <step sourceTime="11500" targetTime="11500" blendTime="0" quality="1.000000" />
+            <step sourceTime="11750" targetTime="11750" blendTime="0" quality="1.000000" />
+            <step sourceTime="12000" targetTime="12000" blendTime="0" quality="1.000000" />
+            <step sourceTime="12250" targetTime="12250" blendTime="0" quality="1.000000" />
+            <step sourceTime="12500" targetTime="12500" blendTime="0" quality="1.000000" />
+            <step sourceTime="12750" targetTime="12750" blendTime="0" quality="1.000000" />
+            <step sourceTime="13000" targetTime="13000" blendTime="0" quality="1.000000" />
+            <step sourceTime="13250" targetTime="13250" blendTime="0" quality="1.000000" />
+            <step sourceTime="13500" targetTime="13500" blendTime="0" quality="1.000000" />
+            <step sourceTime="13750" targetTime="13750" blendTime="0" quality="1.000000" />
+            <step sourceTime="14000" targetTime="14000" blendTime="0" quality="1.000000" />
+            <step sourceTime="14250" targetTime="14250" blendTime="0" quality="1.000000" />
+            <step sourceTime="14500" targetTime="14500" blendTime="0" quality="1.000000" />
+            <step sourceTime="14750" targetTime="14750" blendTime="0" quality="1.000000" />
+            <step sourceTime="15000" targetTime="15000" blendTime="0" quality="1.000000" />
+            <step sourceTime="15250" targetTime="15250" blendTime="0" quality="1.000000" />
+            <step sourceTime="15500" targetTime="15500" blendTime="0" quality="1.000000" />
+            <step sourceTime="15750" targetTime="15750" blendTime="0" quality="1.000000" />
+            <step sourceTime="16000" targetTime="16000" blendTime="0" quality="1.000000" />
+            <step sourceTime="16250" targetTime="16250" blendTime="0" quality="1.000000" />
+            <step sourceTime="16500" targetTime="16500" blendTime="0" quality="1.000000" />
+            <step sourceTime="16750" targetTime="16750" blendTime="0" quality="1.000000" />
+            <step sourceTime="17000" targetTime="17000" blendTime="0" quality="1.000000" />
+            <step sourceTime="17250" targetTime="16750" blendTime="787" quality="0.212766" />
+            <step sourceTime="17500" targetTime="16500" blendTime="833" quality="0.117571" />
+            <step sourceTime="17750" targetTime="17000" blendTime="583" quality="0.112871" />
+            <step sourceTime="18000" targetTime="16750" blendTime="333" quality="0.110295" />
+            <step sourceTime="18250" targetTime="0" blendTime="83" quality="0.088723" />
+        </blendData>
+        <blendData sourceAnimation="idling1" targetAnimation="idle_short" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="0" quality="1.000000" />
+            <step sourceTime="250" targetTime="250" blendTime="0" quality="1.000000" />
+            <step sourceTime="500" targetTime="500" blendTime="0" quality="1.000000" />
+            <step sourceTime="750" targetTime="750" blendTime="0" quality="1.000000" />
+            <step sourceTime="1000" targetTime="1000" blendTime="0" quality="1.000000" />
+            <step sourceTime="1250" targetTime="1250" blendTime="0" quality="1.000000" />
+            <step sourceTime="1500" targetTime="1500" blendTime="0" quality="1.000000" />
+            <step sourceTime="1750" targetTime="1750" blendTime="0" quality="1.000000" />
+            <step sourceTime="2000" targetTime="2000" blendTime="0" quality="1.000000" />
+            <step sourceTime="2250" targetTime="2250" blendTime="0" quality="1.000000" />
+            <step sourceTime="2500" targetTime="2500" blendTime="0" quality="1.000000" />
+            <step sourceTime="2750" targetTime="2750" blendTime="0" quality="1.000000" />
+            <step sourceTime="3000" targetTime="3000" blendTime="0" quality="1.000000" />
+            <step sourceTime="3250" targetTime="3250" blendTime="0" quality="1.000000" />
+            <step sourceTime="3500" targetTime="3500" blendTime="0" quality="1.000000" />
+            <step sourceTime="3750" targetTime="3750" blendTime="0" quality="1.000000" />
+            <step sourceTime="4000" targetTime="4000" blendTime="0" quality="1.000000" />
+            <step sourceTime="4250" targetTime="4250" blendTime="0" quality="1.000000" />
+            <step sourceTime="4500" targetTime="4500" blendTime="0" quality="1.000000" />
+            <step sourceTime="4750" targetTime="4750" blendTime="0" quality="1.000000" />
+            <step sourceTime="5000" targetTime="5000" blendTime="0" quality="1.000000" />
+            <step sourceTime="5250" targetTime="5250" blendTime="0" quality="1.000000" />
+            <step sourceTime="5500" targetTime="5500" blendTime="0" quality="1.000000" />
+            <step sourceTime="5750" targetTime="5750" blendTime="0" quality="1.000000" />
+            <step sourceTime="6000" targetTime="6000" blendTime="0" quality="1.000000" />
+            <step sourceTime="6250" targetTime="6250" blendTime="0" quality="1.000000" />
+            <step sourceTime="6500" targetTime="6500" blendTime="0" quality="1.000000" />
+            <step sourceTime="6750" targetTime="6750" blendTime="0" quality="1.000000" />
+            <step sourceTime="7000" targetTime="7000" blendTime="0" quality="1.000000" />
+            <step sourceTime="7250" targetTime="7250" blendTime="0" quality="1.000000" />
+            <step sourceTime="7500" targetTime="7500" blendTime="0" quality="1.000000" />
+            <step sourceTime="7750" targetTime="7750" blendTime="0" quality="1.000000" />
+            <step sourceTime="8000" targetTime="8000" blendTime="0" quality="1.000000" />
+            <step sourceTime="8250" targetTime="8250" blendTime="0" quality="1.000000" />
+            <step sourceTime="8500" targetTime="8500" blendTime="0" quality="1.000000" />
+            <step sourceTime="8750" targetTime="8750" blendTime="0" quality="1.000000" />
+            <step sourceTime="9000" targetTime="9000" blendTime="0" quality="1.000000" />
+            <step sourceTime="9250" targetTime="9250" blendTime="0" quality="1.000000" />
+            <step sourceTime="9500" targetTime="9500" blendTime="0" quality="1.000000" />
+            <step sourceTime="9750" targetTime="9750" blendTime="0" quality="1.000000" />
+            <step sourceTime="10000" targetTime="10000" blendTime="0" quality="1.000000" />
+            <step sourceTime="10250" targetTime="10250" blendTime="0" quality="1.000000" />
+            <step sourceTime="10500" targetTime="10500" blendTime="0" quality="1.000000" />
+            <step sourceTime="10750" targetTime="10750" blendTime="0" quality="1.000000" />
+            <step sourceTime="11000" targetTime="11000" blendTime="0" quality="1.000000" />
+            <step sourceTime="11250" targetTime="11250" blendTime="0" quality="1.000000" />
+            <step sourceTime="11500" targetTime="11500" blendTime="0" quality="1.000000" />
+            <step sourceTime="11750" targetTime="11750" blendTime="0" quality="1.000000" />
+            <step sourceTime="12000" targetTime="12000" blendTime="0" quality="1.000000" />
+            <step sourceTime="12250" targetTime="12250" blendTime="0" quality="1.000000" />
+            <step sourceTime="12500" targetTime="12500" blendTime="0" quality="1.000000" />
+            <step sourceTime="12750" targetTime="12750" blendTime="0" quality="1.000000" />
+            <step sourceTime="13000" targetTime="13000" blendTime="0" quality="1.000000" />
+            <step sourceTime="13250" targetTime="13250" blendTime="0" quality="1.000000" />
+            <step sourceTime="13500" targetTime="13500" blendTime="0" quality="1.000000" />
+            <step sourceTime="13750" targetTime="13750" blendTime="0" quality="1.000000" />
+            <step sourceTime="14000" targetTime="14000" blendTime="0" quality="1.000000" />
+            <step sourceTime="14250" targetTime="14250" blendTime="0" quality="1.000000" />
+            <step sourceTime="14500" targetTime="14500" blendTime="0" quality="1.000000" />
+            <step sourceTime="14750" targetTime="14750" blendTime="0" quality="1.000000" />
+            <step sourceTime="15000" targetTime="15000" blendTime="0" quality="1.000000" />
+            <step sourceTime="15250" targetTime="15250" blendTime="0" quality="1.000000" />
+            <step sourceTime="15500" targetTime="15500" blendTime="0" quality="1.000000" />
+            <step sourceTime="15750" targetTime="15750" blendTime="0" quality="1.000000" />
+            <step sourceTime="16000" targetTime="16000" blendTime="0" quality="1.000000" />
+            <step sourceTime="16250" targetTime="16250" blendTime="0" quality="1.000000" />
+            <step sourceTime="16500" targetTime="16500" blendTime="0" quality="1.000000" />
+            <step sourceTime="16750" targetTime="16750" blendTime="0" quality="1.000000" />
+            <step sourceTime="17000" targetTime="17000" blendTime="0" quality="1.000000" />
+            <step sourceTime="17250" targetTime="16750" blendTime="787" quality="0.212766" />
+            <step sourceTime="17500" targetTime="16500" blendTime="833" quality="0.117571" />
+            <step sourceTime="17750" targetTime="17000" blendTime="583" quality="0.112871" />
+            <step sourceTime="18000" targetTime="16750" blendTime="333" quality="0.110295" />
+            <step sourceTime="18250" targetTime="0" blendTime="83" quality="0.088723" />
+        </blendData>
+        <blendData sourceAnimation="walk2idle" targetAnimation="idling1" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="0" quality="1.000000" />
+            <step sourceTime="250" targetTime="250" blendTime="0" quality="1.000000" />
+            <step sourceTime="500" targetTime="500" blendTime="0" quality="1.000000" />
+            <step sourceTime="750" targetTime="750" blendTime="0" quality="1.000000" />
+            <step sourceTime="1000" targetTime="1000" blendTime="0" quality="1.000000" />
+            <step sourceTime="1250" targetTime="1250" blendTime="0" quality="1.000000" />
+            <step sourceTime="1500" targetTime="1500" blendTime="0" quality="1.000000" />
+            <step sourceTime="1750" targetTime="1750" blendTime="0" quality="1.000000" />
+            <step sourceTime="2000" targetTime="2000" blendTime="0" quality="1.000000" />
+            <step sourceTime="2250" targetTime="2250" blendTime="0" quality="1.000000" />
+            <step sourceTime="2500" targetTime="2500" blendTime="0" quality="1.000000" />
+            <step sourceTime="2750" targetTime="2750" blendTime="0" quality="1.000000" />
+            <step sourceTime="3000" targetTime="3000" blendTime="0" quality="1.000000" />
+            <step sourceTime="3250" targetTime="3250" blendTime="0" quality="1.000000" />
+            <step sourceTime="3500" targetTime="3500" blendTime="0" quality="1.000000" />
+            <step sourceTime="3750" targetTime="3750" blendTime="0" quality="1.000000" />
+            <step sourceTime="4000" targetTime="4000" blendTime="0" quality="1.000000" />
+            <step sourceTime="4250" targetTime="4250" blendTime="0" quality="1.000000" />
+            <step sourceTime="4500" targetTime="4500" blendTime="0" quality="1.000000" />
+            <step sourceTime="4750" targetTime="4750" blendTime="0" quality="1.000000" />
+            <step sourceTime="5000" targetTime="5000" blendTime="0" quality="1.000000" />
+            <step sourceTime="5250" targetTime="5250" blendTime="0" quality="1.000000" />
+            <step sourceTime="5500" targetTime="5500" blendTime="0" quality="1.000000" />
+            <step sourceTime="5750" targetTime="5750" blendTime="0" quality="1.000000" />
+            <step sourceTime="6000" targetTime="6000" blendTime="0" quality="1.000000" />
+            <step sourceTime="6250" targetTime="6250" blendTime="0" quality="1.000000" />
+            <step sourceTime="6500" targetTime="6500" blendTime="0" quality="1.000000" />
+            <step sourceTime="6750" targetTime="6750" blendTime="0" quality="1.000000" />
+            <step sourceTime="7000" targetTime="7000" blendTime="0" quality="1.000000" />
+            <step sourceTime="7250" targetTime="7250" blendTime="0" quality="1.000000" />
+            <step sourceTime="7500" targetTime="7500" blendTime="0" quality="1.000000" />
+            <step sourceTime="7750" targetTime="7750" blendTime="0" quality="1.000000" />
+            <step sourceTime="8000" targetTime="8000" blendTime="0" quality="1.000000" />
+            <step sourceTime="8250" targetTime="8250" blendTime="0" quality="1.000000" />
+            <step sourceTime="8500" targetTime="8500" blendTime="0" quality="1.000000" />
+            <step sourceTime="8750" targetTime="8750" blendTime="0" quality="1.000000" />
+            <step sourceTime="9000" targetTime="9000" blendTime="0" quality="1.000000" />
+            <step sourceTime="9250" targetTime="9250" blendTime="0" quality="1.000000" />
+            <step sourceTime="9500" targetTime="9500" blendTime="0" quality="1.000000" />
+            <step sourceTime="9750" targetTime="9750" blendTime="0" quality="1.000000" />
+            <step sourceTime="10000" targetTime="10000" blendTime="0" quality="1.000000" />
+            <step sourceTime="10250" targetTime="10250" blendTime="0" quality="1.000000" />
+            <step sourceTime="10500" targetTime="10500" blendTime="0" quality="1.000000" />
+            <step sourceTime="10750" targetTime="10750" blendTime="0" quality="1.000000" />
+            <step sourceTime="11000" targetTime="11000" blendTime="0" quality="1.000000" />
+            <step sourceTime="11250" targetTime="11250" blendTime="0" quality="1.000000" />
+            <step sourceTime="11500" targetTime="11500" blendTime="0" quality="1.000000" />
+            <step sourceTime="11750" targetTime="11750" blendTime="0" quality="1.000000" />
+            <step sourceTime="12000" targetTime="12000" blendTime="0" quality="1.000000" />
+            <step sourceTime="12250" targetTime="12250" blendTime="0" quality="1.000000" />
+            <step sourceTime="12500" targetTime="12500" blendTime="0" quality="1.000000" />
+            <step sourceTime="12750" targetTime="12750" blendTime="0" quality="1.000000" />
+            <step sourceTime="13000" targetTime="13000" blendTime="0" quality="1.000000" />
+            <step sourceTime="13250" targetTime="13250" blendTime="0" quality="1.000000" />
+            <step sourceTime="13500" targetTime="13500" blendTime="0" quality="1.000000" />
+            <step sourceTime="13750" targetTime="13750" blendTime="0" quality="1.000000" />
+            <step sourceTime="14000" targetTime="14000" blendTime="0" quality="1.000000" />
+            <step sourceTime="14250" targetTime="14250" blendTime="0" quality="1.000000" />
+            <step sourceTime="14500" targetTime="14500" blendTime="0" quality="1.000000" />
+            <step sourceTime="14750" targetTime="14750" blendTime="0" quality="1.000000" />
+            <step sourceTime="15000" targetTime="15000" blendTime="0" quality="1.000000" />
+            <step sourceTime="15250" targetTime="15250" blendTime="0" quality="1.000000" />
+            <step sourceTime="15500" targetTime="15500" blendTime="0" quality="1.000000" />
+            <step sourceTime="15750" targetTime="15750" blendTime="0" quality="1.000000" />
+            <step sourceTime="16000" targetTime="16000" blendTime="0" quality="1.000000" />
+            <step sourceTime="16250" targetTime="16250" blendTime="0" quality="1.000000" />
+            <step sourceTime="16500" targetTime="16500" blendTime="0" quality="1.000000" />
+            <step sourceTime="16750" targetTime="16750" blendTime="0" quality="1.000000" />
+            <step sourceTime="17000" targetTime="17000" blendTime="0" quality="1.000000" />
+            <step sourceTime="17250" targetTime="16750" blendTime="787" quality="0.212766" />
+            <step sourceTime="17500" targetTime="16500" blendTime="833" quality="0.117571" />
+            <step sourceTime="17750" targetTime="17000" blendTime="583" quality="0.112871" />
+            <step sourceTime="18000" targetTime="16750" blendTime="333" quality="0.110295" />
+            <step sourceTime="18250" targetTime="0" blendTime="83" quality="0.088723" />
+        </blendData>
+        <blendData sourceAnimation="walk2idle" targetAnimation="idle_short" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="0" quality="1.000000" />
+            <step sourceTime="250" targetTime="250" blendTime="0" quality="1.000000" />
+            <step sourceTime="500" targetTime="500" blendTime="0" quality="1.000000" />
+            <step sourceTime="750" targetTime="750" blendTime="0" quality="1.000000" />
+            <step sourceTime="1000" targetTime="1000" blendTime="0" quality="1.000000" />
+            <step sourceTime="1250" targetTime="1250" blendTime="0" quality="1.000000" />
+            <step sourceTime="1500" targetTime="1500" blendTime="0" quality="1.000000" />
+            <step sourceTime="1750" targetTime="1750" blendTime="0" quality="1.000000" />
+            <step sourceTime="2000" targetTime="2000" blendTime="0" quality="1.000000" />
+            <step sourceTime="2250" targetTime="2250" blendTime="0" quality="1.000000" />
+            <step sourceTime="2500" targetTime="2500" blendTime="0" quality="1.000000" />
+            <step sourceTime="2750" targetTime="2750" blendTime="0" quality="1.000000" />
+            <step sourceTime="3000" targetTime="3000" blendTime="0" quality="1.000000" />
+            <step sourceTime="3250" targetTime="3250" blendTime="0" quality="1.000000" />
+            <step sourceTime="3500" targetTime="3500" blendTime="0" quality="1.000000" />
+            <step sourceTime="3750" targetTime="3750" blendTime="0" quality="1.000000" />
+            <step sourceTime="4000" targetTime="4000" blendTime="0" quality="1.000000" />
+            <step sourceTime="4250" targetTime="4250" blendTime="0" quality="1.000000" />
+            <step sourceTime="4500" targetTime="4500" blendTime="0" quality="1.000000" />
+            <step sourceTime="4750" targetTime="4750" blendTime="0" quality="1.000000" />
+            <step sourceTime="5000" targetTime="5000" blendTime="0" quality="1.000000" />
+            <step sourceTime="5250" targetTime="5250" blendTime="0" quality="1.000000" />
+            <step sourceTime="5500" targetTime="5500" blendTime="0" quality="1.000000" />
+            <step sourceTime="5750" targetTime="5750" blendTime="0" quality="1.000000" />
+            <step sourceTime="6000" targetTime="6000" blendTime="0" quality="1.000000" />
+            <step sourceTime="6250" targetTime="6250" blendTime="0" quality="1.000000" />
+            <step sourceTime="6500" targetTime="6500" blendTime="0" quality="1.000000" />
+            <step sourceTime="6750" targetTime="6750" blendTime="0" quality="1.000000" />
+            <step sourceTime="7000" targetTime="7000" blendTime="0" quality="1.000000" />
+            <step sourceTime="7250" targetTime="7250" blendTime="0" quality="1.000000" />
+            <step sourceTime="7500" targetTime="7500" blendTime="0" quality="1.000000" />
+            <step sourceTime="7750" targetTime="7750" blendTime="0" quality="1.000000" />
+            <step sourceTime="8000" targetTime="8000" blendTime="0" quality="1.000000" />
+            <step sourceTime="8250" targetTime="8250" blendTime="0" quality="1.000000" />
+            <step sourceTime="8500" targetTime="8500" blendTime="0" quality="1.000000" />
+            <step sourceTime="8750" targetTime="8750" blendTime="0" quality="1.000000" />
+            <step sourceTime="9000" targetTime="9000" blendTime="0" quality="1.000000" />
+            <step sourceTime="9250" targetTime="9250" blendTime="0" quality="1.000000" />
+            <step sourceTime="9500" targetTime="9500" blendTime="0" quality="1.000000" />
+            <step sourceTime="9750" targetTime="9750" blendTime="0" quality="1.000000" />
+            <step sourceTime="10000" targetTime="10000" blendTime="0" quality="1.000000" />
+            <step sourceTime="10250" targetTime="10250" blendTime="0" quality="1.000000" />
+            <step sourceTime="10500" targetTime="10500" blendTime="0" quality="1.000000" />
+            <step sourceTime="10750" targetTime="10750" blendTime="0" quality="1.000000" />
+            <step sourceTime="11000" targetTime="11000" blendTime="0" quality="1.000000" />
+            <step sourceTime="11250" targetTime="11250" blendTime="0" quality="1.000000" />
+            <step sourceTime="11500" targetTime="11500" blendTime="0" quality="1.000000" />
+            <step sourceTime="11750" targetTime="11750" blendTime="0" quality="1.000000" />
+            <step sourceTime="12000" targetTime="12000" blendTime="0" quality="1.000000" />
+            <step sourceTime="12250" targetTime="12250" blendTime="0" quality="1.000000" />
+            <step sourceTime="12500" targetTime="12500" blendTime="0" quality="1.000000" />
+            <step sourceTime="12750" targetTime="12750" blendTime="0" quality="1.000000" />
+            <step sourceTime="13000" targetTime="13000" blendTime="0" quality="1.000000" />
+            <step sourceTime="13250" targetTime="13250" blendTime="0" quality="1.000000" />
+            <step sourceTime="13500" targetTime="13500" blendTime="0" quality="1.000000" />
+            <step sourceTime="13750" targetTime="13750" blendTime="0" quality="1.000000" />
+            <step sourceTime="14000" targetTime="14000" blendTime="0" quality="1.000000" />
+            <step sourceTime="14250" targetTime="14250" blendTime="0" quality="1.000000" />
+            <step sourceTime="14500" targetTime="14500" blendTime="0" quality="1.000000" />
+            <step sourceTime="14750" targetTime="14750" blendTime="0" quality="1.000000" />
+            <step sourceTime="15000" targetTime="15000" blendTime="0" quality="1.000000" />
+            <step sourceTime="15250" targetTime="15250" blendTime="0" quality="1.000000" />
+            <step sourceTime="15500" targetTime="15500" blendTime="0" quality="1.000000" />
+            <step sourceTime="15750" targetTime="15750" blendTime="0" quality="1.000000" />
+            <step sourceTime="16000" targetTime="16000" blendTime="0" quality="1.000000" />
+            <step sourceTime="16250" targetTime="16250" blendTime="0" quality="1.000000" />
+            <step sourceTime="16500" targetTime="16500" blendTime="0" quality="1.000000" />
+            <step sourceTime="16750" targetTime="16750" blendTime="0" quality="1.000000" />
+            <step sourceTime="17000" targetTime="17000" blendTime="0" quality="1.000000" />
+            <step sourceTime="17250" targetTime="16750" blendTime="787" quality="0.212766" />
+            <step sourceTime="17500" targetTime="16500" blendTime="833" quality="0.117571" />
+            <step sourceTime="17750" targetTime="17000" blendTime="583" quality="0.112871" />
+            <step sourceTime="18000" targetTime="16750" blendTime="333" quality="0.110295" />
+            <step sourceTime="18250" targetTime="0" blendTime="83" quality="0.088723" />
+        </blendData>
+        <blendData sourceAnimation="idle_short" targetAnimation="idling1" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="0" quality="1.000000" />
+            <step sourceTime="250" targetTime="250" blendTime="0" quality="1.000000" />
+            <step sourceTime="500" targetTime="500" blendTime="0" quality="1.000000" />
+            <step sourceTime="750" targetTime="750" blendTime="0" quality="1.000000" />
+            <step sourceTime="1000" targetTime="1000" blendTime="0" quality="1.000000" />
+            <step sourceTime="1250" targetTime="1250" blendTime="0" quality="1.000000" />
+            <step sourceTime="1500" targetTime="1500" blendTime="0" quality="1.000000" />
+            <step sourceTime="1750" targetTime="1750" blendTime="0" quality="1.000000" />
+            <step sourceTime="2000" targetTime="2000" blendTime="0" quality="1.000000" />
+            <step sourceTime="2250" targetTime="2250" blendTime="0" quality="1.000000" />
+            <step sourceTime="2500" targetTime="2500" blendTime="0" quality="1.000000" />
+            <step sourceTime="2750" targetTime="2750" blendTime="0" quality="1.000000" />
+            <step sourceTime="3000" targetTime="3000" blendTime="0" quality="1.000000" />
+            <step sourceTime="3250" targetTime="3250" blendTime="0" quality="1.000000" />
+            <step sourceTime="3500" targetTime="3500" blendTime="0" quality="1.000000" />
+            <step sourceTime="3750" targetTime="3750" blendTime="0" quality="1.000000" />
+            <step sourceTime="4000" targetTime="4000" blendTime="0" quality="1.000000" />
+            <step sourceTime="4250" targetTime="4250" blendTime="0" quality="1.000000" />
+            <step sourceTime="4500" targetTime="4500" blendTime="0" quality="1.000000" />
+            <step sourceTime="4750" targetTime="4750" blendTime="0" quality="1.000000" />
+            <step sourceTime="5000" targetTime="5000" blendTime="0" quality="1.000000" />
+            <step sourceTime="5250" targetTime="5250" blendTime="0" quality="1.000000" />
+            <step sourceTime="5500" targetTime="5500" blendTime="0" quality="1.000000" />
+            <step sourceTime="5750" targetTime="5750" blendTime="0" quality="1.000000" />
+            <step sourceTime="6000" targetTime="6000" blendTime="0" quality="1.000000" />
+            <step sourceTime="6250" targetTime="6250" blendTime="0" quality="1.000000" />
+            <step sourceTime="6500" targetTime="6500" blendTime="0" quality="1.000000" />
+            <step sourceTime="6750" targetTime="6750" blendTime="0" quality="1.000000" />
+            <step sourceTime="7000" targetTime="7000" blendTime="0" quality="1.000000" />
+            <step sourceTime="7250" targetTime="7250" blendTime="0" quality="1.000000" />
+            <step sourceTime="7500" targetTime="7500" blendTime="0" quality="1.000000" />
+            <step sourceTime="7750" targetTime="7750" blendTime="0" quality="1.000000" />
+            <step sourceTime="8000" targetTime="8000" blendTime="0" quality="1.000000" />
+            <step sourceTime="8250" targetTime="8250" blendTime="0" quality="1.000000" />
+            <step sourceTime="8500" targetTime="8500" blendTime="0" quality="1.000000" />
+            <step sourceTime="8750" targetTime="8750" blendTime="0" quality="1.000000" />
+            <step sourceTime="9000" targetTime="9000" blendTime="0" quality="1.000000" />
+            <step sourceTime="9250" targetTime="9250" blendTime="0" quality="1.000000" />
+            <step sourceTime="9500" targetTime="9500" blendTime="0" quality="1.000000" />
+            <step sourceTime="9750" targetTime="9750" blendTime="0" quality="1.000000" />
+            <step sourceTime="10000" targetTime="10000" blendTime="0" quality="1.000000" />
+            <step sourceTime="10250" targetTime="10250" blendTime="0" quality="1.000000" />
+            <step sourceTime="10500" targetTime="10500" blendTime="0" quality="1.000000" />
+            <step sourceTime="10750" targetTime="10750" blendTime="0" quality="1.000000" />
+            <step sourceTime="11000" targetTime="11000" blendTime="0" quality="1.000000" />
+            <step sourceTime="11250" targetTime="11250" blendTime="0" quality="1.000000" />
+            <step sourceTime="11500" targetTime="11500" blendTime="0" quality="1.000000" />
+            <step sourceTime="11750" targetTime="11750" blendTime="0" quality="1.000000" />
+            <step sourceTime="12000" targetTime="12000" blendTime="0" quality="1.000000" />
+            <step sourceTime="12250" targetTime="12250" blendTime="0" quality="1.000000" />
+            <step sourceTime="12500" targetTime="12500" blendTime="0" quality="1.000000" />
+            <step sourceTime="12750" targetTime="12750" blendTime="0" quality="1.000000" />
+            <step sourceTime="13000" targetTime="13000" blendTime="0" quality="1.000000" />
+            <step sourceTime="13250" targetTime="13250" blendTime="0" quality="1.000000" />
+            <step sourceTime="13500" targetTime="13500" blendTime="0" quality="1.000000" />
+            <step sourceTime="13750" targetTime="13750" blendTime="0" quality="1.000000" />
+            <step sourceTime="14000" targetTime="14000" blendTime="0" quality="1.000000" />
+            <step sourceTime="14250" targetTime="14250" blendTime="0" quality="1.000000" />
+            <step sourceTime="14500" targetTime="14500" blendTime="0" quality="1.000000" />
+            <step sourceTime="14750" targetTime="14750" blendTime="0" quality="1.000000" />
+            <step sourceTime="15000" targetTime="15000" blendTime="0" quality="1.000000" />
+            <step sourceTime="15250" targetTime="15250" blendTime="0" quality="1.000000" />
+            <step sourceTime="15500" targetTime="15500" blendTime="0" quality="1.000000" />
+            <step sourceTime="15750" targetTime="15750" blendTime="0" quality="1.000000" />
+            <step sourceTime="16000" targetTime="16000" blendTime="0" quality="1.000000" />
+            <step sourceTime="16250" targetTime="16250" blendTime="0" quality="1.000000" />
+            <step sourceTime="16500" targetTime="16500" blendTime="0" quality="1.000000" />
+            <step sourceTime="16750" targetTime="16750" blendTime="0" quality="1.000000" />
+            <step sourceTime="17000" targetTime="17000" blendTime="0" quality="1.000000" />
+            <step sourceTime="17250" targetTime="16750" blendTime="787" quality="0.212766" />
+            <step sourceTime="17500" targetTime="16500" blendTime="833" quality="0.117571" />
+            <step sourceTime="17750" targetTime="17000" blendTime="583" quality="0.112871" />
+            <step sourceTime="18000" targetTime="16750" blendTime="333" quality="0.110295" />
+            <step sourceTime="18250" targetTime="0" blendTime="83" quality="0.088723" />
+        </blendData>
+        <blendData sourceAnimation="idling1" targetAnimation="startingToEatGrass1" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="988" quality="0.011873" />
+            <step sourceTime="250" targetTime="0" blendTime="976" quality="0.023254" />
+            <step sourceTime="500" targetTime="0" blendTime="993" quality="0.006446" />
+            <step sourceTime="750" targetTime="0" blendTime="983" quality="0.016865" />
+            <step sourceTime="1000" targetTime="0" blendTime="990" quality="0.009046" />
+            <step sourceTime="1250" targetTime="0" blendTime="997" quality="0.002626" />
+            <step sourceTime="1500" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="1750" targetTime="0" blendTime="950" quality="0.049409" />
+            <step sourceTime="2000" targetTime="0" blendTime="906" quality="0.093225" />
+            <step sourceTime="2250" targetTime="0" blendTime="906" quality="0.093934" />
+            <step sourceTime="2500" targetTime="0" blendTime="926" quality="0.073591" />
+            <step sourceTime="2750" targetTime="0" blendTime="927" quality="0.072948" />
+            <step sourceTime="3000" targetTime="0" blendTime="918" quality="0.081245" />
+            <step sourceTime="3250" targetTime="0" blendTime="904" quality="0.095908" />
+            <step sourceTime="3500" targetTime="0" blendTime="894" quality="0.105004" />
+            <step sourceTime="3750" targetTime="0" blendTime="893" quality="0.106115" />
+            <step sourceTime="4000" targetTime="0" blendTime="900" quality="0.099951" />
+            <step sourceTime="4250" targetTime="0" blendTime="915" quality="0.084873" />
+            <step sourceTime="4500" targetTime="0" blendTime="948" quality="0.051783" />
+            <step sourceTime="4750" targetTime="0" blendTime="993" quality="0.006982" />
+            <step sourceTime="5000" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="5250" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="5500" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="5750" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="6000" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="6250" targetTime="0" blendTime="996" quality="0.003329" />
+            <step sourceTime="6500" targetTime="0" blendTime="999" quality="0.000616" />
+            <step sourceTime="6750" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="7000" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="7250" targetTime="0" blendTime="991" quality="0.008118" />
+            <step sourceTime="7500" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="7750" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="8000" targetTime="0" blendTime="977" quality="0.022236" />
+            <step sourceTime="8250" targetTime="0" blendTime="964" quality="0.035963" />
+            <step sourceTime="8500" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="8750" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="9000" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="9250" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="9500" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="9750" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="10000" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="10250" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="10500" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="10750" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="11000" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="11250" targetTime="0" blendTime="989" quality="0.010142" />
+            <step sourceTime="11500" targetTime="0" blendTime="955" quality="0.044190" />
+            <step sourceTime="11750" targetTime="0" blendTime="962" quality="0.037448" />
+            <step sourceTime="12000" targetTime="0" blendTime="997" quality="0.002685" />
+            <step sourceTime="12250" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="12500" targetTime="0" blendTime="979" quality="0.020233" />
+            <step sourceTime="12750" targetTime="0" blendTime="981" quality="0.018307" />
+            <step sourceTime="13000" targetTime="0" blendTime="979" quality="0.020611" />
+            <step sourceTime="13250" targetTime="0" blendTime="955" quality="0.044271" />
+            <step sourceTime="13500" targetTime="0" blendTime="960" quality="0.039379" />
+            <step sourceTime="13750" targetTime="0" blendTime="975" quality="0.024477" />
+            <step sourceTime="14000" targetTime="0" blendTime="987" quality="0.012435" />
+            <step sourceTime="14250" targetTime="0" blendTime="994" quality="0.005271" />
+            <step sourceTime="14500" targetTime="0" blendTime="999" quality="0.000312" />
+            <step sourceTime="14750" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="15000" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="15250" targetTime="0" blendTime="994" quality="0.005158" />
+            <step sourceTime="15500" targetTime="0" blendTime="956" quality="0.043260" />
+            <step sourceTime="15750" targetTime="0" blendTime="963" quality="0.036006" />
+            <step sourceTime="16000" targetTime="0" blendTime="954" quality="0.045853" />
+            <step sourceTime="16250" targetTime="0" blendTime="883" quality="0.116168" />
+            <step sourceTime="16500" targetTime="0" blendTime="901" quality="0.098388" />
+            <step sourceTime="16750" targetTime="0" blendTime="965" quality="0.034449" />
+            <step sourceTime="17000" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="17250" targetTime="0" blendTime="1000" quality="0.000000" />
+            <step sourceTime="17500" targetTime="0" blendTime="833" quality="0.000000" />
+            <step sourceTime="17750" targetTime="0" blendTime="583" quality="0.000000" />
+            <step sourceTime="18000" targetTime="0" blendTime="333" quality="0.000000" />
+            <step sourceTime="18250" targetTime="0" blendTime="83" quality="0.000000" />
+        </blendData>
+        <blendData sourceAnimation="idling1" targetAnimation="rotateRight" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="500" targetTime="0" blendTime="966" quality="0.019628" />
+            <step sourceTime="750" targetTime="0" blendTime="966" quality="0.002208" />
+            <step sourceTime="1000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="1250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="1500" targetTime="0" blendTime="966" quality="0.009736" />
+            <step sourceTime="1750" targetTime="0" blendTime="966" quality="0.007112" />
+            <step sourceTime="2000" targetTime="0" blendTime="966" quality="0.018600" />
+            <step sourceTime="2250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="2500" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="2750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="3000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="3250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="3500" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="3750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="4000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="4250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="4500" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="4750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="5000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="5250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="5500" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="5750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="6000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="6250" targetTime="0" blendTime="964" quality="0.035117" />
+            <step sourceTime="6500" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="6750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="7000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="7250" targetTime="0" blendTime="966" quality="0.017496" />
+            <step sourceTime="7500" targetTime="0" blendTime="966" quality="0.013942" />
+            <step sourceTime="7750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="8000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="8250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="8500" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="8750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="9000" targetTime="0" blendTime="966" quality="0.026135" />
+            <step sourceTime="9250" targetTime="0" blendTime="966" quality="0.017379" />
+            <step sourceTime="9500" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="9750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="10000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="10250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="10500" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="10750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="11000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="11250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="11500" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="11750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="12000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="12250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="12500" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="12750" targetTime="0" blendTime="966" quality="0.020723" />
+            <step sourceTime="13000" targetTime="0" blendTime="966" quality="0.017736" />
+            <step sourceTime="13250" targetTime="0" blendTime="966" quality="0.023150" />
+            <step sourceTime="13500" targetTime="0" blendTime="966" quality="0.016439" />
+            <step sourceTime="13750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="14000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="14250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="14500" targetTime="0" blendTime="966" quality="0.002969" />
+            <step sourceTime="14750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="15000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="15250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="15500" targetTime="0" blendTime="966" quality="0.008160" />
+            <step sourceTime="15750" targetTime="0" blendTime="966" quality="0.018513" />
+            <step sourceTime="16000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="16250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="16500" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="16750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="17000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="17250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="17500" targetTime="0" blendTime="833" quality="0.000000" />
+            <step sourceTime="17750" targetTime="0" blendTime="583" quality="0.000000" />
+            <step sourceTime="18000" targetTime="0" blendTime="333" quality="0.000000" />
+            <step sourceTime="18250" targetTime="0" blendTime="83" quality="0.000000" />
+        </blendData>
+        <blendData sourceAnimation="idling1" targetAnimation="idle2walk" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="250" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="500" targetTime="0" blendTime="666" quality="0.005256" />
+            <step sourceTime="750" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="1000" targetTime="0" blendTime="666" quality="0.032307" />
+            <step sourceTime="1250" targetTime="0" blendTime="666" quality="0.044637" />
+            <step sourceTime="1500" targetTime="0" blendTime="666" quality="0.000276" />
+            <step sourceTime="1750" targetTime="0" blendTime="666" quality="0.012405" />
+            <step sourceTime="2000" targetTime="0" blendTime="666" quality="0.007148" />
+            <step sourceTime="2250" targetTime="0" blendTime="666" quality="0.024351" />
+            <step sourceTime="2500" targetTime="0" blendTime="666" quality="0.008639" />
+            <step sourceTime="2750" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="3000" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="3250" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="3500" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="3750" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="4000" targetTime="0" blendTime="666" quality="0.000024" />
+            <step sourceTime="4250" targetTime="0" blendTime="666" quality="0.006240" />
+            <step sourceTime="4500" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="4750" targetTime="0" blendTime="666" quality="0.006296" />
+            <step sourceTime="5000" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="5250" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="5500" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="5750" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="6000" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="6250" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="6500" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="6750" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="7000" targetTime="0" blendTime="666" quality="0.005480" />
+            <step sourceTime="7250" targetTime="0" blendTime="666" quality="0.043278" />
+            <step sourceTime="7500" targetTime="0" blendTime="666" quality="0.016317" />
+            <step sourceTime="7750" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="8000" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="8250" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="8500" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="8750" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="9000" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="9250" targetTime="0" blendTime="666" quality="0.003986" />
+            <step sourceTime="9500" targetTime="0" blendTime="666" quality="0.000774" />
+            <step sourceTime="9750" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="10000" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="10250" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="10500" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="10750" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="11000" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="11250" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="11500" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="11750" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="12000" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="12250" targetTime="0" blendTime="666" quality="0.003405" />
+            <step sourceTime="12500" targetTime="0" blendTime="666" quality="0.007358" />
+            <step sourceTime="12750" targetTime="0" blendTime="666" quality="0.062736" />
+            <step sourceTime="13000" targetTime="0" blendTime="666" quality="0.018787" />
+            <step sourceTime="13250" targetTime="0" blendTime="666" quality="0.011706" />
+            <step sourceTime="13500" targetTime="0" blendTime="666" quality="0.011339" />
+            <step sourceTime="13750" targetTime="0" blendTime="666" quality="0.007384" />
+            <step sourceTime="14000" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="14250" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="14500" targetTime="0" blendTime="666" quality="0.022137" />
+            <step sourceTime="14750" targetTime="0" blendTime="666" quality="0.034310" />
+            <step sourceTime="15000" targetTime="0" blendTime="666" quality="0.009767" />
+            <step sourceTime="15250" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="15500" targetTime="0" blendTime="666" quality="0.021566" />
+            <step sourceTime="15750" targetTime="0" blendTime="666" quality="0.006939" />
+            <step sourceTime="16000" targetTime="0" blendTime="666" quality="0.004383" />
+            <step sourceTime="16250" targetTime="0" blendTime="666" quality="0.016098" />
+            <step sourceTime="16500" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="16750" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="17000" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="17250" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="17500" targetTime="0" blendTime="666" quality="0.000000" />
+            <step sourceTime="17750" targetTime="0" blendTime="583" quality="0.000000" />
+            <step sourceTime="18000" targetTime="0" blendTime="333" quality="0.000000" />
+            <step sourceTime="18250" targetTime="0" blendTime="83" quality="0.000000" />
+        </blendData>
+        <blendData sourceAnimation="idling1" targetAnimation="rotateLeft" stepSize="250">
+            <step sourceTime="0" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="500" targetTime="0" blendTime="966" quality="0.011469" />
+            <step sourceTime="750" targetTime="0" blendTime="966" quality="0.008523" />
+            <step sourceTime="1000" targetTime="0" blendTime="966" quality="0.009385" />
+            <step sourceTime="1250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="1500" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="1750" targetTime="0" blendTime="966" quality="0.014080" />
+            <step sourceTime="2000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="2250" targetTime="0" blendTime="954" quality="0.045070" />
+            <step sourceTime="2500" targetTime="0" blendTime="966" quality="0.011550" />
+            <step sourceTime="2750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="3000" targetTime="0" blendTime="966" quality="0.009126" />
+            <step sourceTime="3250" targetTime="0" blendTime="966" quality="0.011270" />
+            <step sourceTime="3500" targetTime="0" blendTime="966" quality="0.008307" />
+            <step sourceTime="3750" targetTime="0" blendTime="966" quality="0.011941" />
+            <step sourceTime="4000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="4250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="4500" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="4750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="5000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="5250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="5500" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="5750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="6000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="6250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="6500" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="6750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="7000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="7250" targetTime="0" blendTime="966" quality="0.007450" />
+            <step sourceTime="7500" targetTime="0" blendTime="966" quality="0.003509" />
+            <step sourceTime="7750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="8000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="8250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="8500" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="8750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="9000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="9250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="9500" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="9750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="10000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="10250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="10500" targetTime="0" blendTime="966" quality="0.006326" />
+            <step sourceTime="10750" targetTime="0" blendTime="966" quality="0.003005" />
+            <step sourceTime="11000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="11250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="11500" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="11750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="12000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="12250" targetTime="0" blendTime="966" quality="0.011381" />
+            <step sourceTime="12500" targetTime="0" blendTime="966" quality="0.007754" />
+            <step sourceTime="12750" targetTime="0" blendTime="966" quality="0.006680" />
+            <step sourceTime="13000" targetTime="0" blendTime="966" quality="0.029229" />
+            <step sourceTime="13250" targetTime="0" blendTime="966" quality="0.015817" />
+            <step sourceTime="13500" targetTime="0" blendTime="966" quality="0.003534" />
+            <step sourceTime="13750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="14000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="14250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="14500" targetTime="0" blendTime="941" quality="0.058848" />
+            <step sourceTime="14750" targetTime="0" blendTime="966" quality="0.012912" />
+            <step sourceTime="15000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="15250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="15500" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="15750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="16000" targetTime="0" blendTime="966" quality="0.002467" />
+            <step sourceTime="16250" targetTime="0" blendTime="966" quality="0.023596" />
+            <step sourceTime="16500" targetTime="0" blendTime="966" quality="0.005353" />
+            <step sourceTime="16750" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="17000" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="17250" targetTime="0" blendTime="966" quality="0.000000" />
+            <step sourceTime="17500" targetTime="0" blendTime="833" quality="0.000000" />
+            <step sourceTime="17750" targetTime="0" blendTime="583" quality="0.000000" />
+            <step sourceTime="18000" targetTime="0" blendTime="333" quality="0.000000" />
+            <step sourceTime="18250" targetTime="0" blendTime="83" quality="0.000000" />
+        </blendData>
+    </animationBlendData>
+
+
+    <!--animationTransitions>
+        <animationTransition animation="idling1" targetAnimation="startingToEatGrass1" timeFactor="1.0"/>
+        <animationTransition animation="idling1" targetAnimation="idle2walk" timeFactor="1.0"/>
+
+        <animationTransition animation="startingToEatGrass1" targetAnimation="eatingGrass1" timeFactor="1.0"/>
+        <animationTransition animation="startingToEatGrass1" targetAnimation="stoppingToEatGrass1" timeFactor="1.0"/>
+        <animationTransition animation="eatingGrass1" targetAnimation="stoppingToEatGrass1" timeFactor="1.0"/>
+        <animationTransition animation="stoppingToEatGrass1" targetAnimation="idling1" timeFactor="1.0"/>
+        <animationTransition animation="stoppingToEatGrass1" targetAnimation="startingToEatGrass1" timeFactor="1.0"/>
+        
+        
+
+
+        <animationTransition animation="idle2walk" targetAnimation="walk" timeFactor="1.0">
+            <condition variable="distance" operator=">" value="1.5" />
+        </animationTransition>
+        <animationTransition animation="idle2walk" targetAnimation="walk2idle" timeFactor="1.0">
+            <condition variable="distance" operator="<=" value="1.5" />
+        </animationTransition>
+
+        <animationTransition animation="walk" targetAnimation="walk2idle" timeFactor="1.0">
+            <condition variable="distance" operator="<=" value="1.5" />
+        </animationTransition>
+        <animationTransition animation="walk" targetAnimation="walk" timeFactor="1.0">
+            <condition variable="distance" operator=">" value="1.5" />
+            <condition variable="angle" operator="<=" value="45" />
+            <condition variable="angle" operator=">=" value="-45" />
+        </animationTransition>
+        <animationTransition animation="walk" targetAnimation="walkAndRotateLeft" timeFactor="1.0">
+            <condition variable="distance" operator=">" value="1.5" />
+            <condition variable="angle" operator="<" value="-45" />
+        </animationTransition>
+        <animationTransition animation="walk" targetAnimation="walkAndRotateRight" timeFactor="1.0">
+            <condition variable="distance" operator=">" value="1.5" />
+            <condition variable="angle" operator=">" value="45" />
+        </animationTransition>
+
+        <animationTransition animation="walkAndRotateLeft" targetAnimation="walkAndRotateLeft" timeFactor="1.0">
+            <condition variable="angle" operator="<" value="-45" />
+        </animationTransition>
+        <animationTransition animation="walkAndRotateLeft" targetAnimation="walk" timeFactor="1.0">
+            <condition variable="angle" operator=">=" value="-45" />
+        </animationTransition>
+
+        <animationTransition animation="walkAndRotateRight" targetAnimation="walkAndRotateRight" timeFactor="1.0">
+            <condition variable="angle" operator=">" value="45" />
+        </animationTransition>
+        <animationTransition animation="walkAndRotateRight" targetAnimation="walk" timeFactor="1.0">
+            <condition variable="angle" operator="<=" value="45" />
+        </animationTransition>
+
+        <animationTransition animation="walk2idle" targetAnimation="idling1" timeFactor="1.0">
+            <condition variable="distance" operator="<=" value="1.5" />
+            <condition variable="angle" operator="<=" value="45" />
+            <condition variable="angle" operator=">=" value="-45" />
+        </animationTransition>
+        <animationTransition animation="walk2idle" targetAnimation="idle2walk" timeFactor="1.0">
+            <condition variable="distance" operator=">" value="1.5" />
+            <condition variable="angle" operator="<=" value="135" />
+            <condition variable="angle" operator=">=" value="-135" />
+        </animationTransition>
+        <animationTransition animation="walk2idle" targetAnimation="rotateLeft" timeFactor="1.0">
+            <condition variable="distance" operator="<=" value="1.5" />
+            <condition variable="angle" operator="<" value="-45" />
+        </animationTransition>
+        <animationTransition animation="walk2idle" targetAnimation="rotateRight" timeFactor="1.0">
+            <condition variable="distance" operator="<=" value="1.5" />
+            <condition variable="angle" operator=">" value="45" />
+        </animationTransition>
+
+        <animationTransition animation="rotateLeft" targetAnimation="rotateLeft" timeFactor="1.0">
+            <condition variable="distance" operator="<=" value="1.5" />
+            <condition variable="angle" operator="<" value="-45" />
+        </animationTransition>
+        <animationTransition animation="rotateLeft" targetAnimation="idle2walk" timeFactor="1.0">
+            <condition variable="distance" operator=">" value="1.5" />
+            <condition variable="angle" operator=">=" value="-45" />
+        </animationTransition>
+        <animationTransition animation="rotateLeft" targetAnimation="idling1" timeFactor="1.0">
+            <condition variable="distance" operator="<" value="1.5" />
+            <condition variable="angle" operator=">=" value="-45" />
+        </animationTransition>
+
+        <animationTransition animation="rotateRight" targetAnimation="rotateRight" timeFactor="1.0">
+            <condition variable="distance" operator="<=" value="1.5" />
+            <condition variable="angle" operator=">" value="45" />
+        </animationTransition>
+        <animationTransition animation="rotateRight" targetAnimation="idle2walk" timeFactor="1.0">
+            <condition variable="distance" operator=">" value="1.5" />
+            <condition variable="angle" operator="<=" value="45" />
+        </animationTransition>
+        <animationTransition animation="rotateRight" targetAnimation="idling1" timeFactor="1.0">
+            <condition variable="distance" operator="<=" value="1.5" />
+            <condition variable="angle" operator="<=" value="45" />
+        </animationTransition>
+        
+    </animationTransitions-->
+
+
+
+</xml>

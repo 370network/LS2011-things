@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onCreate="onMapScreenCreated">
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/background01.png" imageColor="1 1 1 1" onOpen="onOpen" onClose="onClose">
+
+        <GuiElement type="button" profile="upButton" position="0.225 0.93" onCreate="onUpButtonCreate" onClick="onUpClick" focusId="1" focusChangeBottom="2" />
+
+        <GuiElement type="bitmap" position="0.225 0.195" size="0.55 0.725" imageFilename="dataS2/menu/slot_normal.png" imageColor="1 1 1 1"/>
+        
+        <!-- list with the selected available -->
+        <GuiElement type="list" position="0.225 0.195" size="0.55 0.725" visibleItems="4" numColumns="1" columnPositions="0" usePreSelection="true" showSlider="false" listItemHeight = "0.18125" onCreate="onCreateList" onSelectionChanged="onListSelectionChanged" onDoubleClick="onDoubleClick" focusId="2" focusChangeTop="1" focusChangeBottom="3" >
+            <GuiElement type="gameListItem" position="0 0" size="0.55 0.18125" onCreate="onCreateListItem" imageFilename2="dataS2/menu/slot_normal.png" selectedImageFilename="dataS2/menu/slot_selected.png">
+                <GuiElement type="bitmap" position="0.015 0.019" size="0.1096875 0.14625" onCreate="onCreateIcon" imageFilename="data/maps/map01/map_preview.png" imageColor="1 1 1 1"/>
+                <GuiElement type="text" profile="defaultText" position="0.1396875 0.12" onCreate="onCreateTitleText" text="" textWrapWidth="0.4" size="0.61 0.2" alignment="left"/>
+                <GuiElement type="text" profile="defaultText" position="0.142 0.09" textSize="0.023" text2Size="0.023" onCreate="onCreateDescText" text="" textWrapWidth="0.4" size="0.61 0.2" alignment="left"/>
+            </GuiElement>
+        </GuiElement>
+
+        <GuiElement type="button" profile="downButton" position="0.225 0.13" onClick="onDownClick" focusId="3" focusChangeTop="2" focusChangeBottom="4" focusChangeRight="4" />
+
+        <GuiElement type="button" profile="defaultButton" position="0.61 0.02" text="$l10n_Button_Back" onClick="onBackClick" focusId="4" focusChangeTop="3" focusChangeLeft="3" focusChangeRight="5" />
+        <GuiElement type="button" profile="defaultButton" position="0.8 0.02" text="$l10n_Button_Start" onClick="onStartClick" focusId="5" focusChangeTop="3" focusChangeLeft="4" focusInit="onOpen" />
+
+    </GuiElement>
+</GUI>

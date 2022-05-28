@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI>
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/background01.png" imageColor="1 1 1 1">
+
+        <GuiElement type="text" profile="defaultTextCentered" position="0 0.70" textSize="0.03" text2Size="0.03" text="$l10n_ChooseDifficulty" />
+ 
+		<GuiElement type="button" profile="greenButton" position="0.165 0.6" text="$l10n_Button_Easy" onClick="onEasyClick" focusId="1" focusChangeRight="2" focusChangeBottom="4" />
+        <GuiElement type="button" profile="yellowButton" position="0.415 0.6" text="$l10n_Button_Normal" onClick="onNormalClick" focusId="2" focusChangeLeft="1" focusChangeRight="3" focusChangeBottom="4" focusInit="onOpen" />
+        <GuiElement type="button" profile="redButton" position="0.665 0.6" text="$l10n_Button_Hard" onClick="onHardClick" focusId="3" focusChangeLeft="2" focusChangeBottom="4" />
+ 
+        <GuiElement type="button" profile="defaultButton" position="0.415 0.5" text="$l10n_Button_Back" onClick="onBackClick" focusId="4" focusChangeTop="2" focusChangeLeft="1" focusChangeRight="3"/>
+    </GuiElement>
+</GUI>
+

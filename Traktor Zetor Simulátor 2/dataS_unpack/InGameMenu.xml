@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI>
+    <GuiElement type="none" position="0 0" size="1 1" onOpen="onOpen" onClose="onClose">
+        <!--GuiElement type="bitmap" position="0.0875 -0.07" size="0.825 1.1" imageFilename="dataS/missions/mission00_briefing$l10nSuffix.png" imageColor="1 1 1 1" onCreate="onCreateCareerBriefing"/>
+        <GuiElement type="bitmap" position="0.0875 -0.07" size="0.825 0.5" imageFilename="dataS/missions/mission00_briefing$l10nSuffix.png" imageColor="1 1 1 1" onCreate="onCreateMissionBriefing"/-->
+        
+        <GuiElement type="bitmap" position="0.02286 0.12857" size="0.9543 0.8457" imageFilename="dataS2/menu/briefingScreen/background.png" imageColor="1 1 1 1" onCreate="onBriefingBackgroundCreate" />
+        <GuiElement type="bitmap" position="0.04286 0.68857" size="0.30857 0.25905" imageFilename="dataS2/menu/briefingScreen/blank.png" imageColor="1 1 1 1" onCreate="onImage1Create" />
+        <GuiElement type="bitmap" position="0.04286 0.4219" size="0.30857 0.25905" imageFilename="dataS2/menu/briefingScreen/blank.png" imageColor="1 1 1 1" onCreate="onImage2Create" />
+        <GuiElement type="bitmap" position="0.04286 0.15524" size="0.30857 0.25905" imageFilename="dataS2/menu/briefingScreen/blank.png" imageColor="1 1 1 1" onCreate="onImage3Create" />
+        
+        <GuiElement type="button" profile="defaultLargeButton" position="-0.01 0.02" text="$l10n_Button_SaveGame" onClick="onSaveClick" onCreate="onCreateSaveRestartButton" focusId="1" focusChangeRight="2" />
+        <GuiElement type="button" profile="defaultLargeButton" position="0.33 0.02" text="$l10n_Button_CancelGame" onClick="onCancelClick" focusId="2" focusChangeLeft="1" focusChangeRight="3" />
+        <GuiElement type="button" profile="defaultLargeButton" position="0.67 0.02" text="$l10n_Button_ContinueGame" onClick="onContinueClick" onCreate="onCreateContinueButton" focusId="3" focusChangeLeft="2" focusInit="onOpen" />
+        <GuiElement type="text" profile="defaultTextCentered" position="-0.01 0.08" text="" onCreate="onCreateInfoText"/>
+        <GuiElement type="text" profile="defaultTextCentered" position="0 0.3" text="" textWrapWidth="0.8" onCreate="onCreateErrorText"/>
+        <GuiElement type="text" profile="defaultTextCentered" position="-0.01 0.076" text="$l10n_Text_Saving" onCreate="onCreateSavingText"/>
+    </GuiElement>
+</GUI>
+

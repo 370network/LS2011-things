@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpen" onClose="onClose">
+    <GuiElement type="bitmap" position="0 0" size="1 1" imageFilename="dataS2/menu/background01.png" imageColor="1 1 1 1">
+        <GuiElement type="bitmap" position="0.16 0.5" size="0.7 0.46666" imageFilename="dataS2/menu/main_logo$l10nSuffix.png" imageColor="1 1 1 1"/>
+         <GuiElement type="bitmap" position="0.25 0.06" size="0.7 0.69" imageFilename="dataS2/menu/settings_background.png" imageColor="1 1 1 1"/>
+
+        <GuiElement type="text" profile="defaultText" position="0.45 0.66" size="0.41 0.2" textSize="0.03" text2Size="0.03" text="" onCreate="onCreateServerName" alignment="right"/>
+		<GuiElement type="text" profile="defaultText" position="0.45 0.59" size="0.41 0.2" textSize="0.03" text2Size="0.03" text="" onCreate="onCreateMap" alignment="right"/>
+        <GuiElement type="text" profile="defaultText" position="0.45 0.52" size="0.41 0.2" textSize="0.03" text2Size="0.03" text="" onCreate="onCreateNumPlayers" alignment="right"/>
+        <GuiElement type="text" profile="defaultText" position="0.45 0.45" size="0.41 0.2" textSize="0.03" text2Size="0.03" text="" onCreate="onCreateCapacity" alignment="right"/>
+        <GuiElement type="text" profile="defaultText" position="0.45 0.38" size="0.41 0.2" textSize="0.03" text2Size="0.03" text="" onCreate="onCreatePassword" alignment="right"/>
+		<GuiElement type="text" profile="defaultText" position="0.45 0.31" size="0.41 0.2" textSize="0.03" text2Size="0.03" text="" onCreate="onCreateLanguage" alignment="right"/>
+		
+        <GuiElement type="text" profile="defaultText" position="0.12 0.66" size="0.41 0.2" textSize="0.03" text2Size="0.03" text="$l10n_ServerName" alignment="right"/>
+		<GuiElement type="text" profile="defaultText" position="0.12 0.59" size="0.41 0.2" textSize="0.03" text2Size="0.03" text="$l10n_Map" alignment="right"/>
+		<GuiElement type="text" profile="defaultText" position="0.12 0.52" size="0.41 0.2" textSize="0.03" text2Size="0.03" text="$l10n_NumPlayers" alignment="right"/>
+        <GuiElement type="text" profile="defaultText" position="0.12 0.45" size="0.41 0.2" textSize="0.03" text2Size="0.03" text="$l10n_MaxNumPlayers" alignment="right"/>
+		<GuiElement type="text" profile="defaultText" position="0.12 0.38" size="0.41 0.2" textSize="0.03" text2Size="0.03" text="$l10n_Password" alignment="right"/>
+        <GuiElement type="text" profile="defaultText" position="0.12 0.31" size="0.41 0.2" textSize="0.03" text2Size="0.03" text="$l10n_Language" alignment="right"/>
+        
+        <GuiElement type="text" profile="defaultText" position="0.18 0.08" size="0.82 0.2" textSize="0.03" text2Size="0.03" textColor="1 0 0 1" text="$l10n_NotAllModsAvailable" alignment="center" onCreate="onCreateNotAllModsAvailable"/>
+    
+        <GuiElement type="button" profile="defaultButton" position="0.05 0.50" text="$l10n_Button_Start" onClick="onStartClick" onCreate="onCreateStart" focusId="1" focusChangeBottom="2" />
+        <GuiElement type="button" profile="defaultButton" position="0.05 0.42" text="$l10n_Button_Mods" onClick="onModsClick" focusId="2" focusChangeTop="1" focusChangeBottom="3" />
+        <GuiElement type="button" profile="defaultButton" position="0.05 0.34" text="$l10n_Button_Back" onClick="onBackClick" focusId="3" focusChangeTop="2" focusInit="onOpen" />
+    </GuiElement>                                     
+</GUI>
+
